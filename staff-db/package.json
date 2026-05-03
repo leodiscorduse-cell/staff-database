@@ -1,0 +1,15 @@
+{
+  "name": "staff-database-bot",
+  "version": "1.0.0",
+  "description": "Discord staff database bot",
+  "scripts": {
+    "sync": "node bot/bot.js",
+    "dashboard": "node bot/api.js",
+    "start": "node bot/bot.js && node bot/api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "discord.js": "^14.14.1",
+    "express": "^4.18.3"
+  }
+}
