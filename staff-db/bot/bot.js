@@ -70,6 +70,8 @@ const CONFIG = {
       'Junior Management',
       'Trial Management',
       '➜ Management Team',
+    ],
+    'Internal Affairs Team': [
       'Lead Affairs Team',
       'Senior Affairs Team',
       'Affairs Team',

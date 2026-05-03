@@ -21,7 +21,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1479730180258791509": {
       "user_id": "1479730180258791509",
@@ -41,7 +41,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1412530506364485774": {
       "user_id": "1412530506364485774",
@@ -62,7 +62,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1352680172775538688": {
       "user_id": "1352680172775538688",
@@ -85,7 +85,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1289570079880511542": {
       "user_id": "1289570079880511542",
@@ -106,7 +106,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1411656491584192585": {
       "user_id": "1411656491584192585",
@@ -127,7 +127,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "804050170350141491": {
       "user_id": "804050170350141491",
@@ -150,7 +150,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1333863670958264475": {
       "user_id": "1333863670958264475",
@@ -173,7 +173,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1409640835070558276": {
       "user_id": "1409640835070558276",
@@ -194,7 +194,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1489962499515224145": {
       "user_id": "1489962499515224145",
@@ -217,7 +217,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1282376892296462398": {
       "user_id": "1282376892296462398",
@@ -240,7 +240,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1436634778752389120": {
       "user_id": "1436634778752389120",
@@ -274,7 +274,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1061007180788154379": {
       "user_id": "1061007180788154379",
@@ -286,7 +286,7 @@
         "Lead Affairs Team"
       ],
       "highest_role": "Lead Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-03-01T13:12:22.353Z",
       "on_ztp": false,
       "strikes": [],
@@ -298,7 +298,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1045072929085456515": {
       "user_id": "1045072929085456515",
@@ -310,7 +310,7 @@
         "➜ Staff Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-04T19:43:48.086Z",
       "on_ztp": false,
       "strikes": [],
@@ -324,7 +324,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1358056022526132397": {
       "user_id": "1358056022526132397",
@@ -358,7 +358,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1472298976899498055": {
       "user_id": "1472298976899498055",
@@ -370,7 +370,7 @@
         "Affairs Team"
       ],
       "highest_role": "Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-02-27T17:49:12.617Z",
       "on_ztp": false,
       "strikes": [],
@@ -383,7 +383,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1476624123592573004": {
       "user_id": "1476624123592573004",
@@ -410,7 +410,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "984890820098416741": {
       "user_id": "984890820098416741",
@@ -422,7 +422,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-27T15:36:30.020Z",
       "on_ztp": false,
       "strikes": [],
@@ -434,7 +434,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1275037671164481536": {
       "user_id": "1275037671164481536",
@@ -446,7 +446,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2025-12-11T15:49:59.948Z",
       "on_ztp": false,
       "strikes": [],
@@ -459,7 +459,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1205584224242110465": {
       "user_id": "1205584224242110465",
@@ -471,7 +471,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-26T18:34:35.791Z",
       "on_ztp": false,
       "strikes": [],
@@ -484,7 +484,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1094347642420600922": {
       "user_id": "1094347642420600922",
@@ -496,7 +496,7 @@
         "➜ Staff Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-03-29T10:51:30.444Z",
       "on_ztp": true,
       "strikes": [],
@@ -511,7 +511,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1208418879232020615": {
       "user_id": "1208418879232020615",
@@ -523,7 +523,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-10T18:24:56.396Z",
       "on_ztp": false,
       "strikes": [],
@@ -535,7 +535,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "763774740895891467": {
       "user_id": "763774740895891467",
@@ -566,7 +566,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "793163165939925012": {
       "user_id": "793163165939925012",
@@ -602,7 +602,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1439466689787068487": {
       "user_id": "1439466689787068487",
@@ -614,7 +614,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-11T12:37:52.060Z",
       "on_ztp": false,
       "strikes": [],
@@ -623,7 +623,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1309127395663413323": {
       "user_id": "1309127395663413323",
@@ -645,7 +645,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1183312224169771008": {
       "user_id": "1183312224169771008",
@@ -671,7 +671,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1344027588808409172": {
       "user_id": "1344027588808409172",
@@ -702,7 +702,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1211044737595875412": {
       "user_id": "1211044737595875412",
@@ -730,7 +730,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1491875555082240130": {
       "user_id": "1491875555082240130",
@@ -754,7 +754,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1310716495499755602": {
       "user_id": "1310716495499755602",
@@ -766,7 +766,7 @@
         "Affairs Team"
       ],
       "highest_role": "Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-21T20:55:27.460Z",
       "on_ztp": true,
       "strikes": [
@@ -784,7 +784,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1322595120557854760": {
       "user_id": "1322595120557854760",
@@ -796,7 +796,7 @@
         "Junior Affairs Team"
       ],
       "highest_role": "Junior Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-03-21T19:10:04.867Z",
       "on_ztp": false,
       "strikes": [],
@@ -809,7 +809,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1424802580814499864": {
       "user_id": "1424802580814499864",
@@ -843,7 +843,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1385712226937082039": {
       "user_id": "1385712226937082039",
@@ -855,7 +855,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-13T23:41:48.568Z",
       "on_ztp": false,
       "strikes": [],
@@ -867,7 +867,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1309431215664795669": {
       "user_id": "1309431215664795669",
@@ -879,7 +879,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-22T15:23:48.919Z",
       "on_ztp": false,
       "strikes": [],
@@ -892,7 +892,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1454039150775767090": {
       "user_id": "1454039150775767090",
@@ -922,7 +922,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1305254895854686238": {
       "user_id": "1305254895854686238",
@@ -949,7 +949,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1367950238878535940": {
       "user_id": "1367950238878535940",
@@ -969,7 +969,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1468753725865594957": {
       "user_id": "1468753725865594957",
@@ -1004,7 +1004,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1241119617829834834": {
       "user_id": "1241119617829834834",
@@ -1025,7 +1025,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1363438180766056639": {
       "user_id": "1363438180766056639",
@@ -1037,7 +1037,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-02-28T14:18:39.842Z",
       "on_ztp": false,
       "strikes": [],
@@ -1052,7 +1052,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "953350549498101760": {
       "user_id": "953350549498101760",
@@ -1064,7 +1064,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-25T13:03:44.363Z",
       "on_ztp": false,
       "strikes": [],
@@ -1076,7 +1076,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1407735985684349059": {
       "user_id": "1407735985684349059",
@@ -1097,7 +1097,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1489665964504125460": {
       "user_id": "1489665964504125460",
@@ -1109,7 +1109,7 @@
         "➜ Staff Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-05-01T20:37:42.584Z",
       "on_ztp": false,
       "strikes": [],
@@ -1118,7 +1118,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1492485344128532492": {
       "user_id": "1492485344128532492",
@@ -1130,7 +1130,7 @@
         "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-11T11:31:37.491Z",
       "on_ztp": false,
       "strikes": [],
@@ -1141,7 +1141,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1207763251337896046": {
       "user_id": "1207763251337896046",
@@ -1175,7 +1175,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1282008553028321330": {
       "user_id": "1282008553028321330",
@@ -1187,7 +1187,7 @@
         "Affairs Team"
       ],
       "highest_role": "Affairs Team",
-      "role_group": "Management Team",
+      "role_group": "Internal Affairs Team",
       "join_date": "2026-03-28T10:32:34.650Z",
       "on_ztp": false,
       "strikes": [],
@@ -1198,7 +1198,7 @@
       "special": [],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "1439758932691255376": {
       "user_id": "1439758932691255376",
@@ -1228,7 +1228,7 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     },
     "960083107204186122": {
       "user_id": "960083107204186122",
@@ -1259,10 +1259,16 @@
       ],
       "notes": "",
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:09:26.498Z"
+      "updated_at": "2026-05-03T09:23:13.416Z"
     }
   },
   "sync_log": [
+    {
+      "synced_at": "2026-05-03T09:23:13.416Z",
+      "added": 0,
+      "updated": 49,
+      "removed": 0
+    },
     {
       "synced_at": "2026-05-03T09:09:26.498Z",
       "added": 37,
