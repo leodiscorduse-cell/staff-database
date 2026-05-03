@@ -51,19 +51,19 @@ const CONFIG = {
       '➜ Chairman',
       '➜ Vice Chairman',
     ],
-    'Directive Management': [
+    'Directive Team': [
       'Director',
       'Deputy Director',
       'Assistant Director',
       '➜ Directive Team',
       'Disciplinary Director',
       'Recruitment Director',
-      'Management Director',
       'Internal Affairs Director',
       'In-Game Director',
       'Community Director',
     ],
     'Management Team': [
+      'Management Director',
       'Lead Management',
       'Senior Management',
       'Management',
