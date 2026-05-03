@@ -2,50 +2,112 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 
-// ─── CONFIG ───────────────────────────────────────────────────────────────────
 const CONFIG = {
   token: process.env.DISCORD_TOKEN,
   guildId: process.env.GUILD_ID,
 
-  // Staff roles in order from highest to lowest
+  // Staff roles in order highest to lowest
   staffRoles: [
-    // Chairman
-    'Chairman',
-    // Directive
+    '➜ Chairman',
+    '➜ Vice Chairman',
     'Director',
     'Deputy Director',
-    // Management
-    'Manager',
-    'Senior Manager',
-    // Admin
-    'Administrator',
+    'Assistant Director',
+    '➜ Directive Team',
+    'Disciplinary Director',
+    'Recruitment Director',
+    'Management Director',
+    'Internal Affairs Director',
+    'In-Game Director',
+    'Community Director',
+    'Lead Management',
+    'Senior Management',
+    'Management',
+    'Junior Management',
+    'Trial Management',
+    '➜ Management Team',
+    'Lead Affairs Team',
+    'Senior Affairs Team',
+    'Affairs Team',
+    'Junior Affairs Team',
+    'Trial Affairs Team',
+    '➜ Internal Affairs Team',
     'Senior Administrator',
-    // Mod
+    'Administrator',
+    'Junior Administrator',
+    'Trial Administrator',
+    '➜ Administration Team',
     'Senior Moderator',
     'Moderator',
+    'Junior Moderator',
     'Trial Moderator',
-    // Other
-    'Helper',
-    'Staff',
+    '➜ Moderation Team',
+    '➜ Staff Team',
   ],
 
-  // Role hierarchy groups (for sorting/display)
+  // Role hierarchy groups for display ordering
   roleGroups: {
-    'Chairman Team':          ['Chairman'],
-    'Directive Management':   ['Director', 'Deputy Director'],
-    'Admin Team':             ['Administrator', 'Senior Administrator', 'Manager', 'Senior Manager'],
-    'Mod Team':               ['Senior Moderator', 'Moderator', 'Trial Moderator'],
-    'Staff':                  ['Helper', 'Staff'],
+    'Chairman Team': [
+      '➜ Chairman',
+      '➜ Vice Chairman',
+    ],
+    'Directive Management': [
+      'Director',
+      'Deputy Director',
+      'Assistant Director',
+      '➜ Directive Team',
+      'Disciplinary Director',
+      'Recruitment Director',
+      'Management Director',
+      'Internal Affairs Director',
+      'In-Game Director',
+      'Community Director',
+    ],
+    'Management Team': [
+      'Lead Management',
+      'Senior Management',
+      'Management',
+      'Junior Management',
+      'Trial Management',
+      '➜ Management Team',
+      'Lead Affairs Team',
+      'Senior Affairs Team',
+      'Affairs Team',
+      'Junior Affairs Team',
+      'Trial Affairs Team',
+      '➜ Internal Affairs Team',
+    ],
+    'Admin Team': [
+      'Senior Administrator',
+      'Administrator',
+      'Junior Administrator',
+      'Trial Administrator',
+      '➜ Administration Team',
+    ],
+    'Mod Team': [
+      'Senior Moderator',
+      'Moderator',
+      'Junior Moderator',
+      'Trial Moderator',
+      '➜ Moderation Team',
+    ],
+    'Staff': [
+      '➜ Staff Team',
+    ],
   },
 
-  // Strike roles
+  // Strike roles (exact names)
   strikeRoles: [
-    'Strike 1',
-    'Strike 2 (Demotion)',
-    'Strike 3 (Termination)',
+    '➜ Strike 3 (Termination)',
+    '➜ Strike 2 (Demotion)',
+    '➜ Strike 1',
+    'Warning 3 (Strike)',
+    'Warning 2',
+    'Warning 1',
+    'Verbal Warning',
   ],
 
-  // Permission roles
+  // Permission roles (exact names)
   permRoles: [
     '50 / 50 Shift Permission',
     'Off Duty Command Permission',
@@ -54,19 +116,27 @@ const CONFIG = {
     'Infraction Permission',
   ],
 
-  // Sub team roles
+  // Sub team roles (exact names)
   subTeamRoles: [
-    'Media Team',
-    'Event Team',
-    'Social Media Team',
-    'Education & Training Team',
+    '➜ Media Team',
+    '➜ Event Team',
+    '➜ Social Media Team',
+    '➜ Education & Training Team',
   ],
 
-  // LOA and ZTP
-  loaRole: 'LOA',
-  ztpRole: 'ZTP',
+  // Special status roles
+  specialRoles: [
+    '➜ Blacklisted Staff',
+    '➜ Under Investigation',
+    '➜ Terminated Staff',
+    '➜ Suspended',
+    'Zero Tolerance Policy',
+    '➜ Staff of the Week',
+    'Age Verified',
+  ],
+
+  ztpRole: 'Zero Tolerance Policy',
 };
-// ──────────────────────────────────────────────────────────────────────────────
 
 const DB_PATH = path.join(__dirname, '..', 'staff.json');
 
@@ -116,6 +186,7 @@ async function syncStaff() {
     );
     if (staffRolesOnMember.length === 0) continue;
 
+    // Find highest role by position in staffRoles list
     const highestRole = CONFIG.staffRoles.find(r =>
       staffRolesOnMember.map(x => x.toLowerCase()).includes(r.toLowerCase())
     ) || staffRolesOnMember[0];
@@ -129,22 +200,22 @@ async function syncStaff() {
       }
     }
 
-    const onLoa = memberRoleNames.some(r => r.toLowerCase() === CONFIG.loaRole.toLowerCase());
     const onZtp = memberRoleNames.some(r => r.toLowerCase() === CONFIG.ztpRole.toLowerCase());
 
-    // Strikes
     const strikes = CONFIG.strikeRoles.filter(s =>
       memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase())
     );
 
-    // Permissions
     const perms = CONFIG.permRoles.filter(p =>
       memberRoleNames.some(r => r.toLowerCase() === p.toLowerCase())
     );
 
-    // Sub teams
     const subTeams = CONFIG.subTeamRoles.filter(t =>
       memberRoleNames.some(r => r.toLowerCase() === t.toLowerCase())
+    );
+
+    const special = CONFIG.specialRoles.filter(s =>
+      memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase())
     );
 
     const existing = db.staff[member.id];
@@ -158,11 +229,11 @@ async function syncStaff() {
       highest_role: highestRole,
       role_group:   roleGroup,
       join_date:    member.joinedAt ? member.joinedAt.toISOString() : null,
-      on_loa:       onLoa,
       on_ztp:       onZtp,
       strikes:      strikes,
       perms:        perms,
       sub_teams:    subTeams,
+      special:      special,
       notes:        existing?.notes || '',
       added_at:     existing?.added_at || now,
       updated_at:   now,
