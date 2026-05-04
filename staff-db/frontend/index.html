@@ -1,141 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Staff Database</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>UK Project London Roleplay — Staff Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0c0d10; --surface: #13151a; --surface2: #1a1d25; --surface3: #20232d;
-      --border: #252830; --accent: #5865f2; --accent2: #eb459e;
-      --green: #57f287; --yellow: #fee75c; --red: #ed4245; --orange: #f57c00;
-      --text: #e8eaf0; --muted: #5a5f72;
-      --mono: 'Space Mono', monospace; --sans: 'Syne', sans-serif;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0c0d10;--surface:#13151a;--surface2:#1a1d25;--surface3:#20232d;
+      --border:#252830;--accent:#5865f2;--accent2:#eb459e;
+      --green:#57f287;--yellow:#fee75c;--red:#ed4245;--orange:#f57c00;--teal:#1abc9c;
+      --text:#e8eaf0;--muted:#5a5f72;
+      --mono:'Space Mono',monospace;--sans:'Syne',sans-serif;
     }
-    body { background: var(--bg); color: var(--text); font-family: var(--sans); min-height: 100vh; }
+    body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
 
-    /* ── NAV ── */
-    header { display: flex; align-items: center; justify-content: space-between; padding: 16px 32px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(12,13,16,0.95); backdrop-filter: blur(12px); z-index: 100; }
-    .logo { display: flex; align-items: center; gap: 12px; }
-    .logo-icon { width: 36px; height: 36px; background: var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
-    .logo h1 { font-size: 18px; font-weight: 800; }
-    .logo span { color: var(--muted); font-size: 12px; display: block; margin-top: 1px; }
-    .nav-tabs { display: flex; gap: 4px; }
-    .nav-tab { background: none; border: 1px solid transparent; border-radius: 8px; padding: 8px 18px; color: var(--muted); font-family: var(--sans); font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-    .nav-tab:hover { color: var(--text); border-color: var(--border); }
-    .nav-tab.active { background: var(--surface2); border-color: var(--border); color: var(--text); }
-    .sync-info { font-family: var(--mono); font-size: 10px; color: var(--muted); text-align: right; }
-    .sync-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 5px; }
+    /* ── HEADER ── */
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,13,16,0.96);backdrop-filter:blur(12px);z-index:100;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .logo-icon{width:34px;height:34px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px}
+    .logo h1{font-size:15px;font-weight:800;white-space:nowrap}
+    .logo span{color:var(--muted);font-size:11px;display:block;margin-top:1px}
+    .nav-tabs{display:flex;gap:3px;flex-wrap:wrap}
+    .nav-tab{background:none;border:1px solid transparent;border-radius:7px;padding:7px 14px;color:var(--muted);font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+    .nav-tab:hover{color:var(--text);border-color:var(--border)}
+    .nav-tab.active{background:var(--surface2);border-color:var(--border);color:var(--text)}
+    .header-right{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right;flex-shrink:0}
+    .sync-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:4px}
 
     /* ── STATS BAR ── */
-    .stats-bar { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; border-bottom: 1px solid var(--border); background: var(--border); }
-    .stat { background: var(--surface); padding: 16px 20px; }
-    .stat-label { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 6px; }
-    .stat-value { font-size: 26px; font-weight: 800; line-height: 1; }
-    .c-accent { color: var(--accent); } .c-yellow { color: var(--yellow); } .c-pink { color: var(--accent2); }
-    .c-green { color: var(--green); } .c-red { color: var(--red); } .c-orange { color: var(--orange); }
+    .stats-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;border-bottom:1px solid var(--border);background:var(--border)}
+    .stat{background:var(--surface);padding:14px 18px}
+    .stat-label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:5px}
+    .stat-value{font-size:24px;font-weight:800;line-height:1}
+    .ca{color:var(--accent)}.cy{color:var(--yellow)}.cp{color:var(--accent2)}.cg{color:var(--green)}.cr{color:var(--red)}.co{color:var(--orange)}.ct{color:var(--teal)}
 
     /* ── PAGES ── */
-    .page { display: none; padding: 24px 32px; }
-    .page.active { display: block; }
+    .page{display:none;padding:20px 28px}.page.active{display:block}
 
     /* ── CONTROLS ── */
-    .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
-    .search-wrap { flex: 1; min-width: 200px; position: relative; }
-    .search-wrap input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 9px 14px 9px 36px; color: var(--text); font-family: var(--mono); font-size: 12px; outline: none; transition: border-color 0.15s; }
-    .search-wrap input:focus { border-color: var(--accent); }
-    .search-wrap input::placeholder { color: var(--muted); }
-    .search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 13px; }
-    .filter-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 9px 14px; color: var(--muted); font-family: var(--mono); font-size: 11px; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
-    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
-    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .filter-btn.f-loa.active { background: var(--yellow); border-color: var(--yellow); color: #000; }
-    .filter-btn.f-ztp.active { background: var(--red); border-color: var(--red); color: #fff; }
-    .filter-btn.f-strike.active { background: var(--orange); border-color: var(--orange); color: #fff; }
+    .controls{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap;align-items:center}
+    .search-wrap{flex:1;min-width:180px;position:relative}
+    .search-wrap input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px 8px 34px;color:var(--text);font-family:var(--mono);font-size:12px;outline:none;transition:border-color .15s}
+    .search-wrap input:focus{border-color:var(--accent)}
+    .search-wrap input::placeholder{color:var(--muted)}
+    .si{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px}
+    .fbtn{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px;color:var(--muted);font-family:var(--mono);font-size:11px;cursor:pointer;transition:all .15s;white-space:nowrap}
+    .fbtn:hover{border-color:var(--accent);color:var(--text)}
+    .fbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .fbtn.fy.active{background:var(--yellow);border-color:var(--yellow);color:#000}
+    .fbtn.fr.active{background:var(--red);border-color:var(--red);color:#fff}
+    .fbtn.fo.active{background:var(--orange);border-color:var(--orange);color:#fff}
 
     /* ── TABLE ── */
-    .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-    table { width: 100%; border-collapse: collapse; }
-    thead th { background: var(--surface2); padding: 11px 14px; text-align: left; font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); font-weight: 400; border-bottom: 1px solid var(--border); }
-    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; cursor: pointer; }
-    tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: var(--surface2); }
-    tbody td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
+    .table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    table{width:100%;border-collapse:collapse}
+    thead th{background:var(--surface2);padding:10px 13px;text-align:left;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:400;border-bottom:1px solid var(--border)}
+    tbody tr{border-bottom:1px solid var(--border);transition:background .1s;cursor:pointer}
+    tbody tr:last-child{border-bottom:none}
+    tbody tr:hover{background:var(--surface2)}
+    tbody td{padding:11px 13px;font-size:12px;vertical-align:middle}
+    .group-row td{background:var(--surface3);padding:7px 13px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);cursor:default;border-bottom:1px solid var(--border)}
+    .group-row:hover{background:var(--surface3)!important}
 
-    /* group header row */
-    .group-row td { background: var(--surface3); padding: 8px 14px; font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); cursor: default; border-bottom: 1px solid var(--border); }
-    .group-row:hover { background: var(--surface3) !important; }
+    .user-cell{display:flex;align-items:center;gap:8px}
+    .avatar{width:28px;height:28px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;color:var(--accent)}
+    .user-name{font-weight:600;font-size:12px}
+    .user-tag{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:1px}
 
-    .user-cell { display: flex; align-items: center; gap: 9px; }
-    .avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; color: var(--accent); }
-    .user-name { font-weight: 600; font-size: 13px; }
-    .user-tag { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-top: 1px; }
+    .rb{display:inline-block;padding:2px 8px;border-radius:20px;font-size:9px;font-weight:700}
+    .mb{display:inline-block;padding:2px 6px;border-radius:20px;font-size:9px;font-weight:600;margin:1px}
+    .sb{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:20px;font-size:9px;font-weight:600}
+    .bd{width:5px;height:5px;border-radius:50%}
+    .byes{background:rgba(87,242,135,.12);color:var(--green)}.byes .bd{background:var(--green)}
+    .bno{background:rgba(90,95,114,.12);color:var(--muted)}
+    .bstrike{background:rgba(237,66,69,.12);color:var(--red);border:1px solid rgba(237,66,69,.2)}
+    .bperm{background:rgba(88,101,242,.12);color:var(--accent);border:1px solid rgba(88,101,242,.2)}
+    .bteam{background:rgba(235,69,158,.12);color:var(--accent2);border:1px solid rgba(235,69,158,.2)}
+    .bspecial{background:rgba(245,124,0,.12);color:var(--orange);border:1px solid rgba(245,124,0,.2)}
+    .bteal{background:rgba(26,188,156,.12);color:var(--teal);border:1px solid rgba(26,188,156,.2)}
 
-    .role-badge { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 10px; font-weight: 700; }
-    .mini-badge { display: inline-block; padding: 2px 7px; border-radius: 20px; font-size: 10px; font-weight: 600; margin: 2px; }
-
-    .status-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 600; }
-    .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
-    .badge-yes { background: rgba(87,242,135,0.12); color: var(--green); }
-    .badge-yes .badge-dot { background: var(--green); }
-    .badge-no  { background: rgba(90,95,114,0.12); color: var(--muted); }
-
-    .strike-badge { background: rgba(237,66,69,0.12); color: var(--red); border: 1px solid rgba(237,66,69,0.2); }
-    .perm-badge   { background: rgba(88,101,242,0.12); color: var(--accent); border: 1px solid rgba(88,101,242,0.2); }
-    .team-badge   { background: rgba(235,69,158,0.12); color: var(--accent2); border: 1px solid rgba(235,69,158,0.2); }
-
-    .date-cell { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-    .notes-cell { font-size: 11px; color: var(--muted); max-width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .no-notes { font-style: italic; color: var(--border); }
-    .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
-    .empty h3 { font-size: 18px; margin-bottom: 8px; }
-    .empty p  { font-size: 13px; font-family: var(--mono); }
+    .dc{font-family:var(--mono);font-size:10px;color:var(--muted)}
+    .nc{font-size:10px;color:var(--muted);max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .empty{text-align:center;padding:50px 20px;color:var(--muted)}
+    .empty h3{font-size:16px;margin-bottom:6px}
+    .empty p{font-size:12px;font-family:var(--mono)}
 
     /* ── MODAL ── */
-    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
-    .modal-overlay.open { opacity: 1; pointer-events: all; }
-    .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; width: 560px; max-width: 96vw; max-height: 90vh; overflow-y: auto; transform: translateY(16px); transition: transform 0.2s; }
-    .modal-overlay.open .modal { transform: translateY(0); }
-    .modal-header { padding: 22px 22px 18px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-    .modal-avatar { width: 50px; height: 50px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800; color: var(--accent); flex-shrink: 0; }
-    .modal-user h2 { font-size: 19px; font-weight: 800; margin-bottom: 3px; }
-    .modal-user p  { font-family: var(--mono); font-size: 10px; color: var(--muted); }
-    .close-btn { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; padding: 4px; line-height: 1; }
-    .close-btn:hover { color: var(--text); }
-    .modal-body { padding: 22px; }
-    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
-    .field label { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); display: block; margin-bottom: 5px; }
-    .field-val { font-size: 13px; font-weight: 600; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 5px; min-height: 24px; }
-    .section-title { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 8px; margin-top: 16px; }
-    .notes-box { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px; font-family: var(--mono); font-size: 11px; color: var(--text); min-height: 50px; white-space: pre-wrap; }
+    .mo{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .2s}
+    .mo.open{opacity:1;pointer-events:all}
+    .modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:580px;max-width:96vw;max-height:90vh;overflow-y:auto;transform:translateY(14px);transition:transform .2s}
+    .mo.open .modal{transform:translateY(0)}
+    .mh{padding:20px 20px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .ma{width:46px;height:46px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--accent);flex-shrink:0}
+    .mu h2{font-size:17px;font-weight:800;margin-bottom:3px}
+    .mu p{font-family:var(--mono);font-size:10px;color:var(--muted)}
+    .xbtn{background:none;border:none;color:var(--muted);font-size:17px;cursor:pointer;padding:3px;line-height:1}
+    .xbtn:hover{color:var(--text)}
+    .mb-body{padding:20px}
+    .fg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+    .field label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);display:block;margin-bottom:4px}
+    .fv{font-size:12px;font-weight:600}
+    .tl{display:flex;flex-wrap:wrap;gap:4px;min-height:20px}
+    .st{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:6px;margin-top:14px}
+    .nb{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:10px;font-family:var(--mono);font-size:11px;color:var(--text);min-height:44px;white-space:pre-wrap}
 
-    /* ── DATA PAGE ── */
-    .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
-    .data-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
-    .data-card h3 { font-size: 13px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
-    .data-card h3 span { font-size: 16px; }
-    .data-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
-    .data-row:last-child { border-bottom: none; }
-    .data-row .label { color: var(--muted); font-family: var(--mono); font-size: 11px; }
-    .data-row .val { font-weight: 700; }
-    .bar-wrap { margin-top: 4px; }
-    .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 11px; }
-    .bar-label { width: 140px; color: var(--muted); font-family: var(--mono); font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .bar-track { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
-    .bar-fill { height: 100%; border-radius: 3px; background: var(--accent); transition: width 0.6s ease; }
-    .bar-count { font-family: var(--mono); font-size: 10px; color: var(--muted); width: 20px; text-align: right; }
-    .sync-log-list { list-style: none; }
-    .sync-log-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 11px; }
-    .sync-log-item:last-child { border-bottom: none; }
-    .sync-time { font-family: var(--mono); color: var(--muted); font-size: 10px; }
-    .sync-changes { display: flex; gap: 8px; }
-    .sync-add { color: var(--green); font-family: var(--mono); font-size: 10px; }
-    .sync-upd { color: var(--yellow); font-family: var(--mono); font-size: 10px; }
-    .sync-rem { color: var(--red); font-family: var(--mono); font-size: 10px; }
+    /* ── DATA / CARDS ── */
+    .dg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
+    .card h3{font-size:12px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+    .card h3 span{font-size:15px}
+    .dr{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:11px}
+    .dr:last-child{border-bottom:none}
+    .dr .dl{color:var(--muted);font-family:var(--mono);font-size:10px}
+    .dr .dv{font-weight:700}
+    .bw{margin-top:2px}
+    .br{display:flex;align-items:center;gap:7px;margin-bottom:7px;font-size:10px}
+    .bl{width:130px;color:var(--muted);font-family:var(--mono);font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .bt{flex:1;height:5px;background:var(--border);border-radius:3px;overflow:hidden}
+    .bf{height:100%;border-radius:3px;transition:width .5s ease}
+    .bc{font-family:var(--mono);font-size:9px;color:var(--muted);width:18px;text-align:right}
+
+    /* leaderboard */
+    .lb-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
+    .lb-row:last-child{border-bottom:none}
+    .lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);width:22px;text-align:center}
+    .lb-rank.gold{color:#f0c040;font-weight:700}
+    .lb-rank.silver{color:#c0c0c0;font-weight:700}
+    .lb-rank.bronze{color:#cd7f32;font-weight:700}
+    .lb-name{flex:1;font-weight:600}
+    .lb-role{font-size:10px;color:var(--muted)}
+    .lb-val{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--teal)}
+
+    /* logs */
+    .log-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:11px}
+    .log-row:last-child{border-bottom:none}
+    .log-type{width:70px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.8px;flex-shrink:0}
+    .log-body{flex:1}
+    .log-user{font-weight:600;margin-bottom:2px}
+    .log-desc{color:var(--muted);font-size:10px}
+    .log-time{font-family:var(--mono);font-size:9px;color:var(--muted);flex-shrink:0}
+
+    /* sync log */
+    .sl{list-style:none}
+    .sl li{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border);font-size:10px}
+    .sl li:last-child{border-bottom:none}
+    .sl .st2{font-family:var(--mono);color:var(--muted);font-size:9px}
+    .sc{display:flex;gap:7px}
+    .sa{color:var(--green);font-family:var(--mono);font-size:9px}
+    .su{color:var(--yellow);font-family:var(--mono);font-size:9px}
+    .sr{color:var(--red);font-family:var(--mono);font-size:9px}
+
+    /* loa table */
+    .loa-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-start}
+    .loa-name{font-weight:700;font-size:13px;margin-bottom:3px}
+    .loa-reason{font-size:11px;color:var(--muted);font-family:var(--mono)}
+    .loa-dates{text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -143,398 +164,439 @@
 <header>
   <div class="logo">
     <div class="logo-icon">🛡️</div>
-    <div><h1>Staff Database</h1><span id="last-sync">Loading...</span></div>
+    <div><h1>UK Project London Roleplay</h1><span id="last-sync">Loading...</span></div>
   </div>
   <div class="nav-tabs">
-    <button class="nav-tab active" onclick="switchTab('staff')">Staff</button>
-    <button class="nav-tab" onclick="switchTab('data')">📊 Data</button>
+    <button class="nav-tab active" onclick="switchTab('staff',this)">👥 Staff</button>
+    <button class="nav-tab" onclick="switchTab('activity',this)">📈 Activity</button>
+    <button class="nav-tab" onclick="switchTab('loa',this)">🌴 LOA</button>
+    <button class="nav-tab" onclick="switchTab('logs',this)">📋 Logs</button>
+    <button class="nav-tab" onclick="switchTab('disciplinary',this)">⚠️ Disciplinary</button>
+    <button class="nav-tab" onclick="switchTab('data',this)">📊 Data</button>
   </div>
-  <div class="sync-info"><span class="sync-dot"></span>GITHUB PAGES</div>
+  <div class="header-right"><span class="sync-dot"></span>GITHUB PAGES<br><span id="melonly-status">Melonly: checking...</span></div>
 </header>
 
 <div class="stats-bar">
-  <div class="stat"><div class="stat-label">Total Staff</div><div class="stat-value c-accent" id="s-total">—</div></div>
-  <div class="stat"><div class="stat-label">On LOA</div><div class="stat-value c-yellow" id="s-loa">—</div></div>
-  <div class="stat"><div class="stat-label">On ZTP</div><div class="stat-value c-pink" id="s-ztp">—</div></div>
-  <div class="stat"><div class="stat-label">Active</div><div class="stat-value c-green" id="s-active">—</div></div>
-  <div class="stat"><div class="stat-label">Strikes</div><div class="stat-value c-red" id="s-strikes">—</div></div>
-  <div class="stat"><div class="stat-label">Sub Teams</div><div class="stat-value c-orange" id="s-teams">—</div></div>
+  <div class="stat"><div class="stat-label">Total Staff</div><div class="stat-value ca" id="s-total">—</div></div>
+  <div class="stat"><div class="stat-label">On LOA</div><div class="stat-value cy" id="s-loa">—</div></div>
+  <div class="stat"><div class="stat-label">ZTP</div><div class="stat-value cp" id="s-ztp">—</div></div>
+  <div class="stat"><div class="stat-label">Active</div><div class="stat-value cg" id="s-active">—</div></div>
+  <div class="stat"><div class="stat-label">Strikes</div><div class="stat-value cr" id="s-strikes">—</div></div>
+  <div class="stat"><div class="stat-label">Sub Teams</div><div class="stat-value co" id="s-teams">—</div></div>
+  <div class="stat"><div class="stat-label">Total Hours</div><div class="stat-value ct" id="s-hours">—</div></div>
 </div>
 
-<!-- ── STAFF PAGE ── -->
+<!-- ── STAFF ── -->
 <div class="page active" id="page-staff">
   <div class="controls">
-    <div class="search-wrap">
-      <span class="search-icon">⌕</span>
-      <input type="text" id="search" placeholder="Search username..." oninput="renderTable()" />
-    </div>
-    <button class="filter-btn f-loa"    id="btn-loa"    onclick="toggleFilter('loa')">🌴 LOA</button>
-    <button class="filter-btn f-ztp"    id="btn-ztp"    onclick="toggleFilter('ztp')">⚠️ ZTP</button>
-    <button class="filter-btn f-strike" id="btn-strike" onclick="toggleFilter('strike')">🚨 Strikes</button>
-    <button class="filter-btn"          id="btn-media"  onclick="toggleFilter('media')">🎬 Media</button>
-    <button class="filter-btn"          id="btn-event"  onclick="toggleFilter('event')">🎉 Events</button>
+    <div class="search-wrap"><span class="si">⌕</span><input type="text" id="search" placeholder="Search username..." oninput="renderStaff()"/></div>
+    <button class="fbtn fy" id="btn-ztp" onclick="toggleFilter('ztp')">⚠️ ZTP</button>
+    <button class="fbtn fo" id="btn-strike" onclick="toggleFilter('strike')">🚨 Strikes</button>
+    <button class="fbtn" id="btn-media" onclick="toggleFilter('media')">🎬 Media</button>
+    <button class="fbtn" id="btn-event" onclick="toggleFilter('event')">🎉 Events</button>
+    <button class="fbtn" id="btn-loa2" onclick="toggleFilter('loa')">🌴 LOA</button>
   </div>
   <div class="table-wrap">
     <table>
-      <thead>
-        <tr>
-          <th>Member</th>
-          <th>Role</th>
-          <th>Joined</th>
-          <th>LOA</th>
-          <th>ZTP</th>
-          <th>Strikes</th>
-          <th>Permissions</th>
-          <th>Sub Teams</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody id="staff-tbody">
-        <tr><td colspan="9"><div class="empty"><h3>Loading...</h3></div></td></tr>
-      </tbody>
+      <thead><tr>
+        <th>Member</th><th>Role</th><th>Joined</th><th>ZTP</th><th>Strikes</th><th>Permissions</th><th>Sub Teams</th><th>Hours</th><th>Notes</th>
+      </tr></thead>
+      <tbody id="staff-tbody"><tr><td colspan="9"><div class="empty"><h3>Loading...</h3></div></td></tr></tbody>
     </table>
   </div>
 </div>
 
-<!-- ── DATA PAGE ── -->
+<!-- ── ACTIVITY ── -->
+<div class="page" id="page-activity">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div class="card" style="grid-column:span 2">
+      <h3><span>🏆</span> Activity Leaderboard — Total Hours</h3>
+      <div id="lb-hours"></div>
+    </div>
+    <div class="card">
+      <h3><span>📅</span> Most Shifts</h3>
+      <div id="lb-shifts"></div>
+    </div>
+    <div class="card">
+      <h3><span>⏱️</span> Recent Shifts</h3>
+      <div id="recent-shifts"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── LOA ── -->
+<div class="page" id="page-loa">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div>
+      <h3 style="font-size:13px;margin-bottom:12px;color:var(--yellow)">🌴 Currently on LOA</h3>
+      <div id="loa-active"></div>
+    </div>
+    <div class="card">
+      <h3><span>📊</span> LOA Stats</h3>
+      <div id="loa-stats"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── LOGS ── -->
+<div class="page" id="page-logs">
+  <div class="controls">
+    <div class="search-wrap"><span class="si">⌕</span><input type="text" id="log-search" placeholder="Search logs..." oninput="renderLogs()"/></div>
+  </div>
+  <div class="card" style="max-height:70vh;overflow-y:auto">
+    <div id="logs-list"></div>
+  </div>
+</div>
+
+<!-- ── DISCIPLINARY ── -->
+<div class="page" id="page-disciplinary">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div class="card">
+      <h3><span>🚨</span> Staff with Active Strikes</h3>
+      <div id="disc-strikes"></div>
+    </div>
+    <div class="card">
+      <h3><span>🔴</span> Special Status</h3>
+      <div id="disc-special"></div>
+    </div>
+    <div class="card" style="grid-column:span 2">
+      <h3><span>⚠️</span> ZTP Members</h3>
+      <div id="disc-ztp"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DATA ── -->
 <div class="page" id="page-data">
-  <div class="data-grid">
-    <!-- Overview -->
-    <div class="data-card">
+  <div class="dg">
+    <div class="card">
       <h3><span>📋</span> Overview</h3>
-      <div class="data-row"><span class="label">Total Staff</span><span class="val c-accent" id="d-total">—</span></div>
-      <div class="data-row"><span class="label">On LOA</span><span class="val c-yellow" id="d-loa">—</span></div>
-      <div class="data-row"><span class="label">On ZTP</span><span class="val c-pink" id="d-ztp">—</span></div>
-      <div class="data-row"><span class="label">Active (no LOA)</span><span class="val c-green" id="d-active">—</span></div>
-      <div class="data-row"><span class="label">Staff with Strikes</span><span class="val c-red" id="d-strikes">—</span></div>
-      <div class="data-row"><span class="label">In Sub Teams</span><span class="val c-orange" id="d-teams">—</span></div>
+      <div class="dr"><span class="dl">Total Staff</span><span class="dv ca" id="d-total">—</span></div>
+      <div class="dr"><span class="dl">On LOA</span><span class="dv cy" id="d-loa">—</span></div>
+      <div class="dr"><span class="dl">On ZTP</span><span class="dv cp" id="d-ztp">—</span></div>
+      <div class="dr"><span class="dl">Active</span><span class="dv cg" id="d-active">—</span></div>
+      <div class="dr"><span class="dl">With Strikes</span><span class="dv cr" id="d-strikes">—</span></div>
+      <div class="dr"><span class="dl">In Sub Teams</span><span class="dv co" id="d-teams">—</span></div>
+      <div class="dr"><span class="dl">Total Hours (Melonly)</span><span class="dv ct" id="d-hours">—</span></div>
     </div>
-
-    <!-- Strikes breakdown -->
-    <div class="data-card">
-      <h3><span>🚨</span> Strikes</h3>
-      <div id="d-strike-bars" class="bar-wrap"></div>
+    <div class="card">
+      <h3><span>🚨</span> Strikes Breakdown</h3>
+      <div id="d-strike-bars" class="bw"></div>
     </div>
-
-    <!-- Permissions breakdown -->
-    <div class="data-card">
+    <div class="card">
       <h3><span>🔑</span> Permissions</h3>
-      <div id="d-perm-bars" class="bar-wrap"></div>
+      <div id="d-perm-bars" class="bw"></div>
     </div>
-
-    <!-- Role breakdown -->
-    <div class="data-card" style="grid-column: span 2;">
+    <div class="card" style="grid-column:span 2">
       <h3><span>👥</span> Staff by Role</h3>
-      <div id="d-role-bars" class="bar-wrap"></div>
+      <div id="d-role-bars" class="bw"></div>
     </div>
-
-    <!-- Sub teams -->
-    <div class="data-card">
+    <div class="card">
       <h3><span>⭐</span> Sub Teams</h3>
-      <div id="d-team-bars" class="bar-wrap"></div>
+      <div id="d-team-bars" class="bw"></div>
     </div>
-
-    <!-- Sync log -->
-    <div class="data-card" style="grid-column: span 3;">
+    <div class="card" style="grid-column:span 3">
       <h3><span>🔄</span> Sync History</h3>
-      <ul class="sync-log-list" id="d-sync-log"></ul>
+      <ul class="sl" id="d-sync-log"></ul>
     </div>
   </div>
 </div>
 
 <!-- ── MODAL ── -->
-<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+<div class="mo" id="modal" onclick="closeModal(event)">
   <div class="modal">
-    <div class="modal-header">
-      <div style="display:flex;gap:12px;align-items:center;">
-        <div class="modal-avatar" id="m-avatar">?</div>
-        <div class="modal-user"><h2 id="m-name">—</h2><p id="m-id">—</p></div>
+    <div class="mh">
+      <div style="display:flex;gap:11px;align-items:center;">
+        <div class="ma" id="m-avatar">?</div>
+        <div class="mu"><h2 id="m-name">—</h2><p id="m-id">—</p></div>
       </div>
-      <button class="close-btn" onclick="closeModal()">✕</button>
+      <button class="xbtn" onclick="closeModal()">✕</button>
     </div>
-    <div class="modal-body">
-      <div class="field-grid">
-        <div class="field"><label>Highest Role</label><div class="field-val" id="m-role">—</div></div>
-        <div class="field"><label>Group</label><div class="field-val" id="m-group">—</div></div>
-        <div class="field"><label>Joined Server</label><div class="field-val date-cell" id="m-joined">—</div></div>
-        <div class="field"><label>Status</label><div class="field-val" id="m-status">—</div></div>
+    <div class="mb-body">
+      <div class="fg">
+        <div class="field"><label>Highest Role</label><div class="fv" id="m-role">—</div></div>
+        <div class="field"><label>Team</label><div class="fv" id="m-group">—</div></div>
+        <div class="field"><label>Joined Server</label><div class="fv dc" id="m-joined">—</div></div>
+        <div class="field"><label>Status</label><div class="fv" id="m-status">—</div></div>
+        <div class="field"><label>Total Hours</label><div class="fv ct" id="m-hours">—</div></div>
+        <div class="field"><label>Total Shifts</label><div class="fv ct" id="m-shifts">—</div></div>
+        <div class="field"><label>Last Shift</label><div class="fv dc" id="m-lastshift">—</div></div>
+        <div class="field"><label>LOA Status</label><div class="fv" id="m-loa">—</div></div>
       </div>
-      <div class="section-title">All Roles</div>
-      <div class="tag-list" id="m-roles"></div>
-      <div class="section-title">Strikes</div>
-      <div class="tag-list" id="m-strikes"></div>
-      <div class="section-title">Permissions</div>
-      <div class="tag-list" id="m-perms"></div>
-      <div class="section-title">Sub Teams</div>
-      <div class="tag-list" id="m-subteams"></div>
-      <div class="section-title">Notes</div>
-      <div class="notes-box" id="m-notes">—</div>
+      <div class="st">All Roles</div><div class="tl" id="m-roles"></div>
+      <div class="st">Strikes</div><div class="tl" id="m-strikes"></div>
+      <div class="st">Permissions</div><div class="tl" id="m-perms"></div>
+      <div class="st">Sub Teams</div><div class="tl" id="m-subteams"></div>
+      <div class="st">Special Status</div><div class="tl" id="m-special"></div>
+      <div class="st">Notes</div><div class="nb" id="m-notes">—</div>
     </div>
   </div>
 </div>
 
 <script>
-  const DATA_URL = 'https://raw.githubusercontent.com/leodiscorduse-cell/staff-database/main/staff-db/staff.json';
+const DATA_URL = 'https://raw.githubusercontent.com/leodiscorduse-cell/staff-database/main/staff-db/staff.json';
+const GROUP_ORDER = ['Chairman Team','Directive Team','Management Team','Internal Affairs Team','Admin Team','Mod Team','Staff'];
 
-  const GROUP_ORDER = ['Chairman Team','Directive Team','Management Team','Internal Affairs Team','Admin Team','Mod Team','Staff'];
+const ROLE_COLORS = {
+  'chairman':['#f0c040','#000'],'vice chairman':['#e0b030','#000'],
+  'director':['#f04747','#fff'],'deputy director':['#f47b7b','#fff'],'assistant director':['#f47b7b','#fff'],
+  'management director':['#9b59b6','#fff'],
+  'lead management':['#9b59b6','#fff'],'senior management':['#9b59b6','#fff'],'management':['#9b59b6','#fff'],'junior management':['#9b59b6','#fff'],'trial management':['#9b59b6','#fff'],
+  'lead affairs':['#e91e8c','#fff'],'senior affairs':['#e91e8c','#fff'],'affairs team':['#e91e8c','#fff'],'junior affairs':['#e91e8c','#fff'],'trial affairs':['#e91e8c','#fff'],
+  'senior administrator':['#5865f2','#fff'],'administrator':['#5865f2','#fff'],'junior administrator':['#5865f2','#fff'],'trial administrator':['#5865f2','#fff'],
+  'senior moderator':['#4752c4','#fff'],'moderator':['#4752c4','#fff'],'junior moderator':['#4752c4','#fff'],'trial moderator':['#99aab5','#fff'],
+};
 
-  const ROLE_COLORS = {
-    'chairman':          ['#f0c040','#000'],
-    'director':          ['#f04747','#fff'],
-    'deputy director':   ['#f47b7b','#fff'],
-    'manager':           ['#eb459e','#fff'],
-    'senior manager':    ['#eb459e','#fff'],
-    'administrator':     ['#5865f2','#fff'],
-    'senior administrator':['#5865f2','#fff'],
-    'senior moderator':  ['#4752c4','#fff'],
-    'moderator':         ['#4752c4','#fff'],
-    'trial moderator':   ['#99aab5','#fff'],
-    'helper':            ['#57f287','#000'],
-    'staff':             ['#fee75c','#000'],
-  };
+function rs(name){
+  const k=(name||'').toLowerCase();
+  for(const[kk,[bg]]of Object.entries(ROLE_COLORS)){if(k.includes(kk))return`background:${bg}22;color:${bg};border:1px solid ${bg}44`}
+  return'background:#252830;color:#99aab5;border:1px solid #2e3240'
+}
+function yn(v){return v?`<span class="sb byes"><span class="bd"></span>Yes</span>`:`<span class="sb bno">No</span>`}
+function ini(n){return(n||'?').split(/[\s#]+/).map(p=>p[0]).join('').slice(0,2).toUpperCase()}
+function fd(iso){if(!iso)return'—';return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+function fdt(iso){if(!iso)return'—';return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})}
+function fts(ts){if(!ts)return'—';return new Date(ts*1000).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
-  function roleStyle(name) {
-    const key = (name||'').toLowerCase();
-    for (const [k,[bg]] of Object.entries(ROLE_COLORS)) {
-      if (key.includes(k)) return `background:${bg}22;color:${bg};border:1px solid ${bg}44`;
-    }
-    return 'background:#252830;color:#99aab5;border:1px solid #2e3240';
+let allStaff=[], db={}, filters={ztp:false,strike:false,media:false,event:false,loa:false};
+
+async function loadData(){
+  try{
+    const r=await fetch(DATA_URL+'?t='+Date.now());
+    db=await r.json();
+    allStaff=Object.values(db.staff||{});
+    const mel=db.melonly||{};
+    const hasMel=mel.lastFetch&&allStaff.some(m=>m.melonly);
+
+    // stats
+    const total=allStaff.length;
+    const onLoa=allStaff.filter(m=>m.melonly?.onLoa).length;
+    const onZtp=allStaff.filter(m=>m.on_ztp).length;
+    const strikes=allStaff.filter(m=>m.strikes?.length>0).length;
+    const teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
+    const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+
+    document.getElementById('s-total').textContent=total;
+    document.getElementById('s-loa').textContent=onLoa;
+    document.getElementById('s-ztp').textContent=onZtp;
+    document.getElementById('s-active').textContent=total-onLoa;
+    document.getElementById('s-strikes').textContent=strikes;
+    document.getElementById('s-teams').textContent=teams;
+    document.getElementById('s-hours').textContent=totalHrs.toFixed(1)+'h';
+    document.getElementById('melonly-status').textContent=hasMel?'Melonly: ✓ connected':'Melonly: no data';
+
+    const ls=db.sync_log?.[0]?.synced_at;
+    document.getElementById('last-sync').textContent=ls?'Last sync: '+fdt(ls):'No sync yet';
+
+    renderStaff(); renderActivity(); renderLoa(); renderLogs(); renderDisc(); renderData();
+  }catch(e){
+    document.getElementById('staff-tbody').innerHTML=`<tr><td colspan="9"><div class="empty"><h3>⚠️ Could not load data</h3><p>Make sure staff.json is pushed to GitHub and the repo is public.</p></div></td></tr>`;
   }
+}
 
-  function badgeYN(val) {
-    return val
-      ? `<span class="status-badge badge-yes"><span class="badge-dot"></span>Yes</span>`
-      : `<span class="status-badge badge-no">No</span>`;
-  }
+// ── STAFF ──
+function renderStaff(){
+  const search=document.getElementById('search').value.toLowerCase();
+  let staff=allStaff.filter(m=>{
+    if(search&&!m.username.toLowerCase().includes(search)&&!(m.nickname||'').toLowerCase().includes(search))return false;
+    if(filters.ztp&&!m.on_ztp)return false;
+    if(filters.strike&&(!m.strikes||m.strikes.length===0))return false;
+    if(filters.media&&(!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('media'))))return false;
+    if(filters.event&&(!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('event'))))return false;
+    if(filters.loa&&!m.melonly?.onLoa)return false;
+    return true;
+  });
+  staff.sort((a,b)=>{
+    const ga=GROUP_ORDER.indexOf(a.role_group||'Staff'),gb=GROUP_ORDER.indexOf(b.role_group||'Staff');
+    return ga!==gb?ga-gb:a.username.localeCompare(b.username);
+  });
+  const tbody=document.getElementById('staff-tbody');
+  if(!staff.length){tbody.innerHTML=`<tr><td colspan="9"><div class="empty"><h3>No staff found</h3></div></td></tr>`;return}
+  let html='',lastGroup=null;
+  staff.forEach(s=>{
+    const g=s.role_group||'Staff';
+    if(g!==lastGroup){html+=`<tr class="group-row"><td colspan="9">— ${esc(g)}</td></tr>`;lastGroup=g}
+    const st=(s.strikes||[]).map(x=>`<span class="mb bstrike">${esc(x.replace('➜ ',''))}</span>`).join('')||'—';
+    const pe=(s.perms||[]).map(x=>`<span class="mb bperm">${esc(x.replace(' Permission',''))}</span>`).join('')||'—';
+    const te=(s.sub_teams||[]).map(x=>`<span class="mb bteam">${esc(x.replace('➜ ',''))}</span>`).join('')||'—';
+    const hrs=s.melonly?.totalHours!=null?`<span class="ct" style="font-family:var(--mono);font-size:10px">${s.melonly.totalHours}h</span>`:'—';
+    html+=`<tr onclick="openModal('${s.user_id}')">
+      <td><div class="user-cell"><div class="avatar">${ini(s.username)}</div><div>
+        <div class="user-name">${esc(s.nickname||s.username.split('#')[0])}</div>
+        <div class="user-tag">${esc(s.username)}</div></div></div></td>
+      <td><span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span></td>
+      <td class="dc">${fd(s.join_date)}</td>
+      <td>${yn(s.on_ztp)}</td>
+      <td>${st}</td><td>${pe}</td><td>${te}</td><td>${hrs}</td>
+      <td class="nc">${s.notes||'—'}</td>
+    </tr>`;
+  });
+  tbody.innerHTML=html;
+}
 
-  function initials(name) {
-    return (name||'?').split(/[\s#]+/).map(p=>p[0]).join('').slice(0,2).toUpperCase();
-  }
+// ── ACTIVITY ──
+function renderActivity(){
+  const sorted=[...allStaff].filter(m=>m.melonly?.totalHours>0).sort((a,b)=>b.melonly.totalHours-a.melonly.totalHours);
+  const rankLabel=(i)=>i===0?'🥇':i===1?'🥈':i===2?'🥉':`#${i+1}`;
+  document.getElementById('lb-hours').innerHTML=sorted.slice(0,15).map((m,i)=>`
+    <div class="lb-row">
+      <div class="lb-rank ${i===0?'gold':i===1?'silver':i===2?'bronze':''}">${rankLabel(i)}</div>
+      <div class="avatar" style="width:24px;height:24px;font-size:9px">${ini(m.username)}</div>
+      <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div><div class="lb-role">${esc(m.highest_role)}</div></div>
+      <div class="lb-val">${m.melonly.totalHours}h</div>
+    </div>`).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No Melonly data yet. Add MELONLY_TOKEN secret and resync.</p>';
 
-  function fmtDate(iso) {
-    if (!iso) return '—';
-    return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
-  }
+  const byShifts=[...allStaff].filter(m=>m.melonly?.totalShifts>0).sort((a,b)=>b.melonly.totalShifts-a.melonly.totalShifts);
+  document.getElementById('lb-shifts').innerHTML=byShifts.slice(0,10).map((m,i)=>`
+    <div class="lb-row">
+      <div class="lb-rank">#${i+1}</div>
+      <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div></div>
+      <div class="lb-val">${m.melonly.totalShifts} shifts</div>
+    </div>`).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No data yet.</p>';
 
-  function fmtDateTime(iso) {
-    if (!iso) return '—';
-    return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
-  }
+  // Recent shifts from melonly global data
+  const recentShifts=(db.melonly?.shifts||[]).filter(s=>s.endedAt).sort((a,b)=>b.endedAt-a.endedAt).slice(0,10);
+  document.getElementById('recent-shifts').innerHTML=recentShifts.map(s=>{
+    const dur=s.endedAt?Math.round((s.endedAt-s.createdAt)/60)+'m':'ongoing';
+    return`<div class="lb-row"><div style="flex:1"><div class="lb-name" style="font-size:11px">Shift</div><div class="lb-role">${fts(s.createdAt)}</div></div><div class="lb-val">${dur}</div></div>`;
+  }).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No shift data yet.</p>';
+}
 
-  function esc(str) {
-    return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  }
+// ── LOA ──
+function renderLoa(){
+  const onLoa=allStaff.filter(m=>m.melonly?.onLoa);
+  document.getElementById('loa-active').innerHTML=onLoa.length
+    ? onLoa.map(m=>`<div class="loa-card">
+        <div><div class="loa-name">${esc(m.nickname||m.username.split('#')[0])}</div>
+        <div class="loa-reason">${esc(m.melonly?.loaReason||'No reason provided')}</div></div>
+        <div class="loa-dates">Returns<br>${fd(m.melonly?.loaEndsAt)}</div>
+      </div>`).join('')
+    : '<p style="color:var(--muted);font-size:12px">No active LOAs.</p>';
 
-  let allStaff = [];
-  let syncLog = [];
-  let activeFilters = { loa:false, ztp:false, strike:false, media:false, event:false };
+  const total=allStaff.filter(m=>m.melonly?.onLoa).length;
+  document.getElementById('loa-stats').innerHTML=`
+    <div class="dr"><span class="dl">Currently on LOA</span><span class="dv cy">${total}</span></div>
+    <div class="dr"><span class="dl">Active Staff</span><span class="dv cg">${allStaff.length-total}</span></div>`;
+}
 
-  async function loadData() {
-    try {
-      const r = await fetch(DATA_URL + '?t=' + Date.now());
-      const db = await r.json();
-      allStaff = Object.values(db.staff || {});
-      syncLog  = db.sync_log || [];
+// ── LOGS ──
+function renderLogs(){
+  const search=(document.getElementById('log-search')?.value||'').toLowerCase();
+  const logs=(db.melonly?.logs||[]).filter(l=>!search||
+    (l.username||'').toLowerCase().includes(search)||(l.text||'').toLowerCase().includes(search)||(l.description||'').toLowerCase().includes(search)
+  );
+  const logTypeLabel=(t)=>{const m={1:'Ban',2:'Kick',3:'Warn',4:'Mute',5:'Note'};return m[t]||`Type ${t}`};
+  const logTypeColor=(t)=>{const m={1:'var(--red)',2:'var(--orange)',3:'var(--yellow)',4:'var(--accent)',5:'var(--muted)'};return m[t]||'var(--muted)'};
+  document.getElementById('logs-list').innerHTML=logs.length
+    ? logs.map(l=>`<div class="log-row">
+        <div class="log-type" style="color:${logTypeColor(l.type)}">${logTypeLabel(l.type)}</div>
+        <div class="log-body">
+          <div class="log-user">${esc(l.username||'Unknown')}</div>
+          <div class="log-desc">${esc(l.text||l.description||'No description')}</div>
+        </div>
+        <div class="log-time">${fts(l.createdAt)}</div>
+      </div>`).join('')
+    : '<p style="color:var(--muted);font-size:12px;padding:12px 0">No logs available. Requires Melonly token.</p>';
+}
 
-      const total   = allStaff.length;
-      const onLoa   = allStaff.filter(m=>m.on_loa).length;
-      const onZtp   = allStaff.filter(m=>m.on_ztp).length;
-      const strikes = allStaff.filter(m=>m.strikes&&m.strikes.length>0).length;
-      const teams   = allStaff.filter(m=>m.sub_teams&&m.sub_teams.length>0).length;
+// ── DISCIPLINARY ──
+function renderDisc(){
+  const withStrikes=allStaff.filter(m=>m.strikes?.length>0).sort((a,b)=>b.strikes.length-a.strikes.length);
+  document.getElementById('disc-strikes').innerHTML=withStrikes.length
+    ? withStrikes.map(m=>`<div class="lb-row">
+        <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div>
+        <div style="margin-top:3px">${m.strikes.map(s=>`<span class="mb bstrike">${esc(s.replace('➜ ',''))}</span>`).join('')}</div></div>
+      </div>`).join('')
+    : '<p style="color:var(--muted);font-size:12px">No active strikes.</p>';
 
-      // Stats bar
-      document.getElementById('s-total').textContent   = total;
-      document.getElementById('s-loa').textContent     = onLoa;
-      document.getElementById('s-ztp').textContent     = onZtp;
-      document.getElementById('s-active').textContent  = total - onLoa;
-      document.getElementById('s-strikes').textContent = strikes;
-      document.getElementById('s-teams').textContent   = teams;
+  const special=allStaff.filter(m=>m.special?.length>0);
+  document.getElementById('disc-special').innerHTML=special.length
+    ? special.map(m=>`<div class="lb-row">
+        <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div>
+        <div style="margin-top:3px">${m.special.map(s=>`<span class="mb bspecial">${esc(s.replace('➜ ',''))}</span>`).join('')}</div></div>
+      </div>`).join('')
+    : '<p style="color:var(--muted);font-size:12px">No special statuses.</p>';
 
-      const lastSync = syncLog[0]?.synced_at;
-      document.getElementById('last-sync').textContent = lastSync
-        ? 'Last sync: ' + fmtDateTime(lastSync) : 'No sync yet';
+  const ztp=allStaff.filter(m=>m.on_ztp);
+  document.getElementById('disc-ztp').innerHTML=ztp.length
+    ? `<div style="display:flex;flex-wrap:wrap;gap:8px">${ztp.map(m=>`<span class="mb" style="background:rgba(235,69,158,.12);color:var(--accent2);border:1px solid rgba(235,69,158,.2);padding:4px 10px;font-size:11px">${esc(m.nickname||m.username.split('#')[0])}</span>`).join('')}</div>`
+    : '<p style="color:var(--muted);font-size:12px">No ZTP members.</p>';
+}
 
-      renderTable();
-      renderData();
-    } catch(e) {
-      document.getElementById('staff-tbody').innerHTML =
-        `<tr><td colspan="9"><div class="empty"><h3>⚠️ Could not load data</h3><p>Make sure staff.json is in your repo and it's public.</p></div></td></tr>`;
-    }
-  }
+// ── DATA ──
+function renderData(){
+  const total=allStaff.length,onLoa=allStaff.filter(m=>m.melonly?.onLoa).length,onZtp=allStaff.filter(m=>m.on_ztp).length;
+  const strikes=allStaff.filter(m=>m.strikes?.length>0).length,teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
+  const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+  document.getElementById('d-total').textContent=total;
+  document.getElementById('d-loa').textContent=onLoa;
+  document.getElementById('d-ztp').textContent=onZtp;
+  document.getElementById('d-active').textContent=total-onLoa;
+  document.getElementById('d-strikes').textContent=strikes;
+  document.getElementById('d-teams').textContent=teams;
+  document.getElementById('d-hours').textContent=totalHrs.toFixed(1)+'h';
 
-  function renderTable() {
-    const search = document.getElementById('search').value.toLowerCase();
-    let staff = allStaff.filter(m => {
-      if (search && !m.username.toLowerCase().includes(search) && !(m.nickname||'').toLowerCase().includes(search)) return false;
-      if (activeFilters.loa    && !m.on_loa) return false;
-      if (activeFilters.ztp    && !m.on_ztp) return false;
-      if (activeFilters.strike && (!m.strikes||m.strikes.length===0)) return false;
-      if (activeFilters.media  && (!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('media')))) return false;
-      if (activeFilters.event  && (!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('event')))) return false;
-      return true;
-    });
+  const bars=(items,color)=>{const mx=Math.max(...items.map(i=>i.c),1);return items.map(i=>`<div class="br"><div class="bl">${esc(i.l)}</div><div class="bt"><div class="bf" style="width:${(i.c/mx)*100}%;background:${color}"></div></div><div class="bc">${i.c}</div></div>`).join('')};
 
-    // Sort by group order then username
-    staff.sort((a,b) => {
-      const ga = GROUP_ORDER.indexOf(a.role_group||'Staff');
-      const gb = GROUP_ORDER.indexOf(b.role_group||'Staff');
-      if (ga !== gb) return ga - gb;
-      return a.username.localeCompare(b.username);
-    });
+  document.getElementById('d-strike-bars').innerHTML=bars(['➜ Strike 3 (Termination)','➜ Strike 2 (Demotion)','➜ Strike 1','Warning 3 (Strike)','Warning 2','Warning 1','Verbal Warning'].map(s=>({l:s.replace('➜ ',''),c:allStaff.filter(m=>(m.strikes||[]).includes(s)).length})),'var(--red)');
+  document.getElementById('d-perm-bars').innerHTML=bars(['50 / 50 Shift Permission','Off Duty Command Permission','Session Host Permission','Promotion Permission','Infraction Permission'].map(p=>({l:p.replace(' Permission',''),c:allStaff.filter(m=>(m.perms||[]).includes(p)).length})),'var(--accent)');
+  const rc={};allStaff.forEach(m=>{rc[m.highest_role]=(rc[m.highest_role]||0)+1});
+  document.getElementById('d-role-bars').innerHTML=bars(Object.entries(rc).sort((a,b)=>b[1]-a[1]).map(([l,c])=>({l,c})),'var(--accent)');
+  document.getElementById('d-team-bars').innerHTML=bars(['➜ Media Team','➜ Event Team','➜ Social Media Team','➜ Education & Training Team'].map(t=>({l:t.replace('➜ ',''),c:allStaff.filter(m=>(m.sub_teams||[]).includes(t)).length})),'var(--accent2)');
 
-    const tbody = document.getElementById('staff-tbody');
-    if (!staff.length) {
-      tbody.innerHTML = `<tr><td colspan="9"><div class="empty"><h3>No staff found</h3><p>Try adjusting filters.</p></div></td></tr>`;
-      return;
-    }
+  document.getElementById('d-sync-log').innerHTML=(db.sync_log||[]).slice(0,10).map(l=>`<li><span class="st2">${fdt(l.synced_at)}</span><span class="sc"><span class="sa">+${l.added}</span><span class="su">~${l.updated}</span><span class="sr">-${l.removed}</span></span></li>`).join('')||'<li style="color:var(--muted);font-size:11px;padding:8px 0">No syncs yet</li>';
+}
 
-    let html = '';
-    let lastGroup = null;
+// ── FILTERS ──
+function toggleFilter(type){
+  filters[type]=!filters[type];
+  const b=document.getElementById('btn-'+type)||document.getElementById('btn-'+type+'2');
+  if(b)b.classList.toggle('active',filters[type]);
+  renderStaff();
+}
 
-    staff.forEach(s => {
-      const group = s.role_group || 'Staff';
-      if (group !== lastGroup) {
-        html += `<tr class="group-row"><td colspan="9">— ${esc(group)}</td></tr>`;
-        lastGroup = group;
-      }
+// ── TABS ──
+function switchTab(tab,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+tab).classList.add('active');
+  if(btn)btn.classList.add('active');
+}
 
-      const strikesHtml = (s.strikes||[]).map(st =>
-        `<span class="mini-badge strike-badge">${esc(st)}</span>`).join('') || '—';
+// ── MODAL ──
+function openModal(uid){
+  const s=allStaff.find(m=>m.user_id===uid);if(!s)return;
+  document.getElementById('m-avatar').textContent=ini(s.username);
+  document.getElementById('m-name').textContent=s.nickname||s.username.split('#')[0];
+  document.getElementById('m-id').textContent=`ID: ${s.user_id} · ${s.username}`;
+  document.getElementById('m-role').innerHTML=`<span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span>`;
+  document.getElementById('m-group').textContent=s.role_group||'—';
+  document.getElementById('m-joined').textContent=fd(s.join_date);
+  document.getElementById('m-status').innerHTML=[
+    s.on_ztp?`<span class="mb" style="background:rgba(235,69,158,.15);color:var(--accent2);border:1px solid rgba(235,69,158,.3)">ZTP</span>`:'',
+  ].filter(Boolean).join(' ')||'<span style="color:var(--green);font-size:11px">Active</span>';
+  document.getElementById('m-hours').textContent=s.melonly?.totalHours!=null?s.melonly.totalHours+'h':'No data';
+  document.getElementById('m-shifts').textContent=s.melonly?.totalShifts!=null?s.melonly.totalShifts+' shifts':'No data';
+  document.getElementById('m-lastshift').textContent=fd(s.melonly?.lastShiftAt);
+  document.getElementById('m-loa').innerHTML=s.melonly?.onLoa?`<span class="sb byes"><span class="bd"></span>Yes — ${fd(s.melonly.loaEndsAt)}</span>`:`<span class="sb bno">No</span>`;
+  document.getElementById('m-roles').innerHTML=(s.roles||[]).map(r=>`<span class="mb rb" style="${rs(r)}">${esc(r)}</span>`).join('');
+  document.getElementById('m-strikes').innerHTML=(s.strikes||[]).length?(s.strikes||[]).map(x=>`<span class="mb bstrike">${esc(x.replace('➜ ',''))}</span>`).join(''):`<span style="color:var(--muted);font-size:11px">None</span>`;
+  document.getElementById('m-perms').innerHTML=(s.perms||[]).length?(s.perms||[]).map(x=>`<span class="mb bperm">${esc(x)}</span>`).join(''):`<span style="color:var(--muted);font-size:11px">None</span>`;
+  document.getElementById('m-subteams').innerHTML=(s.sub_teams||[]).length?(s.sub_teams||[]).map(x=>`<span class="mb bteam">${esc(x.replace('➜ ',''))}</span>`).join(''):`<span style="color:var(--muted);font-size:11px">None</span>`;
+  document.getElementById('m-special').innerHTML=(s.special||[]).length?(s.special||[]).map(x=>`<span class="mb bspecial">${esc(x.replace('➜ ',''))}</span>`).join(''):`<span style="color:var(--muted);font-size:11px">None</span>`;
+  document.getElementById('m-notes').textContent=s.notes||'No notes';
+  document.getElementById('modal').classList.add('open');
+}
 
-      const permsHtml = (s.perms||[]).map(p =>
-        `<span class="mini-badge perm-badge">${esc(p.replace(' Permission',''))}</span>`).join('') || '—';
+function closeModal(e){
+  if(e&&e.target!==document.getElementById('modal'))return;
+  document.getElementById('modal').classList.remove('open');
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open')});
 
-      const teamsHtml = (s.sub_teams||[]).map(t =>
-        `<span class="mini-badge team-badge">${esc(t.replace(' Team',''))}</span>`).join('') || '—';
-
-      html += `
-        <tr onclick="openModal('${s.user_id}')">
-          <td><div class="user-cell">
-            <div class="avatar">${initials(s.username)}</div>
-            <div><div class="user-name">${esc(s.nickname||s.username.split('#')[0])}</div>
-            <div class="user-tag">${esc(s.username)}</div></div>
-          </div></td>
-          <td><span class="role-badge" style="${roleStyle(s.highest_role)}">${esc(s.highest_role)}</span></td>
-          <td class="date-cell">${fmtDate(s.join_date)}</td>
-          <td>${badgeYN(s.on_loa)}</td>
-          <td>${badgeYN(s.on_ztp)}</td>
-          <td>${strikesHtml}</td>
-          <td>${permsHtml}</td>
-          <td>${teamsHtml}</td>
-          <td class="notes-cell ${s.notes?'':'no-notes'}">${s.notes?esc(s.notes):'—'}</td>
-        </tr>`;
-    });
-
-    tbody.innerHTML = html;
-  }
-
-  function renderData() {
-    const total   = allStaff.length;
-    const onLoa   = allStaff.filter(m=>m.on_loa).length;
-    const onZtp   = allStaff.filter(m=>m.on_ztp).length;
-    const strikes = allStaff.filter(m=>m.strikes&&m.strikes.length>0).length;
-    const teams   = allStaff.filter(m=>m.sub_teams&&m.sub_teams.length>0).length;
-
-    document.getElementById('d-total').textContent   = total;
-    document.getElementById('d-loa').textContent     = onLoa;
-    document.getElementById('d-ztp').textContent     = onZtp;
-    document.getElementById('d-active').textContent  = total - onLoa;
-    document.getElementById('d-strikes').textContent = strikes;
-    document.getElementById('d-teams').textContent   = teams;
-
-    // Strike bars
-    const strikeNames = ['Strike 1','Strike 2 (Demotion)','Strike 3 (Termination)'];
-    document.getElementById('d-strike-bars').innerHTML = bars(
-      strikeNames.map(s => ({ label: s, count: allStaff.filter(m=>(m.strikes||[]).includes(s)).length })),
-      total, '#ed4245'
-    );
-
-    // Perm bars
-    const permNames = ['50 / 50 Shift Permission','Off Duty Command Permission','Session Host Permission','Promotion Permission','Infraction Permission'];
-    document.getElementById('d-perm-bars').innerHTML = bars(
-      permNames.map(p => ({ label: p.replace(' Permission',''), count: allStaff.filter(m=>(m.perms||[]).includes(p)).length })),
-      total, '#5865f2'
-    );
-
-    // Role bars
-    const roleCount = {};
-    allStaff.forEach(m => { roleCount[m.highest_role] = (roleCount[m.highest_role]||0)+1; });
-    const roleSorted = Object.entries(roleCount).sort((a,b)=>b[1]-a[1]).map(([l,c])=>({label:l,count:c}));
-    document.getElementById('d-role-bars').innerHTML = bars(roleSorted, total, '#5865f2');
-
-    // Team bars
-    const teamNames = ['Media Team','Event Team','Social Media Team','Education & Training Team'];
-    document.getElementById('d-team-bars').innerHTML = bars(
-      teamNames.map(t => ({ label: t.replace(' Team',''), count: allStaff.filter(m=>(m.sub_teams||[]).includes(t)).length })),
-      total, '#eb459e'
-    );
-
-    // Sync log
-    document.getElementById('d-sync-log').innerHTML = syncLog.slice(0,10).map(l => `
-      <li class="sync-log-item">
-        <span class="sync-time">${fmtDateTime(l.synced_at)}</span>
-        <span class="sync-changes">
-          <span class="sync-add">+${l.added}</span>
-          <span class="sync-upd">~${l.updated}</span>
-          <span class="sync-rem">-${l.removed}</span>
-        </span>
-      </li>
-    `).join('') || '<li style="color:var(--muted);font-size:12px;padding:8px 0">No syncs yet</li>';
-  }
-
-  function bars(items, total, color) {
-    const max = Math.max(...items.map(i=>i.count), 1);
-    return items.map(i => `
-      <div class="bar-row">
-        <div class="bar-label">${esc(i.label)}</div>
-        <div class="bar-track"><div class="bar-fill" style="width:${(i.count/max)*100}%;background:${color}"></div></div>
-        <div class="bar-count">${i.count}</div>
-      </div>`).join('');
-  }
-
-  function toggleFilter(type) {
-    activeFilters[type] = !activeFilters[type];
-    const btn = document.getElementById('btn-'+type);
-    if (btn) btn.classList.toggle('active', activeFilters[type]);
-    renderTable();
-  }
-
-  function switchTab(tab) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-    document.getElementById('page-'+tab).classList.add('active');
-    event.target.classList.add('active');
-  }
-
-  function openModal(userId) {
-    const s = allStaff.find(m=>m.user_id===userId);
-    if (!s) return;
-    document.getElementById('m-avatar').textContent  = initials(s.username);
-    document.getElementById('m-name').textContent    = s.nickname||s.username.split('#')[0];
-    document.getElementById('m-id').textContent      = `ID: ${s.user_id} · ${s.username}`;
-    document.getElementById('m-role').innerHTML      = `<span class="role-badge" style="${roleStyle(s.highest_role)}">${esc(s.highest_role)}</span>`;
-    document.getElementById('m-group').textContent   = s.role_group||'—';
-    document.getElementById('m-joined').textContent  = fmtDate(s.join_date);
-    document.getElementById('m-status').innerHTML    = [
-      s.on_loa ? `<span class="mini-badge" style="background:rgba(254,231,92,0.15);color:var(--yellow);border:1px solid rgba(254,231,92,0.3)">LOA</span>` : '',
-      s.on_ztp ? `<span class="mini-badge" style="background:rgba(237,66,69,0.15);color:var(--red);border:1px solid rgba(237,66,69,0.3)">ZTP</span>` : '',
-    ].filter(Boolean).join(' ') || '<span style="color:var(--green);font-size:12px">Active</span>';
-    document.getElementById('m-roles').innerHTML     = (s.roles||[]).map(r=>`<span class="mini-badge role-badge" style="${roleStyle(r)}">${esc(r)}</span>`).join('');
-    document.getElementById('m-strikes').innerHTML   = (s.strikes||[]).length ? (s.strikes||[]).map(st=>`<span class="mini-badge strike-badge">${esc(st)}</span>`).join('') : '<span style="color:var(--muted);font-size:12px">No strikes</span>';
-    document.getElementById('m-perms').innerHTML     = (s.perms||[]).length ? (s.perms||[]).map(p=>`<span class="mini-badge perm-badge">${esc(p)}</span>`).join('') : '<span style="color:var(--muted);font-size:12px">No permissions</span>';
-    document.getElementById('m-subteams').innerHTML  = (s.sub_teams||[]).length ? (s.sub_teams||[]).map(t=>`<span class="mini-badge team-badge">${esc(t)}</span>`).join('') : '<span style="color:var(--muted);font-size:12px">No sub teams</span>';
-    document.getElementById('m-notes').textContent   = s.notes||'No notes';
-    document.getElementById('modal').classList.add('open');
-  }
-
-  function closeModal(e) {
-    if (e && e.target !== document.getElementById('modal')) return;
-    document.getElementById('modal').classList.remove('open');
-  }
-
-  document.addEventListener('keydown', e => { if (e.key==='Escape') document.getElementById('modal').classList.remove('open'); });
-
-  loadData();
+loadData();
 </script>
 </body>
 </html>

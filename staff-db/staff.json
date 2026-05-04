@@ -6,22 +6,21 @@
       "nickname": "TM・MX-647・UrLocalCarGuy1_1",
       "roles": [
         "➜ Staff Team",
-        "Trial Moderator",
+        "Junior Moderator",
         "➜ Moderation Team"
       ],
-      "highest_role": "Trial Moderator",
+      "highest_role": "Junior Moderator",
       "role_group": "Mod Team",
       "join_date": "2026-04-23T16:46:25.971Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1479730180258791509": {
       "user_id": "1479730180258791509",
@@ -40,8 +39,9 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1412530506364485774": {
       "user_id": "1412530506364485774",
@@ -61,42 +61,43 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1352680172775538688": {
       "user_id": "1352680172775538688",
       "username": "hayden10034",
-      "nickname": "TRJ-48 / LC-01 | TM・Hjpl2020",
+      "nickname": "JM・Hjpl2020",
       "roles": [
-        "Trial Moderator",
         "➜ Staff Team",
+        "Junior Moderator",
+        "Trial Moderator",
         "➜ Moderation Team"
       ],
-      "highest_role": "Trial Moderator",
+      "highest_role": "Junior Moderator",
       "role_group": "Mod Team",
       "join_date": "2026-04-08T18:34:23.081Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1289570079880511542": {
       "user_id": "1289570079880511542",
       "username": "babyrhino562_37314",
       "nickname": "LOA・TM ・ Babyrhino562",
       "roles": [
-        "Trial Moderator",
+        "Junior Moderator",
         "➜ Staff Team",
         "➜ Moderation Team"
       ],
-      "highest_role": "Trial Moderator",
+      "highest_role": "Junior Moderator",
       "role_group": "Mod Team",
       "join_date": "2026-03-27T20:05:49.294Z",
       "on_ztp": false,
@@ -105,8 +106,9 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1411656491584192585": {
       "user_id": "1411656491584192585",
@@ -126,19 +128,20 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "804050170350141491": {
       "user_id": "804050170350141491",
       "username": "call.2",
-      "nickname": "TM・Denisdailyline2",
+      "nickname": "JM・Denisdailyline2",
       "roles": [
         "➜ Staff Team",
-        "Trial Moderator",
+        "Junior Moderator",
         "➜ Moderation Team"
       ],
-      "highest_role": "Trial Moderator",
+      "highest_role": "Junior Moderator",
       "role_group": "Mod Team",
       "join_date": "2026-05-01T17:04:08.964Z",
       "on_ztp": false,
@@ -149,31 +152,31 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1333863670958264475": {
       "user_id": "1333863670958264475",
       "username": "arm3dstrudders",
-      "nickname": "JRM・arm3dstrudders1",
+      "nickname": "M * arm3dstrudders1(1A-111)",
       "roles": [
         "➜ Staff Team",
-        "➜ Moderation Team",
-        "Trial Moderator"
+        "Moderator",
+        "➜ Moderation Team"
       ],
-      "highest_role": "Trial Moderator",
+      "highest_role": "Moderator",
       "role_group": "Mod Team",
       "join_date": "2026-04-27T09:45:35.082Z",
-      "on_ztp": true,
+      "on_ztp": false,
       "strikes": [],
       "perms": [],
       "sub_teams": [],
-      "special": [
-        "Zero Tolerance Policy"
-      ],
+      "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1409640835070558276": {
       "user_id": "1409640835070558276",
@@ -193,8 +196,9 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:11:39.540Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1489962499515224145": {
       "user_id": "1489962499515224145",
@@ -202,22 +206,21 @@
       "nickname": "kumail613",
       "roles": [
         "➜ Staff Team",
-        "➜ Administration Team",
-        "Administrator"
+        "Senior Administrator",
+        "➜ Administration Team"
       ],
-      "highest_role": "Administrator",
+      "highest_role": "Senior Administrator",
       "role_group": "Admin Team",
       "join_date": "2026-05-02T16:13:24.607Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1282376892296462398": {
       "user_id": "1282376892296462398",
@@ -239,115 +242,72 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
-    },
-    "1436634778752389120": {
-      "user_id": "1436634778752389120",
-      "username": "elite_unit555new",
-      "nickname": "D ・ elite_unit555",
-      "roles": [
-        "Disciplinary Director",
-        "Director",
-        "➜ Staff Team",
-        "➜ Directive Team"
-      ],
-      "highest_role": "Director",
-      "role_group": "Directive Team",
-      "join_date": "2025-12-02T17:43:33.545Z",
-      "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
-      "sub_teams": [
-        "➜ Media Team",
-        "➜ Event Team",
-        "➜ Education & Training Team"
-      ],
-      "special": [
-        "Age Verified"
-      ],
-      "notes": "",
-      "added_at": "2026-05-02T21:19:05.604Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1061007180788154379": {
       "user_id": "1061007180788154379",
       "username": "jmb12.",
-      "nickname": "LIA・JackB12612",
+      "nickname": "TMGMT・JackB12612",
       "roles": [
-        "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Lead Affairs Team"
+        "➜ Management Team",
+        "Trial Management"
       ],
-      "highest_role": "Lead Affairs Team",
-      "role_group": "Internal Affairs Team",
+      "highest_role": "Trial Management",
+      "role_group": "Management Team",
       "join_date": "2026-03-01T13:12:22.353Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1045072929085456515": {
       "user_id": "1045072929085456515",
       "username": "bartleyboy1",
       "nickname": "TIA・Wayne TRJ-01 SFC",
       "roles": [
-        "Trial Affairs Team",
         "➜ Internal Affairs Team",
-        "➜ Staff Team"
+        "➜ Staff Team",
+        "Trial Affairs Team"
       ],
       "highest_role": "Trial Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-04T19:43:48.086Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Media Team"
       ],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1358056022526132397": {
       "user_id": "1358056022526132397",
       "username": "hilton1973",
-      "nickname": "AD・GX006・Hilton1973",
+      "nickname": "D・GX006・Hilton1973",
       "roles": [
-        "Assistant Director",
         "Recruitment Director",
         "➜ Staff Team",
-        "➜ Directive Team"
+        "➜ Directive Team",
+        "Director"
       ],
-      "highest_role": "Assistant Director",
+      "highest_role": "Director",
       "role_group": "Directive Team",
       "join_date": "2026-03-06T08:39:10.154Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Media Team",
         "➜ Event Team",
@@ -357,13 +317,37 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1472298976899498055": {
       "user_id": "1472298976899498055",
       "username": "darkknight27_9",
-      "nickname": "IA • DanWillDan",
+      "nickname": "TMGMT • DanWillDan",
+      "roles": [
+        "➜ Internal Affairs Team",
+        "➜ Staff Team",
+        "➜ Management Team",
+        "Trial Management"
+      ],
+      "highest_role": "Trial Management",
+      "role_group": "Management Team",
+      "join_date": "2026-02-27T17:49:12.617Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-03T09:09:26.498Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "984890820098416741": {
+      "user_id": "984890820098416741",
+      "username": "missing101_",
+      "nickname": "IA・cheekyferret101",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
@@ -371,125 +355,64 @@
       ],
       "highest_role": "Affairs Team",
       "role_group": "Internal Affairs Team",
-      "join_date": "2026-02-27T17:49:12.617Z",
-      "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
-      "sub_teams": [],
-      "special": [],
-      "notes": "",
-      "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
-    },
-    "1476624123592573004": {
-      "user_id": "1476624123592573004",
-      "username": "adnan11_11",
-      "nickname": "Fortgamer12346",
-      "roles": [
-        "➜ Chairman"
-      ],
-      "highest_role": "➜ Chairman",
-      "role_group": "Chairman Team",
-      "join_date": "2026-04-09T20:51:14.718Z",
-      "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
-      "sub_teams": [],
-      "special": [
-        "Age Verified"
-      ],
-      "notes": "",
-      "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
-    },
-    "984890820098416741": {
-      "user_id": "984890820098416741",
-      "username": "missing101_",
-      "nickname": "TIA・cheekyferret101",
-      "roles": [
-        "➜ Internal Affairs Team",
-        "➜ Staff Team",
-        "Trial Affairs Team"
-      ],
-      "highest_role": "Trial Affairs Team",
-      "role_group": "Internal Affairs Team",
       "join_date": "2026-04-27T15:36:30.020Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1275037671164481536": {
       "user_id": "1275037671164481536",
       "username": "jonxrz1",
-      "nickname": "TIA・Jonxrz1",
+      "nickname": "Mo8 Sargent-OW-7718  TIA・Jonxrz1",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Trial Affairs Team"
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2025-12-11T15:49:59.948Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1205584224242110465": {
       "user_id": "1205584224242110465",
       "username": "keeganoakes_72276",
-      "nickname": "TIA・keeganoakes608",
+      "nickname": "JIA・keeganoakes608",
       "roles": [
         "➜ Internal Affairs Team",
-        "➜ Staff Team",
-        "Trial Affairs Team"
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-26T18:34:35.791Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1094347642420600922": {
       "user_id": "1094347642420600922",
       "username": "bronny6349",
-      "nickname": "TIA | Leb123678",
+      "nickname": "TIA | TJ-982 | Leb123678",
       "roles": [
         "Trial Affairs Team",
         "➜ Internal Affairs Team",
@@ -500,18 +423,15 @@
       "join_date": "2026-03-29T10:51:30.444Z",
       "on_ztp": true,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [
         "Zero Tolerance Policy"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1208418879232020615": {
       "user_id": "1208418879232020615",
@@ -527,15 +447,13 @@
       "join_date": "2026-04-10T18:24:56.396Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "763774740895891467": {
       "user_id": "763774740895891467",
@@ -543,21 +461,15 @@
       "nickname": "C・QASAM",
       "roles": [
         "➜ Staff Team",
-        "Internal Affairs Director",
-        "➜ Chairman"
+        "➜ Chairman",
+        "Internal Affairs Director"
       ],
       "highest_role": "➜ Chairman",
       "role_group": "Chairman Team",
       "join_date": "2025-11-19T18:52:07.335Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Education & Training Team"
       ],
@@ -565,32 +477,27 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "793163165939925012": {
       "user_id": "793163165939925012",
       "username": "dtm4343",
-      "nickname": "VC • 𝕯𝕿𝕸",
+      "nickname": "C • 𝕯𝕿𝕸",
       "roles": [
         "Disciplinary Director",
         "In-Game Director",
         "Recruitment Director",
-        "➜ Vice Chairman",
-        "➜ Staff Team"
+        "➜ Staff Team",
+        "➜ Chairman"
       ],
-      "highest_role": "➜ Vice Chairman",
+      "highest_role": "➜ Chairman",
       "role_group": "Chairman Team",
       "join_date": "2026-04-28T20:45:09.516Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Media Team",
         "➜ Event Team",
@@ -601,13 +508,14 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1439466689787068487": {
       "user_id": "1439466689787068487",
       "username": "king_rr15",
-      "nickname": "TIA・Raheem_sterling10717",
+      "nickname": "𝗦𝘁𝗮𝗳𝗳・TIA・Raheem_sterling10717",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
@@ -617,13 +525,16 @@
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-11T12:37:52.060Z",
       "on_ztp": false,
-      "strikes": [],
+      "strikes": [
+        "➜ Strike 1"
+      ],
       "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1309127395663413323": {
       "user_id": "1309127395663413323",
@@ -644,39 +555,38 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1183312224169771008": {
       "user_id": "1183312224169771008",
       "username": "douglasszn",
-      "nickname": "JA・LandoNorris4805",
+      "nickname": "A・LandoNorris4805",
       "roles": [
         "➜ Staff Team",
         "➜ Administration Team",
-        "Junior Administrator",
-        "Trial Administrator"
+        "Administrator"
       ],
-      "highest_role": "Junior Administrator",
+      "highest_role": "Administrator",
       "role_group": "Admin Team",
       "join_date": "2026-04-09T18:42:36.742Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [
         "➜ Staff of the Week"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1344027588808409172": {
       "user_id": "1344027588808409172",
       "username": "jtr0583_60311",
-      "nickname": "TMGMT • Lilman",
+      "nickname": "OD • TMGMT • Lilman",
       "roles": [
         "➜ Staff Team",
         "➜ Management Team",
@@ -687,12 +597,7 @@
       "join_date": "2026-04-26T12:03:30.544Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Event Team",
         "➜ Education & Training Team"
@@ -701,36 +606,9 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
-    },
-    "1211044737595875412": {
-      "user_id": "1211044737595875412",
-      "username": "kebab_wrp",
-      "nickname": "MGMT・TRJ-47・kebab_wrp",
-      "roles": [
-        "➜ Staff Team",
-        "➜ Management Team",
-        "Management"
-      ],
-      "highest_role": "Management",
-      "role_group": "Management Team",
-      "join_date": "2026-04-03T14:26:21.862Z",
-      "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
-      "sub_teams": [],
-      "special": [
-        "Age Verified"
-      ],
-      "notes": "",
-      "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1491875555082240130": {
       "user_id": "1491875555082240130",
@@ -753,38 +631,34 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1310716495499755602": {
       "user_id": "1310716495499755602",
       "username": "seb_1245",
-      "nickname": "TIA ・ whos_him12",
+      "nickname": "LIA ・ whos_him12",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Affairs Team"
+        "Lead Affairs Team"
       ],
-      "highest_role": "Affairs Team",
+      "highest_role": "Lead Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-21T20:55:27.460Z",
       "on_ztp": true,
-      "strikes": [
-        "➜ Strike 1"
-      ],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "strikes": [],
+      "perms": [],
       "sub_teams": [],
       "special": [
         "Zero Tolerance Policy",
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1322595120557854760": {
       "user_id": "1322595120557854760",
@@ -800,38 +674,29 @@
       "join_date": "2026-03-21T19:10:04.867Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1424802580814499864": {
       "user_id": "1424802580814499864",
       "username": "frankiefloyd0486",
-      "nickname": "LMG I Mr_Frankie",
+      "nickname": "SMGT • Mr_Frankie",
       "roles": [
-        "➜ Staff Team",
-        "Lead Management",
-        "➜ Management Team"
+        "➜ Management Team",
+        "Senior Management",
+        "➜ Staff Team"
       ],
-      "highest_role": "Lead Management",
+      "highest_role": "Senior Management",
       "role_group": "Management Team",
       "join_date": "2026-04-26T16:43:48.631Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Media Team",
         "➜ Event Team",
@@ -842,8 +707,9 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1385712226937082039": {
       "user_id": "1385712226937082039",
@@ -859,61 +725,51 @@
       "join_date": "2026-04-13T23:41:48.568Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1309431215664795669": {
       "user_id": "1309431215664795669",
       "username": "holidayfun_boo",
-      "nickname": "TIA・holidayfun_boo",
+      "nickname": "IA・holidayfun_boo",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Trial Affairs Team"
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-22T15:23:48.919Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1454039150775767090": {
       "user_id": "1454039150775767090",
       "username": "bonniet0pg",
-      "nickname": "TRJ454・SMGT・Bonniet0pG",
+      "nickname": "OT-454 | LMGT | Bonniet0pG",
       "roles": [
         "➜ Management Team",
-        "Senior Management",
-        "➜ Staff Team"
+        "➜ Staff Team",
+        "Lead Management"
       ],
-      "highest_role": "Senior Management",
+      "highest_role": "Lead Management",
       "role_group": "Management Team",
       "join_date": "2026-02-19T11:47:23.659Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Education & Training Team"
       ],
@@ -921,8 +777,9 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1305254895854686238": {
       "user_id": "1305254895854686238",
@@ -938,18 +795,15 @@
       "join_date": "2026-03-25T17:17:04.121Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1367950238878535940": {
       "user_id": "1367950238878535940",
@@ -968,31 +822,27 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1468753725865594957": {
       "user_id": "1468753725865594957",
       "username": "cmdkevin__",
-      "nickname": "AD・erlcrobloxman",
+      "nickname": "DD・erlcrobloxman",
       "roles": [
-        "Community Director",
-        "Assistant Director",
+        "In-Game Director",
+        "Deputy Director",
         "➜ Staff Team",
-        "➜ Directive Team"
+        "➜ Directive Team",
+        "Community Director"
       ],
-      "highest_role": "Assistant Director",
+      "highest_role": "Deputy Director",
       "role_group": "Directive Team",
       "join_date": "2026-03-22T14:21:01.221Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Media Team",
         "➜ Event Team",
@@ -1003,8 +853,9 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1241119617829834834": {
       "user_id": "1241119617829834834",
@@ -1024,8 +875,9 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1363438180766056639": {
       "user_id": "1363438180766056639",
@@ -1041,42 +893,37 @@
       "join_date": "2026-02-28T14:18:39.842Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Education & Training Team"
       ],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "953350549498101760": {
       "user_id": "953350549498101760",
       "username": "itxrayax_393",
-      "nickname": "CW-105・TIA・ItxRayax",
+      "nickname": "CW-105・JIA・ItxRayax",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Trial Affairs Team"
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-25T13:03:44.363Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1407735985684349059": {
       "user_id": "1407735985684349059",
@@ -1096,19 +943,20 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1489665964504125460": {
       "user_id": "1489665964504125460",
       "username": "aston761",
-      "nickname": "TIA I sourtoast1",
+      "nickname": "JIA I sourtoast1",
       "roles": [
         "➜ Internal Affairs Team",
-        "Trial Affairs Team",
-        "➜ Staff Team"
+        "➜ Staff Team",
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-05-01T20:37:42.584Z",
       "on_ztp": false,
@@ -1117,31 +965,31 @@
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1492485344128532492": {
       "user_id": "1492485344128532492",
       "username": "jackb069988",
-      "nickname": "TIA ・ jackiejackie53",
+      "nickname": "JIA ・ jackiejackie53",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Trial Affairs Team"
+        "Junior Affairs Team"
       ],
-      "highest_role": "Trial Affairs Team",
+      "highest_role": "Junior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-04-11T11:31:37.491Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
-      ],
+      "perms": [],
       "sub_teams": [],
       "special": [],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1207763251337896046": {
       "user_id": "1207763251337896046",
@@ -1158,13 +1006,7 @@
       "join_date": "2026-04-02T16:56:10.004Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Event Team",
         "➜ Social Media Team",
@@ -1174,61 +1016,39 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "1282008553028321330": {
       "user_id": "1282008553028321330",
       "username": "ariminkowski1",
-      "nickname": "TRJ-R15・roblox_god765p",
+      "nickname": "TRJ-R15 ・SIA・roblox_god765p",
       "roles": [
         "➜ Internal Affairs Team",
         "➜ Staff Team",
-        "Affairs Team"
+        "Senior Affairs Team"
       ],
-      "highest_role": "Affairs Team",
+      "highest_role": "Senior Affairs Team",
       "role_group": "Internal Affairs Team",
       "join_date": "2026-03-28T10:32:34.650Z",
       "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission"
+      "strikes": [
+        "➜ Strike 1"
       ],
-      "sub_teams": [],
-      "special": [],
-      "notes": "",
-      "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
-    },
-    "1439758932691255376": {
-      "user_id": "1439758932691255376",
-      "username": "fw.spxdz",
-      "nickname": "AD・fw_spudz",
-      "roles": [
-        "Management Director",
-        "Assistant Director",
-        "➜ Staff Team",
-        "➜ Directive Team"
+      "perms": [],
+      "sub_teams": [
+        "➜ Media Team",
+        "➜ Social Media Team",
+        "➜ Education & Training Team"
       ],
-      "highest_role": "Assistant Director",
-      "role_group": "Directive Team",
-      "join_date": "2025-12-02T16:48:08.706Z",
-      "on_ztp": false,
-      "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Off Duty Command Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
-      "sub_teams": [],
       "special": [
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
     },
     "960083107204186122": {
       "user_id": "960083107204186122",
@@ -1244,12 +1064,7 @@
       "join_date": "2025-12-03T17:17:09.998Z",
       "on_ztp": false,
       "strikes": [],
-      "perms": [
-        "50 / 50 Shift Permission",
-        "Session Host Permission",
-        "Promotion Permission",
-        "Infraction Permission"
-      ],
+      "perms": [],
       "sub_teams": [
         "➜ Event Team",
         "➜ Education & Training Team"
@@ -1258,11 +1073,255 @@
         "Age Verified"
       ],
       "notes": "",
+      "melonly": null,
       "added_at": "2026-05-03T09:09:26.498Z",
-      "updated_at": "2026-05-03T09:30:16.729Z"
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1342569163046125568": {
+      "user_id": "1342569163046125568",
+      "username": "frankie710",
+      "nickname": "VC • Frankie",
+      "roles": [
+        "➜ Vice Chairman",
+        "➜ Staff Team",
+        "Community Director"
+      ],
+      "highest_role": "➜ Vice Chairman",
+      "role_group": "Chairman Team",
+      "join_date": "2026-05-03T17:12:59.324Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [
+        "➜ Media Team",
+        "➜ Event Team",
+        "➜ Social Media Team",
+        "➜ Education & Training Team"
+      ],
+      "special": [
+        "Age Verified"
+      ],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1135106472842383370": {
+      "user_id": "1135106472842383370",
+      "username": "amy_is_herel_",
+      "nickname": "account_xxx0",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-05-02T16:18:18.573Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1252733074999869470": {
+      "user_id": "1252733074999869470",
+      "username": "cuddle07",
+      "nickname": "TM・cuddle07",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-05-02T21:12:25.955Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1437584629795131413": {
+      "user_id": "1437584629795131413",
+      "username": "fcjohnny20",
+      "nickname": "TM・JohnnyMaughan14",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-03-19T20:19:47.089Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "993244440485433504": {
+      "user_id": "993244440485433504",
+      "username": "conaaa2750",
+      "nickname": "TM・800x62",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-05-01T17:39:49.728Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1410968368231616543": {
+      "user_id": "1410968368231616543",
+      "username": "skeptical537",
+      "nickname": "TM・ItsRealYoMoonStar",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-05-02T21:13:35.080Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "965139699066875964": {
+      "user_id": "965139699066875964",
+      "username": ".breadbanana",
+      "nickname": "TM・tangochair",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-05-02T16:39:42.580Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1397000502314799159": {
+      "user_id": "1397000502314799159",
+      "username": "cyanide_souls",
+      "nickname": "TM・Gaze13579",
+      "roles": [
+        "➜ Staff Team",
+        "Trial Moderator",
+        "➜ Moderation Team"
+      ],
+      "highest_role": "Trial Moderator",
+      "role_group": "Mod Team",
+      "join_date": "2026-04-11T13:54:37.785Z",
+      "on_ztp": false,
+      "strikes": [
+        "➜ Strike 1"
+      ],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1295840976727969803": {
+      "user_id": "1295840976727969803",
+      "username": "thisaint_max4",
+      "nickname": "TA・Thisaint_max47",
+      "roles": [
+        "➜ Staff Team",
+        "➜ Administration Team",
+        "Trial Administrator"
+      ],
+      "highest_role": "Trial Administrator",
+      "role_group": "Admin Team",
+      "join_date": "2026-05-03T11:52:29.352Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
+    },
+    "1393652519691092129": {
+      "user_id": "1393652519691092129",
+      "username": "harribo172",
+      "nickname": "TMGMT・HarryLewis172",
+      "roles": [
+        "➜ Staff Team",
+        "➜ Management Team",
+        "Trial Management"
+      ],
+      "highest_role": "Trial Management",
+      "role_group": "Management Team",
+      "join_date": "2026-04-11T08:47:47.293Z",
+      "on_ztp": false,
+      "strikes": [],
+      "perms": [],
+      "sub_teams": [
+        "➜ Education & Training Team"
+      ],
+      "special": [],
+      "notes": "",
+      "melonly": null,
+      "added_at": "2026-05-04T19:42:17.467Z",
+      "updated_at": "2026-05-04T20:07:05.876Z"
     }
   },
   "sync_log": [
+    {
+      "synced_at": "2026-05-04T20:07:05.876Z",
+      "added": 0,
+      "updated": 55,
+      "removed": 0
+    },
+    {
+      "synced_at": "2026-05-04T19:42:17.467Z",
+      "added": 10,
+      "updated": 45,
+      "removed": 4
+    },
     {
       "synced_at": "2026-05-03T09:30:16.729Z",
       "added": 0,
@@ -1347,5 +1406,5009 @@
       "updated": 0,
       "removed": 0
     }
-  ]
+  ],
+  "melonly": {
+    "shifts": [
+      {
+        "id": "7457103128618340352",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777911932139,
+        "wave": 13,
+        "endedAt": 1777914061768,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457096795965886464",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777910422317,
+        "wave": 13,
+        "endedAt": 1777910449093
+      },
+      {
+        "id": "7457094635790274560",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777909907291,
+        "wave": 13,
+        "endedAt": 1777911926856,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457093063685443584",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777910344101,
+            "startedAt": 1777910140287
+          },
+          {
+            "endedAt": 1777910816916,
+            "startedAt": 1777910350622
+          }
+        ],
+        "createdAt": 1777909532472,
+        "wave": 13,
+        "endedAt": 1777910880854
+      },
+      {
+        "id": "7457092233905311744",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [],
+        "createdAt": 1777909334637,
+        "wave": 13,
+        "endedAt": 1777909830248
+      },
+      {
+        "id": "7457091071667867648",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777912928274,
+            "startedAt": 1777912629947
+          }
+        ],
+        "createdAt": 1777909057538,
+        "wave": 13,
+        "endedAt": 1777912928274
+      },
+      {
+        "id": "7457085954751205376",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777907837570,
+        "wave": 13,
+        "endedAt": 1777910084936
+      },
+      {
+        "id": "7457085317032448000",
+        "serverId": "7411142732405542912",
+        "memberId": "7437981512466698240",
+        "breakTimestamps": [],
+        "createdAt": 1777907685526,
+        "wave": 13,
+        "endedAt": 1777907688321,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457082923917774848",
+        "serverId": "7411142732405542912",
+        "memberId": "7456035746340671488",
+        "breakTimestamps": [],
+        "createdAt": 1777907114963,
+        "wave": 13,
+        "endedAt": 1777909056787,
+        "endedBy": "7456035746340671488"
+      },
+      {
+        "id": "7457082749367619584",
+        "serverId": "7411142732405542912",
+        "memberId": "7456690602126610432",
+        "breakTimestamps": [],
+        "createdAt": 1777907073347,
+        "wave": 13,
+        "endedAt": 1777909823182,
+        "endedBy": "7280006112680611840"
+      },
+      {
+        "id": "7457079374886473728",
+        "serverId": "7411142732405542912",
+        "memberId": "7134552192723193856",
+        "breakTimestamps": [],
+        "createdAt": 1777906268808,
+        "wave": 13,
+        "endedAt": 1777906273837,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457078846261563392",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777907487516,
+            "startedAt": 1777907218932
+          }
+        ],
+        "createdAt": 1777906142774,
+        "wave": 13,
+        "endedAt": 1777907536842
+      },
+      {
+        "id": "7457069648039645184",
+        "serverId": "7411142732405542912",
+        "memberId": "7134552192723193856",
+        "breakTimestamps": [],
+        "createdAt": 1777903949747,
+        "wave": 13,
+        "endedAt": 1777905627383,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457068542395944960",
+        "serverId": "7411142732405542912",
+        "memberId": "7370379171261845504",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777904357393,
+            "startedAt": 1777904274002
+          }
+        ],
+        "createdAt": 1777903686141,
+        "wave": 13,
+        "endedAt": 1777905442400
+      },
+      {
+        "id": "7457064841417592832",
+        "serverId": "7411142732405542912",
+        "memberId": "7364387989918584832",
+        "breakTimestamps": [],
+        "createdAt": 1777902803759,
+        "wave": 13,
+        "endedAt": 1777902851435
+      },
+      {
+        "id": "7457061963151970304",
+        "serverId": "7411142732405542912",
+        "memberId": "7444393888384552960",
+        "breakTimestamps": [],
+        "createdAt": 1777902117527,
+        "wave": 13,
+        "endedAt": 1777903849581
+      },
+      {
+        "id": "7457057724396736512",
+        "serverId": "7411142732405542912",
+        "memberId": "7373018484151685120",
+        "breakTimestamps": [],
+        "createdAt": 1777901106929,
+        "wave": 13,
+        "endedAt": 1777906323647,
+        "endedBy": "7373018484151685120"
+      },
+      {
+        "id": "7457057692750712832",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777901099384,
+        "wave": 13,
+        "endedAt": 1777909512218,
+        "endedBy": "7429928513475448832",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457054033384050688",
+        "serverId": "7411142732405542912",
+        "memberId": "7456463704721199104",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777905186016,
+            "startedAt": 1777904513279
+          }
+        ],
+        "createdAt": 1777900226923,
+        "wave": 13,
+        "endedAt": 1777905699934
+      },
+      {
+        "id": "7457052410985320448",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777899840113,
+        "wave": 13,
+        "endedAt": 1777909516718,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7457049887855611904",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777903229834,
+            "endedBy": "7183780338227744768",
+            "startedAt": 1777902347032
+          },
+          {
+            "endedAt": 1777908453777,
+            "endedBy": "7183780338227744768",
+            "startedAt": 1777908368311
+          }
+        ],
+        "createdAt": 1777899238552,
+        "wave": 13,
+        "endedAt": 1777908585440,
+        "endedBy": "7183780338227744768"
+      },
+      {
+        "id": "7457047289421369344",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777898619037,
+        "wave": 13,
+        "endedAt": 1777902536033
+      },
+      {
+        "id": "7457044605620457472",
+        "serverId": "7411142732405542912",
+        "memberId": "7456459220011978752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777902270910,
+            "startedAt": 1777902233711
+          },
+          {
+            "endedAt": 1777903465239,
+            "startedAt": 1777902991446
+          }
+        ],
+        "createdAt": 1777897979169,
+        "wave": 13,
+        "endedAt": 1777903465239
+      },
+      {
+        "id": "7457044461919408128",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777903554494,
+            "startedAt": 1777903554407
+          }
+        ],
+        "createdAt": 1777897944908,
+        "wave": 13,
+        "endedAt": 1777903554494
+      },
+      {
+        "id": "7457044165281452032",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777902241307,
+            "startedAt": 1777901824157
+          }
+        ],
+        "createdAt": 1777897874184,
+        "wave": 13,
+        "endedAt": 1777902241307
+      },
+      {
+        "id": "7457044033437700096",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777897842750,
+        "wave": 13,
+        "endedAt": 1777897844834
+      },
+      {
+        "id": "7457044011065282560",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777897837416,
+        "wave": 13,
+        "endedAt": 1777897840366
+      },
+      {
+        "id": "7457043899446464512",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777898990975,
+            "startedAt": 1777898841856
+          }
+        ],
+        "createdAt": 1777897810804,
+        "wave": 13,
+        "endedAt": 1777902294102
+      },
+      {
+        "id": "7457038240747360256",
+        "serverId": "7411142732405542912",
+        "memberId": "7415480980384780288",
+        "breakTimestamps": [],
+        "createdAt": 1777896461665,
+        "wave": 13,
+        "endedAt": 1777897070302
+      },
+      {
+        "id": "7457032683693019136",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777896376124,
+            "startedAt": 1777896177517
+          },
+          {
+            "endedAt": 1777897484074,
+            "startedAt": 1777897067330
+          }
+        ],
+        "createdAt": 1777895136760,
+        "wave": 13,
+        "endedAt": 1777897484074
+      },
+      {
+        "id": "7457031384461217792",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777894826999,
+        "wave": 13,
+        "endedAt": 1777897536693
+      },
+      {
+        "id": "7457031356111917056",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777898032302,
+            "endedBy": "7448078155450945536",
+            "startedAt": 1777897293000
+          }
+        ],
+        "createdAt": 1777894820240,
+        "wave": 13,
+        "endedAt": 1777901092213,
+        "endedBy": "7448078155450945536"
+      },
+      {
+        "id": "7457031031107883008",
+        "serverId": "7411142732405542912",
+        "memberId": "7177584778789523456",
+        "breakTimestamps": [],
+        "createdAt": 1777894742753,
+        "wave": 13,
+        "endedAt": 1777894745196,
+        "endedBy": "7177584778789523456"
+      },
+      {
+        "id": "7457030835502321664",
+        "serverId": "7411142732405542912",
+        "memberId": "7456690602126610432",
+        "breakTimestamps": [],
+        "createdAt": 1777894696117,
+        "wave": 13,
+        "endedAt": 1777899838712,
+        "endedBy": "7456690602126610432"
+      },
+      {
+        "id": "7457029702276878336",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777894425935,
+        "wave": 13,
+        "endedAt": 1777897505041
+      },
+      {
+        "id": "7457029624699031552",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777894407440,
+        "wave": 13,
+        "endedAt": 1777894409504
+      },
+      {
+        "id": "7457027210164047872",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777893831769,
+        "wave": 13,
+        "endedAt": 1777894190101
+      },
+      {
+        "id": "7457025135887781888",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777893337223,
+        "wave": 13,
+        "endedAt": 1777897932927,
+        "endedBy": "7330247772681015296"
+      },
+      {
+        "id": "7457024621955518464",
+        "serverId": "7411142732405542912",
+        "memberId": "7134552192723193856",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777893359256,
+            "startedAt": 1777893326125
+          }
+        ],
+        "createdAt": 1777893214692,
+        "wave": 13,
+        "endedAt": 1777897516640
+      },
+      {
+        "id": "7457022907319848960",
+        "serverId": "7411142732405542912",
+        "memberId": "7177584778789523456",
+        "breakTimestamps": [],
+        "createdAt": 1777892805891,
+        "wave": 13,
+        "endedAt": 1777894738833,
+        "endedBy": "7177584778789523456"
+      },
+      {
+        "id": "7457022012142129152",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777893990288,
+            "startedAt": 1777893482562
+          }
+        ],
+        "createdAt": 1777892592464,
+        "wave": 13,
+        "endedAt": 1777893990288
+      },
+      {
+        "id": "7457021778909466624",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777892536857,
+        "wave": 13,
+        "endedAt": 1777896146043
+      },
+      {
+        "id": "7457021752133029888",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777892530473,
+        "wave": 13,
+        "endedAt": 1777892534661
+      },
+      {
+        "id": "7457020902987796480",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777892328021,
+        "wave": 13,
+        "endedAt": 1777893327952,
+        "endedBy": "7330247772681015296"
+      },
+      {
+        "id": "7457020862303047680",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777892318321,
+        "wave": 13,
+        "endedAt": 1777892325819
+      },
+      {
+        "id": "7457020634762055680",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777892264071,
+        "wave": 13,
+        "endedAt": 1777892266280
+      },
+      {
+        "id": "7457019821666865152",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777892070214,
+        "wave": 13,
+        "endedAt": 1777892093319,
+        "endedBy": "7330247772681015296"
+      },
+      {
+        "id": "7457018554773147648",
+        "serverId": "7411142732405542912",
+        "memberId": "7373018484151685120",
+        "breakTimestamps": [],
+        "createdAt": 1777891768163,
+        "wave": 13,
+        "endedAt": 1777895186584,
+        "endedBy": "7373018484151685120"
+      },
+      {
+        "id": "7457018231933374464",
+        "serverId": "7411142732405542912",
+        "memberId": "7415480980384780288",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777893710181,
+            "endedBy": "7415480980384780288",
+            "startedAt": 1777893575567
+          }
+        ],
+        "createdAt": 1777891691192,
+        "wave": 13,
+        "endedAt": 1777894610814
+      },
+      {
+        "id": "7457018141197996032",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777891669559,
+        "wave": 13,
+        "endedAt": 1777894807860
+      },
+      {
+        "id": "7457017871827210240",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777891605336,
+        "wave": 13,
+        "endedAt": 1777892062424,
+        "endedBy": "7330247772681015296"
+      },
+      {
+        "id": "7457017808115732480",
+        "serverId": "7411142732405542912",
+        "memberId": "7456459220011978752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777892696738,
+            "startedAt": 1777892592014
+          },
+          {
+            "endedAt": 1777893147432,
+            "startedAt": 1777892699735
+          },
+          {
+            "endedAt": 1777894456901,
+            "startedAt": 1777894293893
+          }
+        ],
+        "createdAt": 1777891590146,
+        "wave": 13,
+        "endedAt": 1777895245492
+      },
+      {
+        "id": "7457017544742801408",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777891527353,
+        "wave": 13,
+        "endedAt": 1777891666550,
+        "endedBy": "7448078155450945536"
+      },
+      {
+        "id": "7457017473485770752",
+        "serverId": "7411142732405542912",
+        "memberId": "7456463704721199104",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777894926089,
+            "startedAt": 1777894700157
+          }
+        ],
+        "createdAt": 1777891510364,
+        "wave": 13,
+        "endedAt": 1777895961402
+      },
+      {
+        "id": "7457017315616362496",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777891472725,
+        "wave": 13,
+        "endedAt": 1777891522534,
+        "endedBy": "7448078155450945536"
+      },
+      {
+        "id": "7457017231851917312",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777891452754,
+        "wave": 13,
+        "endedAt": 1777891466671,
+        "endedBy": "7448078155450945536"
+      },
+      {
+        "id": "7456814650206720000",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777843153526,
+        "wave": 13,
+        "endedAt": 1777844653067,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456812836719693824",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777842721157,
+        "wave": 13,
+        "endedAt": 1777844653067,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456812609795264512",
+        "serverId": "7411142732405542912",
+        "memberId": "7456035746340671488",
+        "breakTimestamps": [],
+        "createdAt": 1777842667054,
+        "wave": 13,
+        "endedAt": 1777844501210,
+        "endedBy": "7456035746340671488"
+      },
+      {
+        "id": "7456809756749991936",
+        "serverId": "7411142732405542912",
+        "memberId": "7456463704721199104",
+        "breakTimestamps": [],
+        "createdAt": 1777841986835,
+        "wave": 13,
+        "endedAt": 1777844199319
+      },
+      {
+        "id": "7456809276036616192",
+        "serverId": "7411142732405542912",
+        "memberId": "7456459220011978752",
+        "breakTimestamps": [],
+        "createdAt": 1777841872224,
+        "wave": 13,
+        "endedAt": 1777844205864
+      },
+      {
+        "id": "7456807975936593920",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777842363527,
+            "startedAt": 1777842008427
+          }
+        ],
+        "createdAt": 1777841562256,
+        "wave": 13,
+        "endedAt": 1777844423392
+      },
+      {
+        "id": "7456803327116840960",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777840453891,
+        "wave": 13,
+        "endedAt": 1777840922050,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456799248147812352",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777839481389,
+        "wave": 13,
+        "endedAt": 1777844602971,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456797394055729152",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [],
+        "createdAt": 1777839039339,
+        "wave": 13,
+        "endedAt": 1777842693335,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456796987317293056",
+        "serverId": "7411142732405542912",
+        "memberId": "7370379171261845504",
+        "breakTimestamps": [],
+        "createdAt": 1777838942365,
+        "wave": 13,
+        "endedAt": 1777842230245,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456796921940676608",
+        "serverId": "7411142732405542912",
+        "memberId": "7177584778789523456",
+        "breakTimestamps": [],
+        "createdAt": 1777838926778,
+        "wave": 13,
+        "endedAt": 1777844653067
+      },
+      {
+        "id": "7456796037420683264",
+        "serverId": "7411142732405542912",
+        "memberId": "7317230630754848768",
+        "breakTimestamps": [],
+        "createdAt": 1777838715892,
+        "wave": 13,
+        "endedAt": 1777838755393
+      },
+      {
+        "id": "7456795886371213312",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777838679879,
+        "wave": 13,
+        "endedAt": 1777839054963,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456788049519710208",
+        "serverId": "7411142732405542912",
+        "memberId": "7436465920219811840",
+        "breakTimestamps": [],
+        "createdAt": 1777836811428,
+        "wave": 13,
+        "endedAt": 1777842856805,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456784263816417280",
+        "serverId": "7411142732405542912",
+        "memberId": "7317230630754848768",
+        "breakTimestamps": [],
+        "createdAt": 1777835908846,
+        "wave": 13,
+        "endedAt": 1777838686984
+      },
+      {
+        "id": "7456777708148625408",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777834345853,
+        "wave": 13,
+        "endedAt": 1777843949871,
+        "endedBy": "7330247772681015296",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456777377381617664",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777834266992,
+        "wave": 13,
+        "endedAt": 1777841541263,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456774549657358336",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777833592810,
+        "wave": 13,
+        "endedAt": 1777836480898,
+        "endedBy": "7183780338227744768",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456773454793019392",
+        "serverId": "7411142732405542912",
+        "memberId": "7370379171261845504",
+        "breakTimestamps": [],
+        "createdAt": 1777833331774,
+        "wave": 13,
+        "endedAt": 1777837505328,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456773220931211264",
+        "serverId": "7411142732405542912",
+        "memberId": "7437981512466698240",
+        "breakTimestamps": [],
+        "createdAt": 1777833276017,
+        "wave": 13,
+        "endedAt": 1777833287315,
+        "endedBy": "7437981512466698240",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456772360536854528",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777833070883,
+        "wave": 13,
+        "endedAt": 1777834330963,
+        "endedBy": "7330247772681015296"
+      },
+      {
+        "id": "7456768941877104640",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [],
+        "createdAt": 1777832255811,
+        "wave": 13,
+        "endedAt": 1777835873035,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456763235220328448",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777830895238,
+        "wave": 13,
+        "endedAt": 1777835947619,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456762168361357312",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777830640879,
+        "wave": 13,
+        "endedAt": 1777830700507
+      },
+      {
+        "id": "7456758942446653440",
+        "serverId": "7411142732405542912",
+        "memberId": "7456459220011978752",
+        "breakTimestamps": [],
+        "createdAt": 1777829871761,
+        "wave": 13,
+        "endedAt": 1777829875487
+      },
+      {
+        "id": "7456756601957912576",
+        "serverId": "7411142732405542912",
+        "memberId": "7444393888384552960",
+        "breakTimestamps": [],
+        "createdAt": 1777829313745,
+        "wave": 13,
+        "endedAt": 1777830145075
+      },
+      {
+        "id": "7456754192682586112",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777828739329,
+        "wave": 13,
+        "endedAt": 1777830454942,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456752540030341120",
+        "serverId": "7411142732405542912",
+        "memberId": "7456690602126610432",
+        "breakTimestamps": [],
+        "createdAt": 1777828345306,
+        "wave": 13,
+        "endedAt": 1777836463272,
+        "endedBy": "7456690602126610432"
+      },
+      {
+        "id": "7456750095204093952",
+        "serverId": "7411142732405542912",
+        "memberId": "7373018484151685120",
+        "breakTimestamps": [],
+        "createdAt": 1777827762414,
+        "wave": 13,
+        "endedAt": 1777831978264,
+        "endedBy": "7373018484151685120"
+      },
+      {
+        "id": "7456750071988621312",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777828605162,
+            "startedAt": 1777828500441
+          }
+        ],
+        "createdAt": 1777827756879,
+        "wave": 13,
+        "endedAt": 1777829038993,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456748398293553152",
+        "serverId": "7411142732405542912",
+        "memberId": "7444393888384552960",
+        "breakTimestamps": [],
+        "createdAt": 1777827357839,
+        "wave": 13,
+        "endedAt": 1777827908378
+      },
+      {
+        "id": "7456746923010035712",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777827006104,
+        "wave": 13,
+        "endedAt": 1777832277197,
+        "endedBy": "7330247772681015296",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456741346565427200",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777825676576,
+        "wave": 13,
+        "endedAt": 1777832648469,
+        "endedBy": "7420897569099747328"
+      },
+      {
+        "id": "7456740874890776576",
+        "serverId": "7411142732405542912",
+        "memberId": "7317230630754848768",
+        "breakTimestamps": [],
+        "createdAt": 1777825564120,
+        "wave": 13,
+        "endedAt": 1777828417244
+      },
+      {
+        "id": "7456737442154942464",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777828951404,
+            "startedAt": 1777828836041
+          }
+        ],
+        "createdAt": 1777824745692,
+        "wave": 13,
+        "endedAt": 1777828951404
+      },
+      {
+        "id": "7456734525385609216",
+        "serverId": "7411142732405542912",
+        "memberId": "7456035746340671488",
+        "breakTimestamps": [],
+        "createdAt": 1777824050280,
+        "wave": 13,
+        "endedAt": 1777828965207,
+        "endedBy": "7456035746340671488"
+      },
+      {
+        "id": "7456733424343060480",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777823787771,
+        "wave": 13,
+        "endedAt": 1777824917796
+      },
+      {
+        "id": "7456732160557322240",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777823486461,
+        "wave": 13,
+        "endedAt": 1777827752272,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456732087853256704",
+        "serverId": "7411142732405542912",
+        "memberId": "7456035746340671488",
+        "breakTimestamps": [],
+        "createdAt": 1777823469127,
+        "wave": 13,
+        "endedAt": 1777823833684,
+        "endedBy": "7456035746340671488"
+      },
+      {
+        "id": "7456731563770777600",
+        "serverId": "7411142732405542912",
+        "memberId": "7456690602126610432",
+        "breakTimestamps": [],
+        "createdAt": 1777823344176,
+        "wave": 13,
+        "endedAt": 1777827241311,
+        "endedBy": "7456690602126610432"
+      },
+      {
+        "id": "7456728293006381056",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777822564365,
+        "wave": 13,
+        "endedAt": 1777823262024
+      },
+      {
+        "id": "7456724518854201344",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777821664537,
+        "wave": 13,
+        "endedAt": 1777823034253,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456724291141242880",
+        "serverId": "7411142732405542912",
+        "memberId": "7177584778789523456",
+        "breakTimestamps": [],
+        "createdAt": 1777821610246,
+        "wave": 13,
+        "endedAt": 1777825127098
+      },
+      {
+        "id": "7456722086317264896",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777821084575,
+        "wave": 13,
+        "endedAt": 1777822560717
+      },
+      {
+        "id": "7456721562218008576",
+        "serverId": "7411142732405542912",
+        "memberId": "7437981512466698240",
+        "breakTimestamps": [],
+        "createdAt": 1777820959620,
+        "wave": 13,
+        "endedAt": 1777826876006,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456717801013645312",
+        "serverId": "7411142732405542912",
+        "memberId": "7362566900544442368",
+        "breakTimestamps": [],
+        "createdAt": 1777820062879,
+        "wave": 13,
+        "endedAt": 1777820887758,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456707274979938304",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777817553277,
+        "wave": 13,
+        "endedAt": 1777821661619,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456706540808966144",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777817378237,
+        "wave": 13,
+        "endedAt": 1777819857099
+      },
+      {
+        "id": "7456706520470786048",
+        "serverId": "7411142732405542912",
+        "memberId": "7456459220011978752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777818782010,
+            "startedAt": 1777818775024
+          },
+          {
+            "endedAt": 1777819131803,
+            "startedAt": 1777819116657
+          },
+          {
+            "endedAt": 1777819491265,
+            "startedAt": 1777819277656
+          },
+          {
+            "endedAt": 1777820688101,
+            "startedAt": 1777819637344
+          },
+          {
+            "endedAt": 1777823139837,
+            "startedAt": 1777823023530
+          }
+        ],
+        "createdAt": 1777817373388,
+        "wave": 13,
+        "endedAt": 1777829615140
+      },
+      {
+        "id": "7456699769197432832",
+        "serverId": "7411142732405542912",
+        "memberId": "7177584778789523456",
+        "breakTimestamps": [],
+        "createdAt": 1777815763759,
+        "wave": 13,
+        "endedAt": 1777816386573,
+        "endedBy": "7177584778789523456"
+      },
+      {
+        "id": "7456697094003232768",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777815125943,
+        "wave": 13,
+        "endedAt": 1777826099836,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456695977466925056",
+        "serverId": "7411142732405542912",
+        "memberId": "7415480980384780288",
+        "breakTimestamps": [],
+        "createdAt": 1777814859740,
+        "wave": 13,
+        "endedAt": 1777832652676,
+        "endedBy": "7420897569099747328",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456693472725045248",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777814262563,
+        "wave": 13,
+        "endedAt": 1777814324239
+      },
+      {
+        "id": "7456692292628254720",
+        "serverId": "7411142732405542912",
+        "memberId": "7370379171261845504",
+        "breakTimestamps": [],
+        "createdAt": 1777813981206,
+        "wave": 13,
+        "endedAt": 1777818209249
+      },
+      {
+        "id": "7456691813861036032",
+        "serverId": "7411142732405542912",
+        "memberId": "7352285817286430720",
+        "breakTimestamps": [],
+        "createdAt": 1777813867059,
+        "wave": 13,
+        "endedAt": 1777813898397
+      },
+      {
+        "id": "7456691586588479488",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [],
+        "createdAt": 1777813812873,
+        "wave": 13,
+        "endedAt": 1777815944696,
+        "endedBy": "7420897569099747328",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456689019259195392",
+        "serverId": "7411142732405542912",
+        "memberId": "7317230630754848768",
+        "breakTimestamps": [],
+        "createdAt": 1777813200774,
+        "wave": 13,
+        "endedAt": 1777814151953,
+        "endedBy": "7317230630754848768"
+      },
+      {
+        "id": "7456687820975902720",
+        "serverId": "7411142732405542912",
+        "memberId": "7415480980384780288",
+        "breakTimestamps": [],
+        "createdAt": 1777812915081,
+        "wave": 13,
+        "endedAt": 1777814841667
+      },
+      {
+        "id": "7456687376882995200",
+        "serverId": "7411142732405542912",
+        "memberId": "7362566900544442368",
+        "breakTimestamps": [],
+        "createdAt": 1777812809201,
+        "wave": 13,
+        "endedAt": 1777816928440,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456682725576019968",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777811700243,
+        "wave": 13,
+        "endedAt": 1777815933182,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456682520340336640",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777811651311,
+        "wave": 13,
+        "endedAt": 1777812326504,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456682487238889472",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777811643419,
+        "wave": 13,
+        "endedAt": 1777811647043,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456681440323833856",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777811393815,
+        "wave": 13,
+        "endedAt": 1777813875075,
+        "endedBy": "7330247772681015296",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456672901807214592",
+        "serverId": "7411142732405542912",
+        "memberId": "7331980058124357632",
+        "breakTimestamps": [],
+        "createdAt": 1777809358074,
+        "wave": 13,
+        "endedAt": 1777812205013
+      },
+      {
+        "id": "7456671404793008128",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777809001158,
+        "wave": 13,
+        "endedAt": 1777811695534,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456671298152828928",
+        "serverId": "7411142732405542912",
+        "memberId": "7456463704721199104",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777821341774,
+            "startedAt": 1777819122460
+          },
+          {
+            "endedAt": 1777823073873,
+            "startedAt": 1777822581967
+          },
+          {
+            "endedAt": 1777828742246,
+            "startedAt": 1777828542485
+          }
+        ],
+        "createdAt": 1777808975733,
+        "wave": 13,
+        "endedAt": 1777829883857
+      },
+      {
+        "id": "7456668640826363904",
+        "serverId": "7411142732405542912",
+        "memberId": "7361071828082626560",
+        "breakTimestamps": [],
+        "createdAt": 1777808342177,
+        "wave": 13,
+        "endedAt": 1777810839510,
+        "endedBy": "7361071828082626560"
+      },
+      {
+        "id": "7456667664262369280",
+        "serverId": "7411142732405542912",
+        "memberId": "7345892439636316160",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777808119163,
+            "endedBy": "7345892439636316160",
+            "startedAt": 1777808113293
+          },
+          {
+            "endedAt": 1777810301567,
+            "endedBy": "7345892439636316160",
+            "startedAt": 1777809756715
+          }
+        ],
+        "createdAt": 1777808109346,
+        "wave": 13,
+        "endedAt": 1777810301567,
+        "endedBy": "7345892439636316160"
+      },
+      {
+        "id": "7456667464152125440",
+        "serverId": "7411142732405542912",
+        "memberId": "7345892439636316160",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777808094269,
+            "endedBy": "7345892439636316160",
+            "startedAt": 1777808064531
+          }
+        ],
+        "createdAt": 1777808061636,
+        "wave": 13,
+        "endedAt": 1777808102883,
+        "endedBy": "7345892439636316160",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456666740672434176",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777807889145,
+        "wave": 13,
+        "endedAt": 1777810534507,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456665784731832320",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777811081436,
+            "endedBy": "7183780338227744768",
+            "startedAt": 1777810754448
+          },
+          {
+            "endedAt": 1777813322162,
+            "endedBy": "7183780338227744768",
+            "startedAt": 1777813102158
+          }
+        ],
+        "createdAt": 1777807661231,
+        "wave": 13,
+        "endedAt": 1777819193068,
+        "endedBy": "7183780338227744768",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456664177533259776",
+        "serverId": "7411142732405542912",
+        "memberId": "7415480980384780288",
+        "breakTimestamps": [],
+        "createdAt": 1777807278045,
+        "wave": 13,
+        "endedAt": 1777809121701
+      },
+      {
+        "id": "7456664124697612288",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777807265448,
+        "wave": 13,
+        "endedAt": 1777823306211,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456662278503403520",
+        "serverId": "7411142732405542912",
+        "memberId": "7456035746340671488",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777811740946,
+            "endedBy": "7456035746340671488",
+            "startedAt": 1777809988451
+          }
+        ],
+        "createdAt": 1777806825281,
+        "wave": 13,
+        "endedAt": 1777812085792,
+        "endedBy": "7456035746340671488"
+      },
+      {
+        "id": "7456661886344368128",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777806923904,
+            "startedAt": 1777806789972
+          }
+        ],
+        "createdAt": 1777806731783,
+        "wave": 13,
+        "endedAt": 1777809948054
+      },
+      {
+        "id": "7456660879442972672",
+        "serverId": "7411142732405542912",
+        "memberId": "7361071828082626560",
+        "breakTimestamps": [],
+        "createdAt": 1777806491719,
+        "wave": 13,
+        "endedAt": 1777807242031,
+        "endedBy": "7361071828082626560",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456659942338990080",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777806268296,
+        "wave": 13,
+        "endedAt": 1777807254536
+      },
+      {
+        "id": "7456657568983683072",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777806909142,
+            "startedAt": 1777806403754
+          }
+        ],
+        "createdAt": 1777805702444,
+        "wave": 13,
+        "endedAt": 1777813968000
+      },
+      {
+        "id": "7456657568606195712",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777805702354,
+        "wave": 13,
+        "endedAt": 1777810402149
+      },
+      {
+        "id": "7456653727613587456",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [],
+        "createdAt": 1777804786590,
+        "wave": 12,
+        "endedAt": 1777805702225
+      },
+      {
+        "id": "7456653581983158272",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777804751869,
+        "wave": 12,
+        "endedAt": 1777805702210,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456652160671944704",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777805568627,
+            "startedAt": 1777805411409
+          }
+        ],
+        "createdAt": 1777804413002,
+        "wave": 12,
+        "endedAt": 1777805568627
+      },
+      {
+        "id": "7456650420878839808",
+        "serverId": "7411142732405542912",
+        "memberId": "7314028531225202688",
+        "breakTimestamps": [],
+        "createdAt": 1777803998203,
+        "wave": 12,
+        "endedAt": 1777804960884,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456649396109709312",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [],
+        "createdAt": 1777803753879,
+        "wave": 12,
+        "endedAt": 1777807033685,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456647969131991040",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777803413661,
+        "wave": 12,
+        "endedAt": 1777805469901
+      },
+      {
+        "id": "7456646745389273088",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777803121898,
+        "wave": 12,
+        "endedAt": 1777805449760
+      },
+      {
+        "id": "7456646686316695552",
+        "serverId": "7411142732405542912",
+        "memberId": "7317128619698950144",
+        "breakTimestamps": [],
+        "createdAt": 1777803107814,
+        "wave": 12,
+        "endedAt": 1777807944813,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456646144047714304",
+        "serverId": "7411142732405542912",
+        "memberId": "7362566900544442368",
+        "breakTimestamps": [],
+        "createdAt": 1777802978527,
+        "wave": 12,
+        "endedAt": 1777808840376,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456645623131934720",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777813724699,
+            "endedBy": "7448078155450945536",
+            "startedAt": 1777813025702
+          }
+        ],
+        "createdAt": 1777802854331,
+        "wave": 12,
+        "endedAt": 1777825134237,
+        "endedBy": "7448078155450945536",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456467315547181056",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777760342490,
+        "wave": 12,
+        "endedAt": 1777761185132,
+        "endedBy": "7280006112680611840",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456464353789743104",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777759636352,
+        "wave": 12,
+        "endedAt": 1777765197421,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456462693143154688",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777759240423,
+        "wave": 12,
+        "endedAt": 1777760338962
+      },
+      {
+        "id": "7456461315066826752",
+        "serverId": "7411142732405542912",
+        "memberId": "7444393888384552960",
+        "breakTimestamps": [],
+        "createdAt": 1777758911864,
+        "wave": 12,
+        "endedAt": 1777759671108
+      },
+      {
+        "id": "7456459559142428672",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [],
+        "createdAt": 1777758493219,
+        "wave": 12,
+        "endedAt": 1777761045189
+      },
+      {
+        "id": "7456456741073457152",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777757821339,
+        "wave": 12,
+        "endedAt": 1777761517781,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456453641000456192",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777757082224,
+        "wave": 12,
+        "endedAt": 1777767205343,
+        "endedBy": "7448078155450945536",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456451719971475456",
+        "serverId": "7411142732405542912",
+        "memberId": "7362566900544442368",
+        "breakTimestamps": [],
+        "createdAt": 1777756624215,
+        "wave": 12,
+        "endedAt": 1777758605672,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456448210769285120",
+        "serverId": "7411142732405542912",
+        "memberId": "7327271348512755712",
+        "breakTimestamps": [],
+        "createdAt": 1777755787556,
+        "wave": 12,
+        "endedAt": 1777760996607,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456446869648969728",
+        "serverId": "7411142732405542912",
+        "memberId": "7331980058124357632",
+        "breakTimestamps": [],
+        "createdAt": 1777755467808,
+        "wave": 12,
+        "endedAt": 1777764711856,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456445561638490112",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777755155954,
+        "wave": 12,
+        "endedAt": 1777755853899,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456442941851045888",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777754531348,
+        "wave": 12,
+        "endedAt": 1777756166592,
+        "endedBy": "7451576634634670080",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456439773373140992",
+        "serverId": "7411142732405542912",
+        "memberId": "7436465920219811840",
+        "breakTimestamps": [],
+        "createdAt": 1777753775924,
+        "wave": 12,
+        "endedAt": 1777757193939,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456439313123774464",
+        "serverId": "7411142732405542912",
+        "memberId": "7317128619698950144",
+        "breakTimestamps": [],
+        "createdAt": 1777753666192,
+        "wave": 12,
+        "endedAt": 1777756608249,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456432912519401472",
+        "serverId": "7411142732405542912",
+        "memberId": "7331980058124357632",
+        "breakTimestamps": [],
+        "createdAt": 1777752140169,
+        "wave": 12,
+        "endedAt": 1777755463261
+      },
+      {
+        "id": "7456427732126142464",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777750905067,
+        "wave": 12,
+        "endedAt": 1777756157116,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456420155736723456",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777749098715,
+        "wave": 12,
+        "endedAt": 1777754655481
+      },
+      {
+        "id": "7456415058386489344",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777752337839,
+            "startedAt": 1777751216737
+          },
+          {
+            "endedAt": 1777756454919,
+            "startedAt": 1777755893607
+          },
+          {
+            "endedAt": 1777757340823,
+            "startedAt": 1777756902842
+          }
+        ],
+        "createdAt": 1777747883412,
+        "wave": 12,
+        "endedAt": 1777757340823
+      },
+      {
+        "id": "7456412143735279616",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777747188505,
+        "wave": 12,
+        "endedAt": 1777748042618,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456412103717425152",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777747178964,
+        "wave": 12,
+        "endedAt": 1777747186128
+      },
+      {
+        "id": "7456411968648253440",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777747146761,
+        "wave": 12,
+        "endedAt": 1777747175458,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456411516972044288",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777747039073,
+        "wave": 12,
+        "endedAt": 1777759359558,
+        "endedBy": "7330247772681015296",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456398708616204288",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777743985323,
+        "wave": 12,
+        "endedAt": 1777758054791,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456386893970673664",
+        "serverId": "7411142732405542912",
+        "memberId": "7424125839094059008",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777746460491,
+            "startedAt": 1777746255156
+          }
+        ],
+        "createdAt": 1777741168492,
+        "wave": 12,
+        "endedAt": 1777747697696
+      },
+      {
+        "id": "7456377461341687808",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777742895737,
+            "startedAt": 1777741419984
+          }
+        ],
+        "createdAt": 1777738919578,
+        "wave": 12,
+        "endedAt": 1777747142122,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456377014803501056",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777742220553,
+            "startedAt": 1777741610395
+          }
+        ],
+        "createdAt": 1777738813115,
+        "wave": 12,
+        "endedAt": 1777744561679
+      },
+      {
+        "id": "7456371302815764480",
+        "serverId": "7411142732405542912",
+        "memberId": "7352285817286430720",
+        "breakTimestamps": [],
+        "createdAt": 1777737451271,
+        "wave": 12,
+        "endedAt": 1777738357768,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456370994899324928",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777737377859,
+        "wave": 12,
+        "endedAt": 1777743222650,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456363304135430144",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [
+          {
+            "endedAt": 1777738694893,
+            "startedAt": 1777737466096
+          }
+        ],
+        "createdAt": 1777735544237,
+        "wave": 12,
+        "endedAt": 1777738694893
+      },
+      {
+        "id": "7456362216787283968",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777735284993,
+        "wave": 12,
+        "endedAt": 1777743973760,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456361317947936768",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777735070693,
+        "wave": 12,
+        "endedAt": 1777735278893
+      },
+      {
+        "id": "7456311007539892224",
+        "serverId": "7411142732405542912",
+        "memberId": "7330247772681015296",
+        "breakTimestamps": [],
+        "createdAt": 1777723075757,
+        "wave": 12,
+        "endedAt": 1777728018719,
+        "endedBy": "7330247772681015296",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456310649530880000",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777722990401,
+        "wave": 12,
+        "endedAt": 1777723471060,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456310343376048128",
+        "serverId": "7411142732405542912",
+        "memberId": "7183780338227744768",
+        "breakTimestamps": [],
+        "createdAt": 1777722917408,
+        "wave": 12,
+        "endedAt": 1777722986970
+      },
+      {
+        "id": "7456302100197150720",
+        "serverId": "7411142732405542912",
+        "memberId": "7317128619698950144",
+        "breakTimestamps": [],
+        "createdAt": 1777720952081,
+        "wave": 12,
+        "endedAt": 1777721985624,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456292779329589248",
+        "serverId": "7411142732405542912",
+        "memberId": "7429928513475448832",
+        "breakTimestamps": [],
+        "createdAt": 1777718729813,
+        "wave": 12,
+        "endedAt": 1777728095085,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456276576108285952",
+        "serverId": "7411142732405542912",
+        "memberId": "7445952195985412096",
+        "breakTimestamps": [],
+        "createdAt": 1777714866664,
+        "wave": 12,
+        "endedAt": 1777720791037
+      },
+      {
+        "id": "7456275731920719872",
+        "serverId": "7411142732405542912",
+        "memberId": "7451576634634670080",
+        "breakTimestamps": [],
+        "createdAt": 1777714665394,
+        "wave": 12,
+        "endedAt": 1777723701431,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456272565086982144",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [],
+        "createdAt": 1777713910362,
+        "wave": 12,
+        "endedAt": 1777715834152
+      },
+      {
+        "id": "7456271809780912128",
+        "serverId": "7411142732405542912",
+        "memberId": "7134552192723193856",
+        "breakTimestamps": [],
+        "createdAt": 1777713730283,
+        "wave": 12,
+        "endedAt": 1777716802981,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456270795975692288",
+        "serverId": "7411142732405542912",
+        "memberId": "7420897569099747328",
+        "breakTimestamps": [],
+        "createdAt": 1777713488573,
+        "wave": 12,
+        "endedAt": 1777721938423,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456269762419494912",
+        "serverId": "7411142732405542912",
+        "memberId": "7122655021287608320",
+        "breakTimestamps": [],
+        "createdAt": 1777713242154,
+        "wave": 12,
+        "endedAt": 1777723671457,
+        "endedBy": "7122655021287608320",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456268434502848512",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777712925554,
+        "wave": 12,
+        "endedAt": 1777718547615
+      },
+      {
+        "id": "7456267810692403200",
+        "serverId": "7411142732405542912",
+        "memberId": "7352285817286430720",
+        "breakTimestamps": [],
+        "createdAt": 1777712776826,
+        "wave": 12,
+        "endedAt": 1777714731658,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456266712262905856",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777712514940,
+        "wave": 12,
+        "endedAt": 1777717254940,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456266090218262528",
+        "serverId": "7411142732405542912",
+        "memberId": "7448078155450945536",
+        "breakTimestamps": [],
+        "createdAt": 1777712366633,
+        "wave": 12,
+        "endedAt": 1777712508020,
+        "endedBy": "7448078155450945536"
+      },
+      {
+        "id": "7456264466649321472",
+        "serverId": "7411142732405542912",
+        "memberId": "7317128619698950144",
+        "breakTimestamps": [],
+        "createdAt": 1777711979544,
+        "wave": 12,
+        "endedAt": 1777718603037,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456263370816098304",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777711718277,
+        "wave": 12,
+        "endedAt": 1777717854600
+      },
+      {
+        "id": "7456263095703310336",
+        "serverId": "7411142732405542912",
+        "memberId": "7296904071527534592",
+        "breakTimestamps": [],
+        "createdAt": 1777711652685,
+        "wave": 12,
+        "endedAt": 1777712547936,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456110796716642304",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777675341777,
+        "wave": 12,
+        "endedAt": 1777675405256
+      },
+      {
+        "id": "7456102257499574272",
+        "serverId": "7411142732405542912",
+        "memberId": "7280006112680611840",
+        "breakTimestamps": [],
+        "createdAt": 1777673305869,
+        "wave": 12,
+        "endedAt": 1777675314290,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456097036094410752",
+        "serverId": "7411142732405542912",
+        "memberId": "7446180418639892480",
+        "breakTimestamps": [],
+        "createdAt": 1777672060989,
+        "wave": 12,
+        "endedAt": 1777675314290,
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456096269887344640",
+        "serverId": "7411142732405542912",
+        "memberId": "7373018484151685120",
+        "breakTimestamps": [],
+        "createdAt": 1777671878311,
+        "wave": 12,
+        "endedAt": 1777674578059,
+        "endedBy": "7437981512466698240",
+        "type": "7446575298750976000"
+      },
+      {
+        "id": "7456094082155155456",
+        "serverId": "7411142732405542912",
+        "memberId": "7413767188554715136",
+        "breakTimestamps": [],
+        "createdAt": 1777671356715,
+        "wave": 12,
+        "endedAt": 1777671666429
+      },
+      {
+        "id": "7456090669740724224",
+        "serverId": "7411142732405542912",
+        "memberId": "7455309935627210752",
+        "breakTimestamps": [],
+        "createdAt": 1777670543132,
+        "wave": 12,
+        "endedAt": 1777675314290
+      }
+    ],
+    "logs": [
+      {
+        "id": "7457092971230400512",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Racist.",
+        "createdAt": 1777909510429,
+        "createdBy": "7327271348512755712",
+        "editedBy": [
+          "7445952195985412096"
+        ],
+        "username": "shhhhh582",
+        "robloxId": "5527887900",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7457092911474151424",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Racist.",
+        "createdAt": 1777909496182,
+        "createdBy": "7327271348512755712",
+        "editedBy": [
+          "7445952195985412096"
+        ],
+        "username": "shhhhhh",
+        "robloxId": "5853200",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7457088382254977024",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "Allowed to do Kidnapping rp.",
+        "createdAt": 1777908416333,
+        "createdBy": "7445952195985412096",
+        "editedBy": [],
+        "username": "shhhhh582",
+        "robloxId": "5527887900",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079958163165184",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA",
+        "createdAt": 1777906407872,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Robo_King66",
+        "robloxId": "1414601238",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079469635801088",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777906291398,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "nesinesi126",
+        "robloxId": "8041180446",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079433778696192",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777906282849,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "nesinesi126",
+        "robloxId": "8041180446",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079423469096960",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777906280391,
+        "createdBy": "7134552192723193856",
+        "editedBy": [],
+        "username": "Redlic372",
+        "robloxId": "2349333971",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079383203778560",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Exploiting",
+        "createdAt": 1777906270791,
+        "createdBy": "7134552192723193856",
+        "editedBy": [],
+        "username": "Redlic372",
+        "robloxId": "2349333971",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079371434561536",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "NITRP , LTAP",
+        "createdAt": 1777906267985,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "nesinesi126",
+        "completedBy": "7183780338227744768",
+        "robloxId": "8041180446",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079305395245056",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777906252240,
+        "createdBy": "7134552192723193856",
+        "editedBy": [],
+        "username": "Redlic372",
+        "robloxId": "2349333971",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457079070589718528",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "RDM.",
+        "createdAt": 1777906196258,
+        "createdBy": "7455309935627210752",
+        "editedBy": [],
+        "username": "0_024kvibes",
+        "robloxId": "2747349136",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457077556336922624",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777905835232,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Patrickmorrissey37",
+        "robloxId": "10519624057",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457077530349015040",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "NITRP, LTAP",
+        "createdAt": 1777905829036,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Patrickmorrissey37",
+        "completedBy": "7183780338227744768",
+        "robloxId": "10519624057",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457077392889090048",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777905796264,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Patrickmorrissey37",
+        "robloxId": "10519624057",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457075743068000256",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA",
+        "createdAt": 1777905402915,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "0_024kvibes",
+        "robloxId": "2747349136",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457067637814595584",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "ma kick all",
+        "createdAt": 1777903470472,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "thisis_not23adomaga",
+        "robloxId": "10745300535",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457066908773257216",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777903296655,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "thisis_not23adomaga",
+        "robloxId": "10745300535",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457065922390396928",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777903061483,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "WindowsXP_KAT",
+        "robloxId": "155257126",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457065908721160192",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "trolling",
+        "createdAt": 1777903058224,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "WindowsXP_KAT",
+        "robloxId": "155257126",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457065193642659841",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Using UC livery, Hew isn't WL.",
+        "createdAt": 1777902887736,
+        "createdBy": "7373018484151685120",
+        "editedBy": [],
+        "username": "jeffbob55w",
+        "robloxId": "1650736686",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457062326177370112",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "NITRP, Staff ev , GTA",
+        "createdAt": 1777902204079,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "tjtowers0",
+        "robloxId": "1376951168",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457062208556503040",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777902176036,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "tjtowers0",
+        "robloxId": "1376951168",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457061789633613824",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Staff Evasion, Incorrect Livery.",
+        "createdAt": 1777902076157,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "florinplayer",
+        "robloxId": "65088971",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457061720343711744",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777902059637,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "gumbox123",
+        "robloxId": "842018097",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457061654421835776",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "LTAP,NITRP",
+        "createdAt": 1777902043920,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "gumbox123",
+        "completedBy": "7183780338227744768",
+        "robloxId": "842018097",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457061144348332032",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "NITRP",
+        "createdAt": 1777901922309,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "aapplecandyy",
+        "robloxId": "176924383",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457061039188742144",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "NITRP",
+        "createdAt": 1777901897237,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "LegoMonarch",
+        "robloxId": "1620978554",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457060941553733632",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777901873959,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "aapplecandyy",
+        "robloxId": "176924383",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457060763828490240",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777901831586,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "LegoMonarch",
+        "robloxId": "1620978554",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457060263687098368",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "SRDM.",
+        "createdAt": 1777901712343,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "Mr_panda2013",
+        "robloxId": "977534277",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457059711452450816",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush",
+        "createdAt": 1777901580680,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Mr_panda2013",
+        "robloxId": "977534277",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457058535394775040",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Bug Abuse",
+        "createdAt": 1777901300286,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "ooE38wjco",
+        "robloxId": "1835583175",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457058351029948416",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777901256330,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "BLOXBURG_00004",
+        "robloxId": "9909654937",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457058332746977280",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Wasting staff time, spamming mod, NITRP, Trolling.",
+        "createdAt": 1777901251971,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "BLOXBURG_00004",
+        "robloxId": "9909654937",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457057498449580032",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Wasting mod time.",
+        "createdAt": 1777901053059,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "BLOXBURG_00004",
+        "robloxId": "9909654937",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457057379419426816",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Returned and stabbed a mod again",
+        "createdAt": 1777901024680,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "freddierobot999",
+        "robloxId": "1230569203",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457057364433178624",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Returned and stabbed a mod again",
+        "createdAt": 1777901021107,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "freddierobot999",
+        "robloxId": "1230569203",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457057156051767296",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "SVDM Staff evaison staff RDM",
+        "createdAt": 1777900971425,
+        "createdBy": "7424125839094059008",
+        "editedBy": [
+          "7424125839094059008"
+        ],
+        "username": "nicholasmarkovich37",
+        "robloxId": "1565078668",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7457057113764794368",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Interfering with MS",
+        "createdAt": 1777900961343,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "nicholasmarkovich37",
+        "robloxId": "1565078668",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457057023297851392",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "SRDM",
+        "createdAt": 1777900939774,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "nicholasmarkovich37",
+        "robloxId": "1565078668",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457056974253854720",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Interrupting a MS.",
+        "createdAt": 1777900928081,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "freddierobot999",
+        "robloxId": "1230569203",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457056905605681152",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "ASRDM.",
+        "createdAt": 1777900911714,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "freddierobot999",
+        "robloxId": "1230569203",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457056614990745600",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA",
+        "createdAt": 1777900842426,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "bestoneHXisme1st",
+        "robloxId": "976640135",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457054548163563520",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777900349656,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Inkyxyi",
+        "robloxId": "4170140330",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457054166091829248",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "LTAP,NITRP",
+        "createdAt": 1777900258564,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Inkyxyi",
+        "completedBy": "7183780338227744768",
+        "robloxId": "4170140330",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457052848728051712",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA, Driving.",
+        "createdAt": 1777899944479,
+        "createdBy": "7183780338227744768",
+        "editedBy": [],
+        "username": "Inkyxyi",
+        "robloxId": "4170140330",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457052761373282304",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "VDM",
+        "createdAt": 1777899923652,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Beaniebacon0",
+        "robloxId": "3181186012",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457051680194957312",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "SRDM.",
+        "createdAt": 1777899665879,
+        "createdBy": "7446180418639892480",
+        "editedBy": [],
+        "username": "lhw160510",
+        "robloxId": "905115495",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457051551421435904",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777899635177,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "InvasionElectro",
+        "robloxId": "456881566",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457051424833146880",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "SVDM VDM staff evaison GTAD",
+        "createdAt": 1777899604996,
+        "createdBy": "7424125839094059008",
+        "editedBy": [
+          "7424125839094059008"
+        ],
+        "username": "InvasionElectro",
+        "robloxId": "456881566",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7457050965724631040",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "refuse to change livery and staff evasion.",
+        "createdAt": 1777899495536,
+        "createdBy": "7446180418639892480",
+        "editedBy": [],
+        "username": "bedderz111",
+        "robloxId": "3738304280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457050075890454528",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777899283383,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "toolsie12",
+        "robloxId": "1117348975",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457050067120164864",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Hacking",
+        "createdAt": 1777899281292,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "toolsie12",
+        "robloxId": "1117348975",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457049267950063616",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "RDM Staff",
+        "createdAt": 1777899090755,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "lhw160510",
+        "robloxId": "905115495",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457048707406499840",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Staff car towing.",
+        "createdAt": 1777898957111,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "bedderz111",
+        "robloxId": "3738304280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457047947931291648",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777898776038,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "SuperMonkeyMetal",
+        "robloxId": "1461840648",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457047935822336000",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Rejoin after kick Staff disrespect and Trolling",
+        "createdAt": 1777898773151,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "SuperMonkeyMetal",
+        "robloxId": "1461840648",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457047462163779584",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Member disrespect",
+        "createdAt": 1777898660222,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "C1UTCHB0Y",
+        "robloxId": "7156281344",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457047237135175680",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777898606571,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "SuperMonkeyMetal",
+        "robloxId": "1461840648",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457047220232130560",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "svdm and interupting mod scene.",
+        "createdAt": 1777898602541,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "SuperMonkeyMetal",
+        "robloxId": "1461840648",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457046259954618368",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777898373593,
+        "createdBy": "7325263253590773760",
+        "editedBy": [],
+        "username": "Pixel345S",
+        "robloxId": "4619364739",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457038898871406592",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "ToS breach",
+        "createdAt": 1777896618574,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "lxDARKSTARxl",
+        "robloxId": "181719579",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457038808526098432",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777896597034,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "lxDARKSTARxl",
+        "robloxId": "181719579",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457034591388307456",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Trolling, and lifing up my car with the new truck",
+        "createdAt": 1777895591590,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "Cross2611",
+        "robloxId": "2411309198",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457034493052850176",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777895568145,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "Cross2611",
+        "robloxId": "2411309198",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457034046858596352",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777895461764,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "infer",
+        "robloxId": "1519633",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457033855665442816",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Staff Evasion, Staff VDM.",
+        "createdAt": 1777895416180,
+        "createdBy": "7445952195985412096",
+        "editedBy": [],
+        "username": "0400000000000000000",
+        "robloxId": "8904433745",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457033188435562496",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTAD",
+        "createdAt": 1777895257100,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "Unspeakable10345",
+        "robloxId": "2387126209",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457032637312405504",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777895125702,
+        "createdBy": "7413767188554715136",
+        "editedBy": [],
+        "username": "infer",
+        "robloxId": "1519633",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457030056104169472",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo Completed.",
+        "createdAt": 1777894510294,
+        "createdBy": "7445952195985412096",
+        "editedBy": [
+          "7445952195985412096"
+        ],
+        "username": "kinguswad123",
+        "robloxId": "7786298686",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7457030045161230336",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777894507685,
+        "createdBy": "7134552192723193856",
+        "editedBy": [],
+        "username": "kinguswad123",
+        "robloxId": "7786298686",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457029777963094016",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "LTAPPED on me",
+        "createdAt": 1777894443980,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "kinguswad123",
+        "robloxId": "7786298686",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457029587407474688",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Evasion from Staff, GTA Driving 3+ warnings",
+        "createdAt": 1777894398548,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "kinguswad123",
+        "completedBy": "7134552192723193856",
+        "robloxId": "7786298686",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457028506803769344",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Staff evasion Driving off from a stop.",
+        "createdAt": 1777894140912,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "kinguswad123",
+        "robloxId": "7786298686",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457028441578147840",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Wrong livery and faliure to change.",
+        "createdAt": 1777894125361,
+        "createdBy": "7448078155450945536",
+        "editedBy": [],
+        "username": "kinguswad123",
+        "robloxId": "7786298686",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457028316122320896",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "VDM",
+        "createdAt": 1777894095450,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "farhan768768",
+        "robloxId": "8964800043",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457028294353883136",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "3+ warnings",
+        "createdAt": 1777894090260,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "farhan768768",
+        "completedBy": "7445952195985412096",
+        "robloxId": "8964800043",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457028200644743168",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777894067918,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "farhan768768",
+        "robloxId": "8964800043",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457027824520531968",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "VDM",
+        "createdAt": 1777893978243,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "JIM30039",
+        "robloxId": "4722431046",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457027452905197568",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "VDM",
+        "createdAt": 1777893889643,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "farhan768768",
+        "robloxId": "8964800043",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7457026913542868992",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Failure to comply, No intent to roleplay",
+        "createdAt": 1777893761049,
+        "createdBy": "7415480980384780288",
+        "editedBy": [],
+        "username": "farhan768768",
+        "robloxId": "8964800043",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456814388222103552",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Attempted Tow rush.",
+        "createdAt": 1777843091064,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "gorge5063",
+        "robloxId": "1527374825",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456814340159574016",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777843079605,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "ferret_59",
+        "robloxId": "2982326641",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456813961627832320",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Evasion + Cop Baiting",
+        "createdAt": 1777842989356,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "72lukejr18",
+        "robloxId": "7785558380",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456813258045919232",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777842821609,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "tinymouse900",
+        "robloxId": "1747482986",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456813202181984256",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "LTAP, Left before he was told.",
+        "createdAt": 1777842808290,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "tinymouse900",
+        "robloxId": "1747482986",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456813024943280128",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush.",
+        "createdAt": 1777842766033,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "tinymouse900",
+        "robloxId": "1747482986",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456812213924270080",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP. W1",
+        "createdAt": 1777842572671,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "iQasL",
+        "robloxId": "1293696473",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456810819200749568",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "x2 Logged Warning offences",
+        "createdAt": 1777842240143,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "Danyrrrrrrr",
+        "robloxId": "3163647585",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456810552002613248",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP",
+        "createdAt": 1777842176438,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "Danyrrrrrrr",
+        "robloxId": "3163647585",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456810173756084224",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush",
+        "createdAt": 1777842086257,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "wca3e",
+        "robloxId": "1125331350",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456810038288453632",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush",
+        "createdAt": 1777842053959,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "Strvain12345",
+        "robloxId": "9290738256",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456807047783256064",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Wrong Uniform",
+        "createdAt": 1777841340967,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "Jordanwoobly",
+        "robloxId": "3169691803",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456806983627182080",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP",
+        "createdAt": 1777841325671,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "Jordanwoobly",
+        "robloxId": "3169691803",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456805253233512448",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777840913113,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "Finnhero6",
+        "robloxId": "1176551917",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456805197587681280",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777840899846,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "Finnhero6",
+        "robloxId": "1176551917",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456805187982725120",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777840897556,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "Finnhero6",
+        "robloxId": "1176551917",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456805163190194176",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "He said a racial slur, then LTAP.",
+        "createdAt": 1777840891645,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "Finnhero6",
+        "completedBy": "7370379171261845504",
+        "robloxId": "1176551917",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456803959097790464",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "VW - Wrong uniform",
+        "createdAt": 1777840604567,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "marssss354",
+        "robloxId": "10839770605",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456803909244293120",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Unrealistic avatar (won't change).",
+        "createdAt": 1777840592681,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "BadCrusader_46",
+        "robloxId": "3865104984",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456803751517491200",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "tool abuse.",
+        "createdAt": 1777840555076,
+        "createdBy": "7327271348512755712",
+        "editedBy": [],
+        "username": "gorge5063",
+        "robloxId": "1527374825",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456803294946529280",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP",
+        "createdAt": 1777840446221,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "gorge5063",
+        "robloxId": "1527374825",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456801687768928256",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "W1 FRP",
+        "createdAt": 1777840063040,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "Thedarklord1092",
+        "robloxId": "691815511",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456800747166896128",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "warning 2 FRP (autojail).",
+        "createdAt": 1777839838783,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "marssss354",
+        "robloxId": "10839770605",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456800612236136448",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "W1 cuff rush.",
+        "createdAt": 1777839806613,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "marssss354",
+        "robloxId": "10839770605",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456800314717376512",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "BAN BOLO COMPLETED.",
+        "createdAt": 1777839735679,
+        "createdBy": "7436465920219811840",
+        "editedBy": [
+          "7436465920219811840"
+        ],
+        "username": "Rotrexalt34",
+        "robloxId": "3237715395",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7456800288196792320",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Was going to kick for another false mod call but LTAP.",
+        "createdAt": 1777839729357,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "Rotrexalt34",
+        "completedBy": "7436465920219811840",
+        "robloxId": "3237715395",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456800166352261120",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777839700306,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "kornersplaza",
+        "robloxId": "2712256092",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456800120013590528",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Tool Abuse, Cuff Rush, Staff Evasion.",
+        "createdAt": 1777839689258,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "kornersplaza",
+        "robloxId": "2712256092",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799720527106048",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777839594013,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "lntothestars",
+        "robloxId": "240287315",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799716819341312",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "W1 not doing NLR.",
+        "createdAt": 1777839593129,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "Altofrotrex1",
+        "robloxId": "3214586374",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799694035881984",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Glitching car under map with tow truck/",
+        "createdAt": 1777839587697,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "lntothestars",
+        "robloxId": "240287315",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799654487789568",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777839578268,
+        "createdBy": "7327271348512755712",
+        "editedBy": [],
+        "username": "dexterh33323",
+        "robloxId": "10207263737",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799621684137984",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "NITRP, auto jail, cuff rush.",
+        "createdAt": 1777839570447,
+        "createdBy": "7327271348512755712",
+        "editedBy": [],
+        "username": "dexterh33323",
+        "robloxId": "10207263737",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456799494043078656",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "False mod call.",
+        "createdAt": 1777839540015,
+        "createdBy": "7436465920219811840",
+        "editedBy": [],
+        "username": "Rotrexalt34",
+        "robloxId": "3237715395",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456798937752539136",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777839407385,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "hihihihi",
+        "robloxId": "38187",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456798895197130752",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "LTAP, nitrp, frp, vdm",
+        "createdAt": 1777839397239,
+        "createdBy": "7327271348512755712",
+        "editedBy": [],
+        "username": "hihihihihi34671",
+        "robloxId": "3109907654",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797731231633408",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "cuff rush, auto jail",
+        "createdAt": 1777839119728,
+        "createdBy": "7327271348512755712",
+        "editedBy": [],
+        "username": "MKB967",
+        "robloxId": "4806108080",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797206142521344",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777838994537,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797179454164992",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Exploits.",
+        "createdAt": 1777838988174,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797132641538048",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777838977013,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797053427912704",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777838958127,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797043323834368",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777838955718,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456797009895231488",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777838947748,
+        "createdBy": "7370379171261845504",
+        "editedBy": [],
+        "username": "od_6i",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456796813094293504",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "exploiting ins erver rn",
+        "createdAt": 1777838900827,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "od_6i",
+        "completedBy": "7370379171261845504",
+        "robloxId": "10856813280",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456786045556756480",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "perms to rob bank.",
+        "createdAt": 1777836333646,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "Denisdailyline2",
+        "robloxId": "2293754436",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456785946508267520",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "Perms to rob bank.",
+        "createdAt": 1777836310031,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "800x62",
+        "robloxId": "1856251166",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456778531477917696",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "W1 cuff rush.",
+        "createdAt": 1777834542150,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "sigmakriper3219",
+        "robloxId": "6130255223",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456778251654926336",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777834475435,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "HarryHarry9977",
+        "robloxId": "7271281380",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456778016115396608",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "LTAP. Un-Realistic Avatar, refusing to change it.",
+        "createdAt": 1777834419278,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "HarryHarry9977",
+        "robloxId": "7271281380",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456767299584790528",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777831864258,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "banna",
+        "robloxId": "104553",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456761784158916608",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "w1 cuff rush.",
+        "createdAt": 1777830549278,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "KStloukal",
+        "robloxId": "2684476341",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758981113942016",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829880980,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "OliviaFox21YT",
+        "robloxId": "10677272710",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758863769899008",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829853003,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "AriaDark201713",
+        "robloxId": "10677267037",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758754042712064",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777829826842,
+        "createdBy": "7456690602126610432",
+        "editedBy": [],
+        "username": "XxMinerM00nLegendxX2",
+        "robloxId": "10677288325",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758678155169792",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777829808749,
+        "createdBy": "7456690602126610432",
+        "editedBy": [],
+        "username": "HawkCraz3Galaxy",
+        "robloxId": "10394603936",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758563768111104",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829781477,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "Rift_Aqua201147",
+        "robloxId": "10677242345",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758314056028160",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829721941,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "XxGamerAceNeonxX2011",
+        "robloxId": "10394613575",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758143062642688",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cop Baiting",
+        "createdAt": 1777829681173,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Oliviahilford",
+        "robloxId": "1577183363",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456758059801513984",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829661322,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "XxFoxEchoEaglexX",
+        "robloxId": "10394730929",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456757926292623360",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "bot.",
+        "createdAt": 1777829629491,
+        "createdBy": "7330247772681015296",
+        "editedBy": [],
+        "username": "LavaHaz3Cooki3",
+        "robloxId": "10394618783",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456757763360690176",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "RDM Staff and Evade",
+        "createdAt": 1777829590645,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Milkshk4",
+        "robloxId": "6005511759",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456757154939146240",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "False Report",
+        "createdAt": 1777829445586,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Milkshk4",
+        "robloxId": "6005511759",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456756654873251840",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTAD",
+        "createdAt": 1777829326361,
+        "createdBy": "7444393888384552960",
+        "editedBy": [],
+        "username": "bestoneHXisme1st",
+        "robloxId": "976640135",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456755455658823680",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777829040446,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "824specialforces",
+        "robloxId": "2593837971",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456753898372468736",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777828669160,
+        "createdBy": "7304682263415885824",
+        "editedBy": [],
+        "username": "wellzy321",
+        "robloxId": "1699363925",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456752911947665408",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA",
+        "createdAt": 1777828433978,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Stupidity_26",
+        "robloxId": "4121815474",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456751568491122688",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "LTAP, Attempted Staff RDM, False Mod-Call",
+        "createdAt": 1777828113673,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "824specialforces",
+        "completedBy": "7420897569099747328",
+        "robloxId": "2593837971",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456751419241009152",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Staff RDM (attempted)",
+        "createdAt": 1777828078089,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "824specialforces",
+        "robloxId": "2593837971",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456751156459474944",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "False Mod-Call",
+        "createdAt": 1777828015437,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "824specialforces",
+        "robloxId": "2593837971",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456750282337161216",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTAD",
+        "createdAt": 1777827807030,
+        "createdBy": "7444393888384552960",
+        "editedBy": [],
+        "username": "eboythclown",
+        "robloxId": "1816774788",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456750086031151104",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777827760227,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "Boo_TheNinja",
+        "robloxId": "1172147868",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456749504688033792",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777827621624,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "TheRealKadePlayz",
+        "robloxId": "1040322075",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456749297426501632",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "NITRP",
+        "createdAt": 1777827572209,
+        "createdBy": "7444393888384552960",
+        "editedBy": [],
+        "username": "Mathrew8",
+        "robloxId": "5515518282",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456749237905133568",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777827558018,
+        "createdBy": "7304682263415885824",
+        "editedBy": [],
+        "username": "Mathrew8",
+        "robloxId": "5515518282",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456748812015505408",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777827456478,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "Doggylover123c",
+        "robloxId": "1898174306",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456748621891899392",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777827411150,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "Hammysike13",
+        "robloxId": "2562134701",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456748382036430848",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Roblox ToS.",
+        "createdAt": 1777827353963,
+        "createdBy": "7429928513475448832",
+        "editedBy": [
+          "7429928513475448832"
+        ],
+        "username": "hammysike13",
+        "description": "",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7456747590638374912",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Ro-Banging - awaiting ban",
+        "createdAt": 1777827165279,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "Doggylover123c",
+        "robloxId": "1898174306",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456747530492055552",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Ro-Banging - awaiting ban",
+        "createdAt": 1777827150939,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "Hammysike13",
+        "robloxId": "2562134701",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456747145526251520",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Keeps punching people after being told to stop multiple times.",
+        "createdAt": 1777827059156,
+        "createdBy": "7455309935627210752",
+        "editedBy": [],
+        "username": "gsjsbcisbej",
+        "robloxId": "8094912434",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456746992744534016",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "FRP, VDM and Staff Evasion",
+        "createdAt": 1777827022730,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Boo_TheNinja",
+        "completedBy": "7420897569099747328",
+        "robloxId": "1172147868",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456746746245287936",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Ro-Banging",
+        "createdAt": 1777826963960,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "Hammysike13",
+        "completedBy": "7429928513475448832",
+        "robloxId": "2562134701",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456746667484647424",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Ro-Banging, Cop-Baiting (clipped)",
+        "createdAt": 1777826945182,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "Doggylover123c",
+        "completedBy": "7429928513475448832",
+        "robloxId": "1898174306",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456746431542464512",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777826888929,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "Snowylol8",
+        "robloxId": "5174990935",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456746410151514112",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Ban Bolo completed.",
+        "createdAt": 1777826883829,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "Player768614",
+        "robloxId": "9907468243",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456745743135543296",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "GTA Driving",
+        "createdAt": 1777826724800,
+        "createdBy": "7317230630754848768",
+        "editedBy": [],
+        "username": "Doggylover123c",
+        "robloxId": "1898174306",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456743904570773504",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "2x Staff Invasion",
+        "createdAt": 1777826286452,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Yoshiiii677",
+        "robloxId": "9464028019",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456743675830210560",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "SVDM",
+        "createdAt": 1777826231916,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "Yoshiiii677",
+        "robloxId": "9464028019",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456743635174821888",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777826222223,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "boshkk",
+        "robloxId": "62961215",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456743199755735040",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush.",
+        "createdAt": 1777826118411,
+        "createdBy": "7429928513475448832",
+        "editedBy": [],
+        "username": "PeterParkerCoat",
+        "robloxId": "541144751",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456742411880894464",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "False Report",
+        "createdAt": 1777825930567,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "kenzie57374647r7",
+        "robloxId": "4779700712",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456742206754263040",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "No Reason Provided",
+        "createdAt": 1777825881661,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "LilGlock261",
+        "robloxId": "7763750098",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456742170624528384",
+        "serverId": "7411142732405542912",
+        "type": 2,
+        "text": "Rejoining after kick.",
+        "createdAt": 1777825873047,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "LilGlock261",
+        "robloxId": "7763750098",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456741980702248960",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP + Evading Staff + Cuff Rush",
+        "createdAt": 1777825827766,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Yoshiiii677",
+        "robloxId": "9464028019",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456741692763279360",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff rushing.",
+        "createdAt": 1777825759116,
+        "createdBy": "7455309935627210752",
+        "editedBy": [],
+        "username": "Yoshiiii677",
+        "robloxId": "9464028019",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456740934680580096",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Refusing to change avatar",
+        "createdAt": 1777825578376,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "LilGlock261",
+        "robloxId": "7763750098",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456740905026850816",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP",
+        "createdAt": 1777825571305,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "My_Name3514",
+        "robloxId": "7280878990",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456740607034134528",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Unrealistic avatar",
+        "createdAt": 1777825500258,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "LilGlock261",
+        "robloxId": "7763750098",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456740310945632256",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "He keeps joining back i do not have perms to ban any Higher+ Please Ban Him",
+        "createdAt": 1777825429665,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Snowylol8",
+        "robloxId": "5174990935",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456740101662445568",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff rushing, spamming Spike strips.",
+        "createdAt": 1777825379768,
+        "createdBy": "7455309935627210752",
+        "editedBy": [],
+        "username": "Snowylol8",
+        "robloxId": "5174990935",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456739380007276544",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "FRP + Threatning Staff",
+        "createdAt": 1777825207712,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Fortniteisbetter5886",
+        "robloxId": "7706039684",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456739113123713024",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "FRP + Evading Staff + Cuff Rush + Joining after kick",
+        "createdAt": 1777825144082,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Snowylol8",
+        "completedBy": "7437981512466698240",
+        "robloxId": "5174990935",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456738239987060736",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "(reason i saw you cuff rushing multiple people including me)",
+        "createdAt": 1777824935910,
+        "createdBy": "7456035746340671488",
+        "editedBy": [],
+        "username": "Snowylol8",
+        "robloxId": "5174990935",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456738116838100992",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Exploiting.",
+        "createdAt": 1777824906549,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Player768614",
+        "completedBy": "7437981512466698240",
+        "robloxId": "9907468243",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456737231676379136",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Staff RDM",
+        "createdAt": 1777824695510,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "SkinnyTacoDog08",
+        "robloxId": "5118725832",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456736253367554048",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "FRP + Evading Staff",
+        "createdAt": 1777824462263,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "Player768614",
+        "robloxId": "9907468243",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456733457448701952",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Evading Staff + FRP + False Report",
+        "createdAt": 1777823795664,
+        "createdBy": "7456463704721199104",
+        "editedBy": [
+          "7456463704721199104"
+        ],
+        "username": "xx_raivo",
+        "robloxId": "1659442179",
+        "description": "",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7456732461909676032",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "False Report and Evading Staff",
+        "createdAt": 1777823558309,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "xx_raivo",
+        "robloxId": "1659442179",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456730380150771712",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "joined back after a kick but giving him one last warning",
+        "createdAt": 1777823061979,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "ooE38wjco",
+        "robloxId": "1835583175",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456729859490844672",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Staff evaison cuff rush",
+        "createdAt": 1777822937844,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "davidhunjadi1",
+        "robloxId": "191213366",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456729225886699520",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "SVDM Staff evaison",
+        "createdAt": 1777822786781,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "Forces384",
+        "robloxId": "6232536299",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456729145670635520",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "Cuff Rush",
+        "createdAt": 1777822767656,
+        "createdBy": "7177584778789523456",
+        "editedBy": [],
+        "username": "Harrybombbomb",
+        "robloxId": "2241205396",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456728684418830336",
+        "serverId": "7411142732405542912",
+        "type": 4,
+        "text": "Road block perms",
+        "createdAt": 1777822657685,
+        "createdBy": "7456459220011978752",
+        "editedBy": [],
+        "username": "On3Developer",
+        "robloxId": "1379687902",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456727961102716928",
+        "serverId": "7411142732405542912",
+        "type": 0,
+        "text": "RDM",
+        "createdAt": 1777822485233,
+        "createdBy": "7437981512466698240",
+        "editedBy": [],
+        "username": "ooE38wjco",
+        "robloxId": "1835583175",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456727315536416768",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "LTAP and Unreaslitic avatar and told to change it.",
+        "createdAt": 1777822331319,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "SupremeTilly257",
+        "robloxId": "2296233023",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456726440122257408",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777822122603,
+        "createdBy": "7420897569099747328",
+        "editedBy": [],
+        "username": "lowride75",
+        "robloxId": "10712468254",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456725229440602112",
+        "serverId": "7411142732405542912",
+        "type": 3,
+        "text": "Avatar abusing.",
+        "createdAt": 1777821833954,
+        "createdBy": "7456463704721199104",
+        "editedBy": [],
+        "username": "Deagan0830",
+        "robloxId": "1656019134",
+        "description": "",
+        "expired": false,
+        "proof": null
+      },
+      {
+        "id": "7456725027254177792",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "Avatar abusing glitch",
+        "createdAt": 1777821785749,
+        "createdBy": "7456463704721199104",
+        "editedBy": [
+          "7456463704721199104"
+        ],
+        "username": "Deagan0830",
+        "robloxId": "1656019134",
+        "expired": false,
+        "tempBan": false,
+        "proof": null
+      },
+      {
+        "id": "7456724977794945024",
+        "serverId": "7411142732405542912",
+        "type": 1,
+        "text": "No Reason Provided",
+        "createdAt": 1777821773957,
+        "createdBy": "7424125839094059008",
+        "editedBy": [],
+        "username": "Noahisaking1230",
+        "robloxId": "7216986976",
+        "expired": false,
+        "proof": null
+      }
+    ],
+    "loas": [
+      {
+        "id": "7451369446838374400",
+        "serverId": "7411142732405542912",
+        "memberId": "7201164132312158208",
+        "createdAt": 1776544915876,
+        "status": 1,
+        "startType": 0,
+        "extensionRequests": [],
+        "reasonHistory": [
+          {
+            "text": "iPad is broken and it’s getting fixed soon",
+            "createdAt": 1776544915876
+          }
+        ],
+        "reviewedAt": 1776562712770,
+        "endAt": 1777161600000,
+        "reason": "iPad is broken and it’s getting fixed soon",
+        "reviewedBy": "7241126844139835392"
+      },
+      {
+        "id": "7430927199705763840",
+        "serverId": "7411142732405542912",
+        "memberId": "7396175601477881856",
+        "createdAt": 1771671104361,
+        "status": 1,
+        "startType": 0,
+        "extensionRequests": [],
+        "reasonHistory": [
+          {
+            "text": "Hospital",
+            "createdAt": 1771671104361
+          }
+        ],
+        "reviewedAt": 1772564061670,
+        "endAt": 1772496000000,
+        "reason": "Hospital",
+        "reviewedBy": "7241126844139835392",
+        "denyReason": "Basically already ended."
+      },
+      {
+        "id": "7429875981134860288",
+        "serverId": "7411142732405542912",
+        "memberId": "7069390615452061696",
+        "createdAt": 1771420474323,
+        "status": 1,
+        "startType": 1,
+        "extensionRequests": [],
+        "reasonHistory": [
+          {
+            "text": "I will be away for a week out the country.",
+            "createdAt": 1771420474323
+          }
+        ],
+        "startAt": 1771632000000,
+        "reviewedAt": 1772564049262,
+        "endAt": 1772236800000,
+        "reason": "I will be away for a week out the country.",
+        "reviewedBy": "7241126844139835392",
+        "denyReason": "Already ended."
+      },
+      {
+        "id": "7418441586939269120",
+        "serverId": "7411142732405542912",
+        "memberId": "7413241679588626432",
+        "createdAt": 1768694302306,
+        "status": 1,
+        "startType": 0,
+        "extensionRequests": [],
+        "reasonHistory": [
+          {
+            "text": "I have all honors and AP classes and have almost no time for moderation. If I can in between, I will moderate. One thing I can do is handle tickets for general support and questions. (I can be Discord Active, not game active.)",
+            "createdAt": 1768694302306
+          }
+        ],
+        "reviewedAt": 1768702947083,
+        "endAt": 1773532800000,
+        "reason": "I have all honors and AP classes and have almost no time for moderation. If I can in between, I will moderate. One thing I can do is handle tickets for general support and questions. (I can be Discord Active, not game active.)",
+        "reviewedBy": "7391199778224214016",
+        "denyReason": "Sorted"
+      },
+      {
+        "id": "7417605604044181504",
+        "serverId": "7411142732405542912",
+        "memberId": "7281353158519951360",
+        "createdAt": 1768494988452,
+        "status": 1,
+        "startType": 0,
+        "extensionRequests": [],
+        "reasonHistory": [
+          {
+            "text": "I just realised my mic dont work i need to get another one it will take about a couple days",
+            "createdAt": 1768494988452
+          }
+        ],
+        "reviewedAt": 1768496030718,
+        "endAt": 1769126400000,
+        "reason": "I just realised my mic dont work i need to get another one it will take about a couple days",
+        "reviewedBy": "7391199778224214016",
+        "denyReason": "Situation is sorted"
+      }
+    ],
+    "lastFetch": "2026-05-04T20:07:31.970Z"
+  }
 }
