@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>UK Project London Roleplay — Staff Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0c0d10;--surface:#13151a;--surface2:#1a1d25;--surface3:#20232d;
+      --border:#252830;--accent:#5865f2;--accent2:#eb459e;
+      --green:#57f287;--yellow:#fee75c;--red:#ed4245;--orange:#f57c00;--teal:#1abc9c;
+      --text:#e8eaf0;--muted:#5a5f72;
+      --mono:'Space Mono',monospace;--sans:'Syne',sans-serif;
+    }
+    body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,13,16,0.97);backdrop-filter:blur(12px);z-index:100;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .logo-icon{width:34px;height:34px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px}
+    .logo h1{font-size:15px;font-weight:800;white-space:nowrap}
+    .logo span{color:var(--muted);font-size:11px;display:block;margin-top:1px}
+    .nav-tabs{display:flex;gap:3px;flex-wrap:wrap}
+    .nav-tab{background:none;border:1px solid transparent;border-radius:7px;padding:7px 13px;color:var(--muted);font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+    .nav-tab:hover{color:var(--text);border-color:var(--border)}
+    .nav-tab.active{background:var(--surface2);border-color:var(--border);color:var(--text)}
+    .header-right{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right;flex-shrink:0;line-height:1.6}
+    .sync-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:4px}.sync-dot.offline{background:var(--red)}
+    .mel-ok{color:var(--teal)}.mel-no{color:var(--red)}
+
+    .stats-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;border-bottom:1px solid var(--border);background:var(--border)}
+    .stat{background:var(--surface);padding:14px 18px;cursor:default}
+    .stat-label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:5px}
+    .stat-value{font-size:22px;font-weight:800;line-height:1}
+    .ca{color:var(--accent)}.cy{color:var(--yellow)}.cp{color:var(--accent2)}.cg{color:var(--green)}.cr{color:var(--red)}.co{color:var(--orange)}.ct{color:var(--teal)}
+
+    .page{display:none;padding:20px 28px}.page.active{display:block}
+    .controls{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+    .sw{flex:1;min-width:180px;position:relative}
+    .sw input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px 8px 34px;color:var(--text);font-family:var(--mono);font-size:12px;outline:none;transition:border-color .15s}
+    .sw input:focus{border-color:var(--accent)}
+    .sw input::placeholder{color:var(--muted)}
+    .si{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px}
+    .fbtn{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px;color:var(--muted);font-family:var(--mono);font-size:11px;cursor:pointer;transition:all .15s;white-space:nowrap}
+    .fbtn:hover{border-color:var(--accent);color:var(--text)}
+    .fbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .fbtn.fy.active{background:var(--yellow);border-color:var(--yellow);color:#000}
+    .fbtn.fr.active{background:var(--red);border-color:var(--red);color:#fff}
+    .fbtn.fo.active{background:var(--orange);border-color:var(--orange);color:#fff}
+    .fbtn.ft.active{background:var(--teal);border-color:var(--teal);color:#000}
+
+    .tw{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    table{width:100%;border-collapse:collapse}
+    thead th{background:var(--surface2);padding:10px 13px;text-align:left;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:400;border-bottom:1px solid var(--border)}
+    tbody tr{border-bottom:1px solid var(--border);transition:background .1s;cursor:pointer}
+    tbody tr:last-child{border-bottom:none}
+    tbody tr:hover{background:var(--surface2)}
+    tbody td{padding:10px 13px;font-size:12px;vertical-align:middle}
+    .gr td{background:var(--surface3);padding:7px 13px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);cursor:default;border-bottom:1px solid var(--border)}
+    .gr:hover{background:var(--surface3)!important}
+
+    .uc{display:flex;align-items:center;gap:8px}
+    .av{width:28px;height:28px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;color:var(--accent)}
+    .un{font-weight:600;font-size:12px}
+    .ut{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:1px}
+
+    .rb{display:inline-block;padding:2px 8px;border-radius:20px;font-size:9px;font-weight:700}
+    .mb{display:inline-block;padding:2px 6px;border-radius:20px;font-size:9px;font-weight:600;margin:1px}
+    .sb{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:20px;font-size:9px;font-weight:600}
+    .bd{width:5px;height:5px;border-radius:50%}
+    .byes{background:rgba(87,242,135,.12);color:var(--green)}.byes .bd{background:var(--green)}
+    .bno{background:rgba(90,95,114,.12);color:var(--muted)}
+    .bstrike{background:rgba(237,66,69,.12);color:var(--red);border:1px solid rgba(237,66,69,.2)}
+    .bperm{background:rgba(88,101,242,.12);color:var(--accent);border:1px solid rgba(88,101,242,.2)}
+    .bteam{background:rgba(235,69,158,.12);color:var(--accent2);border:1px solid rgba(235,69,158,.2)}
+    .bspecial{background:rgba(245,124,0,.12);color:var(--orange);border:1px solid rgba(245,124,0,.2)}
+    .bteal{background:rgba(26,188,156,.12);color:var(--teal);border:1px solid rgba(26,188,156,.2)}
+
+    .dc{font-family:var(--mono);font-size:10px;color:var(--muted)}
+    .nc{font-size:10px;color:var(--muted);max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .empty{text-align:center;padding:50px 20px;color:var(--muted)}
+    .empty h3{font-size:16px;margin-bottom:6px}
+    .empty p{font-size:12px;font-family:var(--mono)}
+    .no-data{color:var(--muted);font-size:12px;padding:12px 0;font-family:var(--mono)}
+
+    /* modal */
+    .mo{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .2s}
+    .mo.open{opacity:1;pointer-events:all}
+    .modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:600px;max-width:96vw;max-height:90vh;overflow-y:auto;transform:translateY(14px);transition:transform .2s}
+    .mo.open .modal{transform:translateY(0)}
+    .mh{padding:20px 20px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .ma{width:46px;height:46px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--accent);flex-shrink:0}
+    .mu h2{font-size:17px;font-weight:800;margin-bottom:3px}
+    .mu p{font-family:var(--mono);font-size:10px;color:var(--muted)}
+    .xbtn{background:none;border:none;color:var(--muted);font-size:17px;cursor:pointer;padding:3px;line-height:1}
+    .xbtn:hover{color:var(--text)}
+    .mbd{padding:20px}
+    .fg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+    .field label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);display:block;margin-bottom:4px}
+    .fv{font-size:12px;font-weight:600}
+    .tl{display:flex;flex-wrap:wrap;gap:4px;min-height:20px}
+    .st{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:6px;margin-top:14px}
+    .nb{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:10px;font-family:var(--mono);font-size:11px;color:var(--text);min-height:44px;white-space:pre-wrap}
+
+    /* cards */
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .span2{grid-column:span 2}
+    .span3{grid-column:span 3}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
+    .card h3{font-size:12px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+    .card h3 .icon{font-size:15px}
+    .dr{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:11px}
+    .dr:last-child{border-bottom:none}
+    .dl{color:var(--muted);font-family:var(--mono);font-size:10px}
+    .dv{font-weight:700}
+
+    /* bars */
+    .bw{margin-top:2px}
+    .br2{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+    .bl{width:130px;color:var(--muted);font-family:var(--mono);font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .bt{flex:1;height:5px;background:var(--border);border-radius:3px;overflow:hidden}
+    .bf{height:100%;border-radius:3px;transition:width .6s ease}
+    .bc{font-family:var(--mono);font-size:9px;color:var(--muted);width:22px;text-align:right}
+
+    /* leaderboard */
+    .lb{display:flex;flex-direction:column;gap:0}
+    .lb-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+    .lb-row:last-child{border-bottom:none}
+    .lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);width:24px;text-align:center;flex-shrink:0}
+    .gold{color:#f0c040;font-weight:700}.silver{color:#b0b0b0;font-weight:700}.bronze{color:#cd7f32;font-weight:700}
+    .lb-info{flex:1;min-width:0}
+    .lb-name{font-weight:600;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .lb-sub{font-size:10px;color:var(--muted)}
+    .lb-val{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--teal);flex-shrink:0}
+
+    .alert{background:rgba(237,66,69,.1);border:1px solid rgba(237,66,69,.2);border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:var(--red)}
+    .alert.info{background:rgba(88,101,242,.1);border-color:rgba(88,101,242,.2);color:var(--accent)}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🛡️</div>
+    <div><h1>UK Project London Roleplay</h1><span id="last-sync">Loading...</span></div>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="switchTab('staff',this)">👥 Staff</button>
+    <button class="nav-tab" onclick="switchTab('data',this)">📊 Data</button>
+  </div>
+  <div class="header-right">
+    <span class="sync-dot" id="connection-dot"></span><span id="source-label">GITHUB PAGES</span><br>
+    <span id="mel-status">Loading status...</span>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-label">Total Staff</div><div class="stat-value ca" id="s-total">—</div></div>
+  <div class="stat"><div class="stat-label">On LOA</div><div class="stat-value cy" id="s-loa">—</div></div>
+  <div class="stat"><div class="stat-label">ZTP</div><div class="stat-value cp" id="s-ztp">—</div></div>
+  <div class="stat"><div class="stat-label">Active</div><div class="stat-value cg" id="s-active">—</div></div>
+  <div class="stat"><div class="stat-label">Strikes</div><div class="stat-value cr" id="s-strikes">—</div></div>
+  <div class="stat"><div class="stat-label">Sub Teams</div><div class="stat-value co" id="s-teams">—</div></div>
+  <div class="stat"><div class="stat-label">Total Hours</div><div class="stat-value ct" id="s-hours">—</div></div>
+</div>
+
+<!-- STAFF TAB -->
+<div class="page active" id="page-staff">
+  <div class="controls">
+    <div class="sw"><span class="si">⌕</span><input type="text" id="search" placeholder="Search username or role..." oninput="renderStaff()"/></div>
+    <button class="fbtn fy" id="btn-ztp" onclick="toggleFilter('ztp')">⚠️ ZTP</button>
+    <button class="fbtn fo" id="btn-strike" onclick="toggleFilter('strike')">🚨 Strikes</button>
+    <button class="fbtn ft" id="btn-loa2" onclick="toggleFilter('loa')">🌴 LOA</button>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Member</th><th>Role</th><th>Joined</th><th>ZTP</th><th>Strikes</th><th>Hours</th><th>Notes</th></tr></thead>
+      <tbody id="staff-tbody"><tr><td colspan="7"><div class="empty"><h3>Loading...</h3></div></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- DATA TAB -->
+<div class="page" id="page-data">
+  <div class="grid3" style="margin-bottom:14px">
+    <div class="card">
+      <h3><span class="icon">📋</span> Overview</h3>
+      <div class="dr"><span class="dl">Total Staff</span><span class="dv ca" id="d-total">—</span></div>
+      <div class="dr"><span class="dl">On LOA</span><span class="dv cy" id="d-loa">—</span></div>
+      <div class="dr"><span class="dl">On ZTP</span><span class="dv cp" id="d-ztp">—</span></div>
+      <div class="dr"><span class="dl">Active</span><span class="dv cg" id="d-active">—</span></div>
+      <div class="dr"><span class="dl">With Strikes</span><span class="dv cr" id="d-strikecount">—</span></div>
+      <div class="dr"><span class="dl">Total Hours</span><span class="dv ct" id="d-hours">—</span></div>
+    </div>
+    <div class="card">
+      <h3><span class="icon">⬇️</span> Export Data</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <button class="fbtn" onclick="exportData('json')" style="background:var(--accent);border-color:var(--accent);color:#fff;flex:1">📥 JSON</button>
+        <button class="fbtn" onclick="exportData('csv')" style="background:var(--accent2);border-color:var(--accent2);color:#fff;flex:1">📊 CSV</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3><span class="icon">🔄</span> Melonly Status</h3>
+      <div id="melonly-info"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="mo" id="modal" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="mh">
+      <div style="display:flex;gap:11px;align-items:center;">
+        <div class="ma" id="m-avatar">?</div>
+        <div class="mu"><h2 id="m-name">—</h2><p id="m-id">—</p></div>
+      </div>
+      <button class="xbtn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="mbd">
+      <div class="fg">
+        <div class="field"><label>Highest Role</label><div class="fv" id="m-role">—</div></div>
+        <div class="field"><label>Team</label><div class="fv" id="m-group">—</div></div>
+        <div class="field"><label>Joined Server</label><div class="fv dc" id="m-joined">—</div></div>
+        <div class="field"><label>Status</label><div class="fv" id="m-status">—</div></div>
+        <div class="field"><label>Total Hours</label><div class="fv ct" id="m-hours">—</div></div>
+      </div>
+      <div class="st">All Roles</div><div class="tl" id="m-roles"></div>
+      <div class="st">Strikes</div><div class="tl" id="m-strikes"></div>
+      <div class="st">Notes</div><div class="nb" id="m-notes">—</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const LOCAL_DATA_URL = 'staff-data.json';
+const REMOTE_DATA_URL = 'https://raw.githubusercontent.com/leodiscorduse-cell/staff-database/main/staff-db/staff.json';
+const GROUP_ORDER = ['Chairman Team','Directive Team','Management Team','Internal Affairs Team','Admin Team','Mod Team','Staff'];
+
+function rs(n){const k=(n||'').toLowerCase();const ROLE_COLORS={'chairman':['#f0c040','#000'],'vice chairman':['#e0b030','#000'],'director':['#f04747','#fff'],'management':['#9b59b6','#fff'],'affairs':['#e91e8c','#fff'],'administrator':['#5865f2','#fff'],'moderator':['#4752c4','#fff']};for(const[kk,[bg]]of Object.entries(ROLE_COLORS)){if(k.includes(kk))return`background:${bg}22;color:${bg};border:1px solid ${bg}44`}return'background:#252830;color:#99aab5;border:1px solid #2e3240'}
+function yn(v){return v?`<span class="sb byes"><span class="bd"></span>Yes</span>`:`<span class="sb bno">No</span>`}
+function ini(n){return(n||'?').split(/[\s#]+/).map(p=>p[0]).join('').slice(0,2).toUpperCase()}
+function fd(iso){if(!iso)return'—';return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+let allStaff=[], db={}, filters={ztp:false,strike:false,loa:false};
+
+async function loadData(){
+  try{
+    document.getElementById('connection-dot').className='sync-dot';
+    let r = await fetch(LOCAL_DATA_URL+'?t='+Date.now());
+    if(!r.ok){
+      r = await fetch(REMOTE_DATA_URL+'?t='+Date.now());
+    }
+    if(!r.ok)throw new Error(`HTTP ${r.status}`);
+    db=await r.json();
+    allStaff=Object.values(db.staff||{});
+
+    const total=allStaff.length;
+    const onZtp=allStaff.filter(m=>m.on_ztp).length;
+    const strikes=allStaff.filter(m=>m.strikes?.length>0).length;
+    const teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
+    const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+
+    document.getElementById('s-total').textContent=total;
+    document.getElementById('s-ztp').textContent=onZtp;
+    document.getElementById('s-active').textContent=total;
+    document.getElementById('s-strikes').textContent=strikes;
+    document.getElementById('s-teams').textContent=teams;
+    document.getElementById('s-hours').textContent=totalHrs.toFixed(1)+'h';
+
+    const ls=db.sync_log?.[0]?.synced_at;
+    document.getElementById('last-sync').textContent=ls?'Last sync: '+fd(ls):'No sync yet';
+
+    const mel=db.melonly||{};
+    document.getElementById('mel-status').innerHTML=mel.lastFetch
+      ?`<span class="mel-ok">✓ Melonly data available</span>`
+      :`<span class="mel-no">✗ No Melonly data</span>`;
+
+    document.getElementById('melonly-info').innerHTML=mel.stats?`
+      <div class="dr"><span class="dl">Matched</span><span class="dv">${mel.stats.totalMatched}/${allStaff.length}</span></div>
+      <div class="dr"><span class="dl">Enriched</span><span class="dv">${mel.stats.totalEnriched}</span></div>
+      <div class="dr"><span class="dl">Shifts</span><span class="dv">${mel.stats.shiftsCount}</span></div>
+      <div class="dr"><span class="dl">LOAs</span><span class="dv">${mel.stats.loasCount}</span></div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:10px">Updated: ${fd(mel.lastFetch)}</div>
+    `:'<p class="no-data">No Melonly integration yet.</p>';
+
+    renderStaff(); renderData();
+  }catch(e){
+    document.getElementById('connection-dot').classList.add('offline');
+    document.getElementById('staff-tbody').innerHTML=`<tr><td colspan="7"><div class="alert info">⚠️ Could not load staff data. Make sure <code>staff-data.json</code> exists in /docs or the repo is public.</div></td></tr>`;
+    console.error(e);
+  }
+}
+
+function renderStaff(){
+  const search=document.getElementById('search').value.toLowerCase();
+  let staff=allStaff.filter(m=>{
+    if(search&&!m.username?.toLowerCase().includes(search)&&!(m.nickname||'').toLowerCase().includes(search)&&!(m.highest_role||'').toLowerCase().includes(search))return false;
+    if(filters.ztp&&!m.on_ztp)return false;
+    if(filters.strike&&!m.strikes?.length)return false;
+    if(filters.loa&&!m.melonly?.onLoa)return false;
+    return true;
+  });
+  staff.sort((a,b)=>{
+    const ga=GROUP_ORDER.indexOf(a.role_group||'Staff'),gb=GROUP_ORDER.indexOf(b.role_group||'Staff');
+    return ga!==gb?ga-gb:a.username.localeCompare(b.username);
+  });
+  const tbody=document.getElementById('staff-tbody');
+  if(!staff.length){tbody.innerHTML=`<tr><td colspan="7"><div class="empty"><h3>No staff found</h3></div></td></tr>`;return}
+  let html='',lastGroup=null;
+  staff.forEach(s=>{
+    const g=s.role_group||'Staff';
+    if(g!==lastGroup){html+=`<tr class="gr"><td colspan="7">— ${esc(g)}</td></tr>`;lastGroup=g}
+    const st=(s.strikes||[]).slice(0,2).map(x=>`<span class="mb bstrike">${esc(x.replace('➜ ',''))}</span>`).join('')||'—';
+    const hrs=s.melonly?.totalHours!=null?`${s.melonly.totalHours}h`:'—';
+    html+=`<tr onclick="openModal('${s.user_id}')">
+      <td><div class="uc"><div class="av">${ini(s.username)}</div><div><div class="un">${esc(s.nickname||s.username?.split('#')[0])}</div><div class="ut">${esc(s.username)}</div></div></div></td>
+      <td><span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span></td>
+      <td class="dc">${fd(s.join_date)}</td>
+      <td>${yn(s.on_ztp)}</td>
+      <td>${st}</td>
+      <td>${hrs}</td>
+      <td class="nc">${esc(s.notes)||'—'}</td>
+    </tr>`;
+  });
+  tbody.innerHTML=html;
+}
+
+function renderData(){
+  const total=allStaff.length,onZtp=allStaff.filter(m=>m.on_ztp).length;
+  const strikes=allStaff.filter(m=>m.strikes?.length>0).length;
+  const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+  
+  document.getElementById('d-total').textContent=total;
+  document.getElementById('d-ztp').textContent=onZtp;
+  document.getElementById('d-active').textContent=total;
+  document.getElementById('d-strikecount').textContent=strikes;
+  document.getElementById('d-hours').textContent=totalHrs.toFixed(1)+'h';
+}
+
+function toggleFilter(type){
+  filters[type]=!filters[type];
+  const b=document.getElementById('btn-'+type)||document.getElementById('btn-'+type+'2');
+  if(b)b.classList.toggle('active',filters[type]);
+  renderStaff();
+}
+
+function exportData(format){
+  const data={staff:db.staff,sync_log:db.sync_log,melonly:db.melonly,exported:new Date().toISOString()};
+  if(format==='csv'){
+    const headers=['User ID','Username','Nickname','Role','Team','Joined','ZTP','Strikes','Hours','Notes'];
+    const rows=allStaff.map(s=>[s.user_id,s.username,s.nickname||'',s.highest_role,s.role_group,fd(s.join_date),s.on_ztp?'Y':'N',(s.strikes||[]).length,s.melonly?.totalHours||0,s.notes||'']);
+    const csv=[headers,...rows].map(r=>r.map(c=>typeof c==='string'&&c.includes(',')?`"${c}"`:c).join(',')).join('\n');
+    const blob=new Blob([csv],{type:'text/csv'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;
+    a.download='staff-export.csv';
+    a.click();
+  }else{
+    const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;
+    a.download='staff-export.json';
+    a.click();
+  }
+}
+
+function switchTab(tab,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+tab).classList.add('active');
+  if(btn)btn.classList.add('active');
+}
+
+function openModal(uid){
+  const s=allStaff.find(m=>m.user_id===uid);if(!s)return;
+  document.getElementById('m-avatar').textContent=ini(s.username);
+  document.getElementById('m-name').textContent=s.nickname||s.username?.split('#')[0];
+  document.getElementById('m-id').textContent=`ID: ${s.user_id} · ${s.username}`;
+  document.getElementById('m-role').innerHTML=`<span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span>`;
+  document.getElementById('m-group').textContent=s.role_group||'—';
+  document.getElementById('m-joined').textContent=fd(s.join_date);
+  document.getElementById('m-status').innerHTML=s.on_ztp?`<span class="mb" style="background:rgba(235,69,158,.15);color:var(--accent2);border:1px solid rgba(235,69,158,.3)">ZTP</span>`:`<span style="color:var(--green);font-size:11px">Active</span>`;
+  document.getElementById('m-hours').textContent=s.melonly?.totalHours!=null?s.melonly.totalHours+'h':'No data';
+  document.getElementById('m-roles').innerHTML=(s.roles||[]).map(r=>`<span class="mb rb" style="${rs(r)}">${esc(r)}</span>`).join('');
+  document.getElementById('m-strikes').innerHTML=(s.strikes||[]).length?(s.strikes||[]).map(x=>`<span class="mb bstrike">${esc(x.replace('➜ ',''))}</span>`).join(''):`<span style="color:var(--muted);font-size:11px">None</span>`;
+  document.getElementById('m-notes').textContent=s.notes||'No notes';
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal(e){
+  if(e&&e.target!==document.getElementById('modal'))return;
+  document.getElementById('modal').classList.remove('open');
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open')});
+
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+name: Sync docs data and GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'staff-db/staff.json'
+      - 'staff-db/bot/**'
+      - 'docs/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Copy staff data to docs
+        run: |
+          mkdir -p docs
+          cp staff-db/staff.json docs/staff-data.json
+
+      - name: Commit docs staff data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/staff-data.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync docs staff data"
+            git push
+          fi
+
+  sync-melonly:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: staff-db
+        run: npm install
+
+      - name: Run Discord sync
+        working-directory: staff-db
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          GUILD_ID: ${{ secrets.GUILD_ID }}
+          MELONLY_TOKEN: ${{ secrets.MELONLY_TOKEN }}
+        run: npm run sync
+
+      - name: Commit sync results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add staff-db/staff.json
+          git commit -m "🔄 Automated sync" || true
+          git push
