@@ -16,35 +16,31 @@
     }
     body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
 
-    /* ── HEADER ── */
-    header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,13,16,0.96);backdrop-filter:blur(12px);z-index:100;gap:16px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,13,16,0.97);backdrop-filter:blur(12px);z-index:100;gap:16px}
     .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
     .logo-icon{width:34px;height:34px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px}
     .logo h1{font-size:15px;font-weight:800;white-space:nowrap}
     .logo span{color:var(--muted);font-size:11px;display:block;margin-top:1px}
     .nav-tabs{display:flex;gap:3px;flex-wrap:wrap}
-    .nav-tab{background:none;border:1px solid transparent;border-radius:7px;padding:7px 14px;color:var(--muted);font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+    .nav-tab{background:none;border:1px solid transparent;border-radius:7px;padding:7px 13px;color:var(--muted);font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
     .nav-tab:hover{color:var(--text);border-color:var(--border)}
     .nav-tab.active{background:var(--surface2);border-color:var(--border);color:var(--text)}
-    .header-right{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right;flex-shrink:0}
+    .header-right{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right;flex-shrink:0;line-height:1.6}
     .sync-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:4px}
+    .mel-ok{color:var(--teal)}.mel-no{color:var(--red)}
 
-    /* ── STATS BAR ── */
     .stats-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;border-bottom:1px solid var(--border);background:var(--border)}
-    .stat{background:var(--surface);padding:14px 18px}
+    .stat{background:var(--surface);padding:14px 18px;cursor:default}
     .stat-label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:5px}
-    .stat-value{font-size:24px;font-weight:800;line-height:1}
+    .stat-value{font-size:22px;font-weight:800;line-height:1}
     .ca{color:var(--accent)}.cy{color:var(--yellow)}.cp{color:var(--accent2)}.cg{color:var(--green)}.cr{color:var(--red)}.co{color:var(--orange)}.ct{color:var(--teal)}
 
-    /* ── PAGES ── */
     .page{display:none;padding:20px 28px}.page.active{display:block}
-
-    /* ── CONTROLS ── */
-    .controls{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap;align-items:center}
-    .search-wrap{flex:1;min-width:180px;position:relative}
-    .search-wrap input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px 8px 34px;color:var(--text);font-family:var(--mono);font-size:12px;outline:none;transition:border-color .15s}
-    .search-wrap input:focus{border-color:var(--accent)}
-    .search-wrap input::placeholder{color:var(--muted)}
+    .controls{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+    .sw{flex:1;min-width:180px;position:relative}
+    .sw input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px 8px 34px;color:var(--text);font-family:var(--mono);font-size:12px;outline:none;transition:border-color .15s}
+    .sw input:focus{border-color:var(--accent)}
+    .sw input::placeholder{color:var(--muted)}
     .si{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px}
     .fbtn{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:8px 12px;color:var(--muted);font-family:var(--mono);font-size:11px;cursor:pointer;transition:all .15s;white-space:nowrap}
     .fbtn:hover{border-color:var(--accent);color:var(--text)}
@@ -52,22 +48,22 @@
     .fbtn.fy.active{background:var(--yellow);border-color:var(--yellow);color:#000}
     .fbtn.fr.active{background:var(--red);border-color:var(--red);color:#fff}
     .fbtn.fo.active{background:var(--orange);border-color:var(--orange);color:#fff}
+    .fbtn.ft.active{background:var(--teal);border-color:var(--teal);color:#000}
 
-    /* ── TABLE ── */
-    .table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    .tw{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
     table{width:100%;border-collapse:collapse}
-    thead th{background:var(--surface2);padding:10px 13px;text-align:left;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:400;border-bottom:1px solid var(--border)}
+    thead th{background:var(--surface2);padding:10px 13px;text-align:left;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:400;border-bottom:1px solid var(--border)}
     tbody tr{border-bottom:1px solid var(--border);transition:background .1s;cursor:pointer}
     tbody tr:last-child{border-bottom:none}
     tbody tr:hover{background:var(--surface2)}
-    tbody td{padding:11px 13px;font-size:12px;vertical-align:middle}
-    .group-row td{background:var(--surface3);padding:7px 13px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);cursor:default;border-bottom:1px solid var(--border)}
-    .group-row:hover{background:var(--surface3)!important}
+    tbody td{padding:10px 13px;font-size:12px;vertical-align:middle}
+    .gr td{background:var(--surface3);padding:7px 13px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);cursor:default;border-bottom:1px solid var(--border)}
+    .gr:hover{background:var(--surface3)!important}
 
-    .user-cell{display:flex;align-items:center;gap:8px}
-    .avatar{width:28px;height:28px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;color:var(--accent)}
-    .user-name{font-weight:600;font-size:12px}
-    .user-tag{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:1px}
+    .uc{display:flex;align-items:center;gap:8px}
+    .av{width:28px;height:28px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;color:var(--accent)}
+    .un{font-weight:600;font-size:12px}
+    .ut{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:1px}
 
     .rb{display:inline-block;padding:2px 8px;border-radius:20px;font-size:9px;font-weight:700}
     .mb{display:inline-block;padding:2px 6px;border-radius:20px;font-size:9px;font-weight:600;margin:1px}
@@ -86,11 +82,12 @@
     .empty{text-align:center;padding:50px 20px;color:var(--muted)}
     .empty h3{font-size:16px;margin-bottom:6px}
     .empty p{font-size:12px;font-family:var(--mono)}
+    .no-data{color:var(--muted);font-size:12px;padding:12px 0;font-family:var(--mono)}
 
-    /* ── MODAL ── */
-    .mo{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .2s}
+    /* modal */
+    .mo{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .2s}
     .mo.open{opacity:1;pointer-events:all}
-    .modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:580px;max-width:96vw;max-height:90vh;overflow-y:auto;transform:translateY(14px);transition:transform .2s}
+    .modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:600px;max-width:96vw;max-height:90vh;overflow-y:auto;transform:translateY(14px);transition:transform .2s}
     .mo.open .modal{transform:translateY(0)}
     .mh{padding:20px 20px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
     .ma{width:46px;height:46px;border-radius:50%;background:var(--surface2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--accent);flex-shrink:0}
@@ -98,49 +95,77 @@
     .mu p{font-family:var(--mono);font-size:10px;color:var(--muted)}
     .xbtn{background:none;border:none;color:var(--muted);font-size:17px;cursor:pointer;padding:3px;line-height:1}
     .xbtn:hover{color:var(--text)}
-    .mb-body{padding:20px}
+    .mbd{padding:20px}
     .fg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-    .field label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);display:block;margin-bottom:4px}
+    .field label{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);display:block;margin-bottom:4px}
     .fv{font-size:12px;font-weight:600}
     .tl{display:flex;flex-wrap:wrap;gap:4px;min-height:20px}
     .st{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin-bottom:6px;margin-top:14px}
     .nb{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:10px;font-family:var(--mono);font-size:11px;color:var(--text);min-height:44px;white-space:pre-wrap}
 
-    /* ── DATA / CARDS ── */
-    .dg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+    /* cards */
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .span2{grid-column:span 2}
+    .span3{grid-column:span 3}
     .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
-    .card h3{font-size:12px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:6px}
-    .card h3 span{font-size:15px}
+    .card h3{font-size:12px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+    .card h3 .icon{font-size:15px}
     .dr{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:11px}
     .dr:last-child{border-bottom:none}
-    .dr .dl{color:var(--muted);font-family:var(--mono);font-size:10px}
-    .dr .dv{font-weight:700}
+    .dl{color:var(--muted);font-family:var(--mono);font-size:10px}
+    .dv{font-weight:700}
+
+    /* bars */
     .bw{margin-top:2px}
-    .br{display:flex;align-items:center;gap:7px;margin-bottom:7px;font-size:10px}
+    .br2{display:flex;align-items:center;gap:7px;margin-bottom:7px}
     .bl{width:130px;color:var(--muted);font-family:var(--mono);font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .bt{flex:1;height:5px;background:var(--border);border-radius:3px;overflow:hidden}
-    .bf{height:100%;border-radius:3px;transition:width .5s ease}
-    .bc{font-family:var(--mono);font-size:9px;color:var(--muted);width:18px;text-align:right}
+    .bf{height:100%;border-radius:3px;transition:width .6s ease}
+    .bc{font-family:var(--mono);font-size:9px;color:var(--muted);width:22px;text-align:right}
 
     /* leaderboard */
-    .lb-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
+    .lb{display:flex;flex-direction:column;gap:0}
+    .lb-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
     .lb-row:last-child{border-bottom:none}
-    .lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);width:22px;text-align:center}
-    .lb-rank.gold{color:#f0c040;font-weight:700}
-    .lb-rank.silver{color:#c0c0c0;font-weight:700}
-    .lb-rank.bronze{color:#cd7f32;font-weight:700}
-    .lb-name{flex:1;font-weight:600}
-    .lb-role{font-size:10px;color:var(--muted)}
-    .lb-val{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--teal)}
+    .lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);width:24px;text-align:center;flex-shrink:0}
+    .gold{color:#f0c040;font-weight:700}.silver{color:#b0b0b0;font-weight:700}.bronze{color:#cd7f32;font-weight:700}
+    .lb-info{flex:1;min-width:0}
+    .lb-name{font-weight:600;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .lb-sub{font-size:10px;color:var(--muted)}
+    .lb-val{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--teal);flex-shrink:0}
+
+    /* shifts */
+    .shift-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:11px}
+    .shift-row:last-child{border-bottom:none}
+    .shift-info{flex:1;min-width:0}
+    .shift-name{font-weight:600;font-size:12px}
+    .shift-meta{font-size:10px;color:var(--muted);margin-top:1px}
+    .shift-dur{font-family:var(--mono);font-size:11px;color:var(--teal);flex-shrink:0}
 
     /* logs */
-    .log-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:11px}
+    .log-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
     .log-row:last-child{border-bottom:none}
-    .log-type{width:70px;font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.8px;flex-shrink:0}
-    .log-body{flex:1}
-    .log-user{font-weight:600;margin-bottom:2px}
-    .log-desc{color:var(--muted);font-size:10px}
+    .log-badge{padding:2px 8px;border-radius:4px;font-family:var(--mono);font-size:9px;font-weight:700;flex-shrink:0;width:60px;text-align:center}
+    .log-body{flex:1;min-width:0}
+    .log-user{font-weight:600;font-size:12px}
+    .log-desc{font-size:10px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .log-time{font-family:var(--mono);font-size:9px;color:var(--muted);flex-shrink:0}
+
+    /* loa */
+    .loa-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+    .loa-name{font-weight:700;font-size:13px;margin-bottom:3px}
+    .loa-role{font-size:10px;color:var(--muted);margin-bottom:5px}
+    .loa-reason{font-size:11px;color:var(--muted);font-family:var(--mono)}
+    .loa-dates{text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted);flex-shrink:0}
+    .loa-dates strong{display:block;color:var(--yellow);font-size:11px;margin-top:3px}
+
+    /* disc */
+    .disc-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+    .disc-row:last-child{border-bottom:none}
+    .disc-info{flex:1}
+    .disc-name{font-weight:600;font-size:12px;margin-bottom:4px}
+    .disc-badges{display:flex;flex-wrap:wrap;gap:3px}
 
     /* sync log */
     .sl{list-style:none}
@@ -149,14 +174,22 @@
     .sl .st2{font-family:var(--mono);color:var(--muted);font-size:9px}
     .sc{display:flex;gap:7px}
     .sa{color:var(--green);font-family:var(--mono);font-size:9px}
-    .su{color:var(--yellow);font-family:var(--mono);font-size:9px}
-    .sr{color:var(--red);font-family:var(--mono);font-size:9px}
+    .su2{color:var(--yellow);font-family:var(--mono);font-size:9px}
+    .sr2{color:var(--red);font-family:var(--mono);font-size:9px}
 
-    /* loa table */
-    .loa-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-start}
-    .loa-name{font-weight:700;font-size:13px;margin-bottom:3px}
-    .loa-reason{font-size:11px;color:var(--muted);font-family:var(--mono)}
-    .loa-dates{text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)}
+    /* quota */
+    .quota-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+    .quota-row:last-child{border-bottom:none}
+    .quota-info{flex:1;min-width:0}
+    .quota-name{font-weight:600;font-size:12px}
+    .quota-role{font-size:10px;color:var(--muted)}
+    .quota-bar-wrap{width:120px;flex-shrink:0}
+    .quota-bar-track{height:5px;background:var(--border);border-radius:3px;overflow:hidden;margin-bottom:3px}
+    .quota-bar-fill{height:100%;border-radius:3px;transition:width .5s}
+    .quota-val{font-family:var(--mono);font-size:9px;color:var(--muted);text-align:right}
+    .quota-met{color:var(--green)!important}
+
+    select.fbtn{appearance:none;background-image:none}
   </style>
 </head>
 <body>
@@ -172,9 +205,13 @@
     <button class="nav-tab" onclick="switchTab('loa',this)">🌴 LOA</button>
     <button class="nav-tab" onclick="switchTab('logs',this)">📋 Logs</button>
     <button class="nav-tab" onclick="switchTab('disciplinary',this)">⚠️ Disciplinary</button>
+    <button class="nav-tab" onclick="switchTab('quota',this)">🎯 Quota</button>
     <button class="nav-tab" onclick="switchTab('data',this)">📊 Data</button>
   </div>
-  <div class="header-right"><span class="sync-dot"></span>GITHUB PAGES<br><span id="melonly-status">Melonly: checking...</span></div>
+  <div class="header-right">
+    <span class="sync-dot"></span>GITHUB PAGES<br>
+    <span id="mel-status">Melonly: checking...</span>
+  </div>
 </header>
 
 <div class="stats-bar">
@@ -187,123 +224,157 @@
   <div class="stat"><div class="stat-label">Total Hours</div><div class="stat-value ct" id="s-hours">—</div></div>
 </div>
 
-<!-- ── STAFF ── -->
+<!-- STAFF -->
 <div class="page active" id="page-staff">
   <div class="controls">
-    <div class="search-wrap"><span class="si">⌕</span><input type="text" id="search" placeholder="Search username..." oninput="renderStaff()"/></div>
+    <div class="sw"><span class="si">⌕</span><input type="text" id="search" placeholder="Search username or role..." oninput="renderStaff()"/></div>
     <button class="fbtn fy" id="btn-ztp" onclick="toggleFilter('ztp')">⚠️ ZTP</button>
     <button class="fbtn fo" id="btn-strike" onclick="toggleFilter('strike')">🚨 Strikes</button>
     <button class="fbtn" id="btn-media" onclick="toggleFilter('media')">🎬 Media</button>
     <button class="fbtn" id="btn-event" onclick="toggleFilter('event')">🎉 Events</button>
-    <button class="fbtn" id="btn-loa2" onclick="toggleFilter('loa')">🌴 LOA</button>
+    <button class="fbtn ft" id="btn-loa2" onclick="toggleFilter('loa')">🌴 LOA</button>
   </div>
-  <div class="table-wrap">
+  <div class="tw">
     <table>
-      <thead><tr>
-        <th>Member</th><th>Role</th><th>Joined</th><th>ZTP</th><th>Strikes</th><th>Permissions</th><th>Sub Teams</th><th>Hours</th><th>Notes</th>
-      </tr></thead>
-      <tbody id="staff-tbody"><tr><td colspan="9"><div class="empty"><h3>Loading...</h3></div></td></tr></tbody>
+      <thead><tr><th>Member</th><th>Role</th><th>Joined</th><th>ZTP</th><th>Strikes</th><th>Permissions</th><th>Sub Teams</th><th>Hours</th><th>Shifts</th><th>Notes</th></tr></thead>
+      <tbody id="staff-tbody"><tr><td colspan="10"><div class="empty"><h3>Loading...</h3></div></td></tr></tbody>
     </table>
   </div>
 </div>
 
-<!-- ── ACTIVITY ── -->
+<!-- ACTIVITY -->
 <div class="page" id="page-activity">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-    <div class="card" style="grid-column:span 2">
-      <h3><span>🏆</span> Activity Leaderboard — Total Hours</h3>
-      <div id="lb-hours"></div>
+  <div class="grid2" style="margin-bottom:14px">
+    <div class="card span2">
+      <h3><span class="icon">🏆</span> Activity Leaderboard — Total Hours</h3>
+      <div class="lb" id="lb-hours"></div>
     </div>
+  </div>
+  <div class="grid2">
     <div class="card">
-      <h3><span>📅</span> Most Shifts</h3>
-      <div id="lb-shifts"></div>
+      <h3><span class="icon">📅</span> Most Shifts</h3>
+      <div class="lb" id="lb-shifts"></div>
     </div>
-    <div class="card">
-      <h3><span>⏱️</span> Recent Shifts</h3>
+    <div class="card" style="max-height:500px;overflow-y:auto">
+      <h3><span class="icon">⏱️</span> Recent Shifts</h3>
       <div id="recent-shifts"></div>
     </div>
   </div>
 </div>
 
-<!-- ── LOA ── -->
+<!-- LOA -->
 <div class="page" id="page-loa">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+  <div class="grid2">
     <div>
-      <h3 style="font-size:13px;margin-bottom:12px;color:var(--yellow)">🌴 Currently on LOA</h3>
+      <h3 style="font-size:13px;margin-bottom:14px;color:var(--yellow)">🌴 Currently on LOA (<span id="loa-count">0</span>)</h3>
       <div id="loa-active"></div>
     </div>
     <div class="card">
-      <h3><span>📊</span> LOA Stats</h3>
+      <h3><span class="icon">📊</span> LOA Overview</h3>
       <div id="loa-stats"></div>
     </div>
   </div>
 </div>
 
-<!-- ── LOGS ── -->
+<!-- LOGS -->
 <div class="page" id="page-logs">
   <div class="controls">
-    <div class="search-wrap"><span class="si">⌕</span><input type="text" id="log-search" placeholder="Search logs..." oninput="renderLogs()"/></div>
+    <div class="sw"><span class="si">⌕</span><input type="text" id="log-search" placeholder="Search logs..." oninput="renderLogs()"/></div>
+    <select class="fbtn" id="log-type" onchange="renderLogs()">
+      <option value="">All types</option>
+      <option value="1">Ban</option>
+      <option value="2">Kick</option>
+      <option value="3">Warn</option>
+      <option value="4">Mute</option>
+      <option value="5">Note</option>
+    </select>
   </div>
   <div class="card" style="max-height:70vh;overflow-y:auto">
-    <div id="logs-list"></div>
+    <div id="logs-list"><p class="no-data">Loading logs...</p></div>
   </div>
 </div>
 
-<!-- ── DISCIPLINARY ── -->
+<!-- DISCIPLINARY -->
 <div class="page" id="page-disciplinary">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+  <div class="grid2" style="margin-bottom:14px">
     <div class="card">
-      <h3><span>🚨</span> Staff with Active Strikes</h3>
+      <h3><span class="icon">🚨</span> Active Strikes</h3>
       <div id="disc-strikes"></div>
     </div>
     <div class="card">
-      <h3><span>🔴</span> Special Status</h3>
+      <h3><span class="icon">🔴</span> Special Status</h3>
       <div id="disc-special"></div>
     </div>
-    <div class="card" style="grid-column:span 2">
-      <h3><span>⚠️</span> ZTP Members</h3>
-      <div id="disc-ztp"></div>
+  </div>
+  <div class="card" style="margin-bottom:14px">
+    <h3><span class="icon">⚠️</span> Zero Tolerance Policy</h3>
+    <div id="disc-ztp"></div>
+  </div>
+  <div class="card">
+    <h3><span class="icon">📋</span> Recent Moderation Logs</h3>
+    <div id="disc-logs"></div>
+  </div>
+</div>
+
+<!-- QUOTA -->
+<div class="page" id="page-quota">
+  <div class="controls">
+    <select class="fbtn" id="quota-period" onchange="renderQuota()">
+      <option value="7">Last 7 days</option>
+      <option value="14">Last 14 days</option>
+      <option value="30" selected>Last 30 days</option>
+    </select>
+    <div class="sw"><span class="si">⌕</span><input type="text" id="quota-search" placeholder="Search member..." oninput="renderQuota()"/></div>
+  </div>
+  <div class="grid2">
+    <div class="card span2">
+      <h3><span class="icon">🎯</span> Activity Quota — Hours This Period</h3>
+      <p style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:14px">Minimum quota is estimated based on role. Green = met quota.</p>
+      <div id="quota-list"></div>
     </div>
   </div>
 </div>
 
-<!-- ── DATA ── -->
+<!-- DATA -->
 <div class="page" id="page-data">
-  <div class="dg">
+  <div class="grid3" style="margin-bottom:14px">
     <div class="card">
-      <h3><span>📋</span> Overview</h3>
+      <h3><span class="icon">📋</span> Overview</h3>
       <div class="dr"><span class="dl">Total Staff</span><span class="dv ca" id="d-total">—</span></div>
       <div class="dr"><span class="dl">On LOA</span><span class="dv cy" id="d-loa">—</span></div>
       <div class="dr"><span class="dl">On ZTP</span><span class="dv cp" id="d-ztp">—</span></div>
       <div class="dr"><span class="dl">Active</span><span class="dv cg" id="d-active">—</span></div>
-      <div class="dr"><span class="dl">With Strikes</span><span class="dv cr" id="d-strikes">—</span></div>
+      <div class="dr"><span class="dl">With Strikes</span><span class="dv cr" id="d-strikecount">—</span></div>
       <div class="dr"><span class="dl">In Sub Teams</span><span class="dv co" id="d-teams">—</span></div>
-      <div class="dr"><span class="dl">Total Hours (Melonly)</span><span class="dv ct" id="d-hours">—</span></div>
+      <div class="dr"><span class="dl">Total Hours</span><span class="dv ct" id="d-hours">—</span></div>
+      <div class="dr"><span class="dl">Total Shifts</span><span class="dv ct" id="d-shifts">—</span></div>
     </div>
     <div class="card">
-      <h3><span>🚨</span> Strikes Breakdown</h3>
+      <h3><span class="icon">🚨</span> Strikes</h3>
       <div id="d-strike-bars" class="bw"></div>
     </div>
     <div class="card">
-      <h3><span>🔑</span> Permissions</h3>
+      <h3><span class="icon">🔑</span> Permissions</h3>
       <div id="d-perm-bars" class="bw"></div>
     </div>
-    <div class="card" style="grid-column:span 2">
-      <h3><span>👥</span> Staff by Role</h3>
+  </div>
+  <div class="grid3">
+    <div class="card span2">
+      <h3><span class="icon">👥</span> Staff by Role</h3>
       <div id="d-role-bars" class="bw"></div>
     </div>
     <div class="card">
-      <h3><span>⭐</span> Sub Teams</h3>
+      <h3><span class="icon">⭐</span> Sub Teams</h3>
       <div id="d-team-bars" class="bw"></div>
     </div>
-    <div class="card" style="grid-column:span 3">
-      <h3><span>🔄</span> Sync History</h3>
+    <div class="card span3">
+      <h3><span class="icon">🔄</span> Sync History</h3>
       <ul class="sl" id="d-sync-log"></ul>
     </div>
   </div>
 </div>
 
-<!-- ── MODAL ── -->
+<!-- MODAL -->
 <div class="mo" id="modal" onclick="closeModal(event)">
   <div class="modal">
     <div class="mh">
@@ -313,7 +384,7 @@
       </div>
       <button class="xbtn" onclick="closeModal()">✕</button>
     </div>
-    <div class="mb-body">
+    <div class="mbd">
       <div class="fg">
         <div class="field"><label>Highest Role</label><div class="fv" id="m-role">—</div></div>
         <div class="field"><label>Team</label><div class="fv" id="m-group">—</div></div>
@@ -338,27 +409,31 @@
 const DATA_URL = 'https://raw.githubusercontent.com/leodiscorduse-cell/staff-database/main/staff-db/staff.json';
 const GROUP_ORDER = ['Chairman Team','Directive Team','Management Team','Internal Affairs Team','Admin Team','Mod Team','Staff'];
 
+// Quota hours by group (minimum per 30 days)
+const QUOTA = {
+  'Chairman Team':2,'Directive Team':3,'Management Team':4,'Internal Affairs Team':4,
+  'Admin Team':5,'Mod Team':6,'Staff':4
+};
+
 const ROLE_COLORS = {
   'chairman':['#f0c040','#000'],'vice chairman':['#e0b030','#000'],
   'director':['#f04747','#fff'],'deputy director':['#f47b7b','#fff'],'assistant director':['#f47b7b','#fff'],
   'management director':['#9b59b6','#fff'],
   'lead management':['#9b59b6','#fff'],'senior management':['#9b59b6','#fff'],'management':['#9b59b6','#fff'],'junior management':['#9b59b6','#fff'],'trial management':['#9b59b6','#fff'],
-  'lead affairs':['#e91e8c','#fff'],'senior affairs':['#e91e8c','#fff'],'affairs team':['#e91e8c','#fff'],'junior affairs':['#e91e8c','#fff'],'trial affairs':['#e91e8c','#fff'],
+  'lead affairs':['#e91e8c','#fff'],'senior affairs':['#e91e8c','#fff'],'affairs':['#e91e8c','#fff'],'junior affairs':['#e91e8c','#fff'],'trial affairs':['#e91e8c','#fff'],
   'senior administrator':['#5865f2','#fff'],'administrator':['#5865f2','#fff'],'junior administrator':['#5865f2','#fff'],'trial administrator':['#5865f2','#fff'],
   'senior moderator':['#4752c4','#fff'],'moderator':['#4752c4','#fff'],'junior moderator':['#4752c4','#fff'],'trial moderator':['#99aab5','#fff'],
 };
 
-function rs(name){
-  const k=(name||'').toLowerCase();
-  for(const[kk,[bg]]of Object.entries(ROLE_COLORS)){if(k.includes(kk))return`background:${bg}22;color:${bg};border:1px solid ${bg}44`}
-  return'background:#252830;color:#99aab5;border:1px solid #2e3240'
-}
+function rs(n){const k=(n||'').toLowerCase();for(const[kk,[bg]]of Object.entries(ROLE_COLORS)){if(k.includes(kk))return`background:${bg}22;color:${bg};border:1px solid ${bg}44`}return'background:#252830;color:#99aab5;border:1px solid #2e3240'}
 function yn(v){return v?`<span class="sb byes"><span class="bd"></span>Yes</span>`:`<span class="sb bno">No</span>`}
 function ini(n){return(n||'?').split(/[\s#]+/).map(p=>p[0]).join('').slice(0,2).toUpperCase()}
 function fd(iso){if(!iso)return'—';return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
 function fdt(iso){if(!iso)return'—';return new Date(iso).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})}
-function fts(ts){if(!ts)return'—';return new Date(ts).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+function fms(ms){if(!ms||ms<=0)return'—';const m=Math.round(ms/60000);if(m<60)return m+'m';return(m/60).toFixed(1)+'h'}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function logColor(t){return{1:'var(--red)',2:'var(--orange)',3:'var(--yellow)',4:'var(--accent)',5:'var(--muted)'}[t]||'var(--muted)'}
+function logLabel(t){return{1:'BAN',2:'KICK',3:'WARN',4:'MUTE',5:'NOTE'}[t]||`TYPE ${t}`}
 
 let allStaff=[], db={}, filters={ztp:false,strike:false,media:false,event:false,loa:false};
 
@@ -368,15 +443,15 @@ async function loadData(){
     db=await r.json();
     allStaff=Object.values(db.staff||{});
     const mel=db.melonly||{};
-    const hasMel=mel.lastFetch&&allStaff.some(m=>m.melonly);
+    const hasMel=!!mel.lastFetch;
 
-    // stats
     const total=allStaff.length;
-    const onLoa=allStaff.filter(m=>m.melonly?.onLoa).length;
+    const onLoa=(mel.loas||[]).length;
     const onZtp=allStaff.filter(m=>m.on_ztp).length;
     const strikes=allStaff.filter(m=>m.strikes?.length>0).length;
     const teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
     const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+    const totalShifts=allStaff.reduce((a,m)=>a+(m.melonly?.totalShifts||0),0);
 
     document.getElementById('s-total').textContent=total;
     document.getElementById('s-loa').textContent=onLoa;
@@ -385,26 +460,29 @@ async function loadData(){
     document.getElementById('s-strikes').textContent=strikes;
     document.getElementById('s-teams').textContent=teams;
     document.getElementById('s-hours').textContent=totalHrs.toFixed(1)+'h';
-    document.getElementById('melonly-status').textContent=hasMel?'Melonly: ✓ connected':'Melonly: no data';
+    document.getElementById('mel-status').innerHTML=hasMel
+      ?`<span class="mel-ok">Melonly: ✓ ${fdt(mel.lastFetch)}</span>`
+      :`<span class="mel-no">Melonly: no data</span>`;
 
     const ls=db.sync_log?.[0]?.synced_at;
     document.getElementById('last-sync').textContent=ls?'Last sync: '+fdt(ls):'No sync yet';
 
-    renderStaff(); renderActivity(); renderLoa(); renderLogs(); renderDisc(); renderData();
+    renderStaff(); renderActivity(); renderLoa(); renderLogs(); renderDisc(); renderQuota(); renderData();
   }catch(e){
-    document.getElementById('staff-tbody').innerHTML=`<tr><td colspan="9"><div class="empty"><h3>⚠️ Could not load data</h3><p>Make sure staff.json is pushed to GitHub and the repo is public.</p></div></td></tr>`;
+    document.getElementById('staff-tbody').innerHTML=`<tr><td colspan="10"><div class="empty"><h3>⚠️ Could not load data</h3><p>Make sure staff.json is in your repo and it's public.</p></div></td></tr>`;
+    console.error(e);
   }
 }
 
-// ── STAFF ──
+/* ── STAFF ── */
 function renderStaff(){
   const search=document.getElementById('search').value.toLowerCase();
   let staff=allStaff.filter(m=>{
-    if(search&&!m.username.toLowerCase().includes(search)&&!(m.nickname||'').toLowerCase().includes(search))return false;
+    if(search&&!m.username?.toLowerCase().includes(search)&&!(m.nickname||'').toLowerCase().includes(search)&&!(m.highest_role||'').toLowerCase().includes(search))return false;
     if(filters.ztp&&!m.on_ztp)return false;
-    if(filters.strike&&(!m.strikes||m.strikes.length===0))return false;
-    if(filters.media&&(!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('media'))))return false;
-    if(filters.event&&(!m.sub_teams||!m.sub_teams.some(t=>t.toLowerCase().includes('event'))))return false;
+    if(filters.strike&&!m.strikes?.length)return false;
+    if(filters.media&&!m.sub_teams?.some(t=>t.toLowerCase().includes('media')))return false;
+    if(filters.event&&!m.sub_teams?.some(t=>t.toLowerCase().includes('event')))return false;
     if(filters.loa&&!m.melonly?.onLoa)return false;
     return true;
   });
@@ -413,132 +491,213 @@ function renderStaff(){
     return ga!==gb?ga-gb:a.username.localeCompare(b.username);
   });
   const tbody=document.getElementById('staff-tbody');
-  if(!staff.length){tbody.innerHTML=`<tr><td colspan="9"><div class="empty"><h3>No staff found</h3></div></td></tr>`;return}
+  if(!staff.length){tbody.innerHTML=`<tr><td colspan="10"><div class="empty"><h3>No staff found</h3></div></td></tr>`;return}
   let html='',lastGroup=null;
   staff.forEach(s=>{
     const g=s.role_group||'Staff';
-    if(g!==lastGroup){html+=`<tr class="group-row"><td colspan="9">— ${esc(g)}</td></tr>`;lastGroup=g}
+    if(g!==lastGroup){html+=`<tr class="gr"><td colspan="10">— ${esc(g)}</td></tr>`;lastGroup=g}
     const st=(s.strikes||[]).map(x=>`<span class="mb bstrike">${esc(x.replace('➜ ',''))}</span>`).join('')||'—';
     const pe=(s.perms||[]).map(x=>`<span class="mb bperm">${esc(x.replace(' Permission',''))}</span>`).join('')||'—';
     const te=(s.sub_teams||[]).map(x=>`<span class="mb bteam">${esc(x.replace('➜ ',''))}</span>`).join('')||'—';
     const hrs=s.melonly?.totalHours!=null?`<span class="ct" style="font-family:var(--mono);font-size:10px">${s.melonly.totalHours}h</span>`:'—';
+    const shf=s.melonly?.totalShifts!=null?`<span style="font-family:var(--mono);font-size:10px;color:var(--muted)">${s.melonly.totalShifts}</span>`:'—';
     html+=`<tr onclick="openModal('${s.user_id}')">
-      <td><div class="user-cell"><div class="avatar">${ini(s.username)}</div><div>
-        <div class="user-name">${esc(s.nickname||s.username.split('#')[0])}</div>
-        <div class="user-tag">${esc(s.username)}</div></div></div></td>
+      <td><div class="uc"><div class="av">${ini(s.username)}</div><div><div class="un">${esc(s.nickname||s.username?.split('#')[0])}</div><div class="ut">${esc(s.username)}</div></div></div></td>
       <td><span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span></td>
       <td class="dc">${fd(s.join_date)}</td>
       <td>${yn(s.on_ztp)}</td>
-      <td>${st}</td><td>${pe}</td><td>${te}</td><td>${hrs}</td>
-      <td class="nc">${s.notes||'—'}</td>
+      <td>${st}</td><td>${pe}</td><td>${te}</td><td>${hrs}</td><td>${shf}</td>
+      <td class="nc">${esc(s.notes)||'—'}</td>
     </tr>`;
   });
   tbody.innerHTML=html;
 }
 
-// ── ACTIVITY ──
+/* ── ACTIVITY ── */
 function renderActivity(){
   const sorted=[...allStaff].filter(m=>m.melonly?.totalHours>0).sort((a,b)=>b.melonly.totalHours-a.melonly.totalHours);
-  const rankLabel=(i)=>i===0?'🥇':i===1?'🥈':i===2?'🥉':`#${i+1}`;
-  document.getElementById('lb-hours').innerHTML=sorted.slice(0,15).map((m,i)=>`
-    <div class="lb-row">
-      <div class="lb-rank ${i===0?'gold':i===1?'silver':i===2?'bronze':''}">${rankLabel(i)}</div>
-      <div class="avatar" style="width:24px;height:24px;font-size:9px">${ini(m.username)}</div>
-      <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div><div class="lb-role">${esc(m.highest_role)}</div></div>
-      <div class="lb-val">${m.melonly.totalHours}h</div>
-    </div>`).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No Melonly data yet. Add MELONLY_TOKEN secret and resync.</p>';
+  const rank=i=>i===0?'🥇':i===1?'🥈':i===2?'🥉':`<span style="font-size:10px">#${i+1}</span>`;
+  const rankClass=i=>i===0?'gold':i===1?'silver':i===2?'bronze':'';
+
+  document.getElementById('lb-hours').innerHTML=sorted.length
+    ? sorted.slice(0,20).map((m,i)=>`<div class="lb-row">
+        <div class="lb-rank ${rankClass(i)}">${rank(i)}</div>
+        <div class="av" style="width:24px;height:24px;font-size:9px;flex-shrink:0">${ini(m.username)}</div>
+        <div class="lb-info"><div class="lb-name">${esc(m.nickname||m.username?.split('#')[0])}</div><div class="lb-sub">${esc(m.highest_role)}</div></div>
+        <div class="lb-val">${m.melonly.totalHours}h</div>
+      </div>`).join('')
+    : `<p class="no-data">No data yet — add MELONLY_TOKEN secret and resync.</p>`;
 
   const byShifts=[...allStaff].filter(m=>m.melonly?.totalShifts>0).sort((a,b)=>b.melonly.totalShifts-a.melonly.totalShifts);
-  document.getElementById('lb-shifts').innerHTML=byShifts.slice(0,10).map((m,i)=>`
-    <div class="lb-row">
-      <div class="lb-rank">#${i+1}</div>
-      <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div></div>
-      <div class="lb-val">${m.melonly.totalShifts} shifts</div>
-    </div>`).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No data yet.</p>';
-
-  // Recent shifts from melonly global data
-  const recentShifts=(db.melonly?.shifts||[]).filter(s=>s.endedAt).sort((a,b)=>b.endedAt-a.endedAt).slice(0,10);
-  document.getElementById('recent-shifts').innerHTML=recentShifts.map(s=>{
-    const dur=s.endedAt?Math.round((s.endedAt-s.createdAt)/60000)+'m':'ongoing';
-    return`<div class="lb-row"><div style="flex:1"><div class="lb-name" style="font-size:11px">Shift</div><div class="lb-role">${fts(s.createdAt)}</div></div><div class="lb-val">${dur}</div></div>`;
-  }).join('')||'<p style="color:var(--muted);font-size:12px;padding:8px 0">No shift data yet.</p>';
-}
-
-// ── LOA ──
-function renderLoa(){
-  const onLoa=allStaff.filter(m=>m.melonly?.onLoa);
-  document.getElementById('loa-active').innerHTML=onLoa.length
-    ? onLoa.map(m=>`<div class="loa-card">
-        <div><div class="loa-name">${esc(m.nickname||m.username.split('#')[0])}</div>
-        <div class="loa-reason">${esc(m.melonly?.loaReason||'No reason provided')}</div></div>
-        <div class="loa-dates">Returns<br>${fd(m.melonly?.loaEndsAt)}</div>
+  document.getElementById('lb-shifts').innerHTML=byShifts.length
+    ? byShifts.slice(0,15).map((m,i)=>`<div class="lb-row">
+        <div class="lb-rank">#${i+1}</div>
+        <div class="lb-info"><div class="lb-name">${esc(m.nickname||m.username?.split('#')[0])}</div><div class="lb-sub">${esc(m.highest_role)}</div></div>
+        <div class="lb-val">${m.melonly.totalShifts} shifts</div>
       </div>`).join('')
-    : '<p style="color:var(--muted);font-size:12px">No active LOAs.</p>';
+    : `<p class="no-data">No data yet.</p>`;
 
-  const total=allStaff.filter(m=>m.melonly?.onLoa).length;
-  document.getElementById('loa-stats').innerHTML=`
-    <div class="dr"><span class="dl">Currently on LOA</span><span class="dv cy">${total}</span></div>
-    <div class="dr"><span class="dl">Active Staff</span><span class="dv cg">${allStaff.length-total}</span></div>`;
+  const recentShifts=(db.melonly?.shifts||[]).slice(0,20);
+  document.getElementById('recent-shifts').innerHTML=recentShifts.length
+    ? recentShifts.map(s=>`<div class="shift-row">
+        <div class="shift-info">
+          <div class="shift-name">${esc(s.displayName||'Unknown')}</div>
+          <div class="shift-meta">${s.highestRole?`<span class="rb" style="${rs(s.highestRole)};font-size:9px">${esc(s.highestRole)}</span> · `:''} ${fdt(new Date(s.createdAt).toISOString())}</div>
+        </div>
+        <div class="shift-dur">${fms(s.durationMs)}</div>
+      </div>`).join('')
+    : `<p class="no-data">No shift data yet.</p>`;
 }
 
-// ── LOGS ──
+/* ── LOA ── */
+function renderLoa(){
+  const loas=db.melonly?.loas||[];
+  document.getElementById('loa-count').textContent=loas.length;
+  document.getElementById('loa-active').innerHTML=loas.length
+    ? loas.map(l=>`<div class="loa-card">
+        <div>
+          <div class="loa-name">${esc(l.displayName||'Unknown')}</div>
+          <div class="loa-role">${l.highestRole?`<span class="rb" style="${rs(l.highestRole)};font-size:9px">${esc(l.highestRole)}</span>`:''}</div>
+          <div class="loa-reason">${esc(l.reason||'No reason provided')}</div>
+        </div>
+        <div class="loa-dates">Returns<strong>${l.endAt?fd(new Date(l.endAt).toISOString()):'—'}</strong></div>
+      </div>`)
+      .join('')
+    : `<p class="no-data">No active LOAs right now.</p>`;
+
+  document.getElementById('loa-stats').innerHTML=`
+    <div class="dr"><span class="dl">Currently on LOA</span><span class="dv cy">${loas.length}</span></div>
+    <div class="dr"><span class="dl">Active Staff</span><span class="dv cg">${allStaff.length-loas.length}</span></div>
+    <div class="dr"><span class="dl">% on LOA</span><span class="dv">${allStaff.length?((loas.length/allStaff.length)*100).toFixed(1)+'%':'—'}</span></div>`;
+}
+
+/* ── LOGS ── */
 function renderLogs(){
   const search=(document.getElementById('log-search')?.value||'').toLowerCase();
-  const logs=(db.melonly?.logs||[]).filter(l=>!search||
-    (l.username||'').toLowerCase().includes(search)||(l.text||'').toLowerCase().includes(search)||(l.description||'').toLowerCase().includes(search)
-  );
-  const logTypeLabel=(t)=>{const m={1:'Ban',2:'Kick',3:'Warn',4:'Mute',5:'Note'};return m[t]||`Type ${t}`};
-  const logTypeColor=(t)=>{const m={1:'var(--red)',2:'var(--orange)',3:'var(--yellow)',4:'var(--accent)',5:'var(--muted)'};return m[t]||'var(--muted)'};
+  const typeFilter=document.getElementById('log-type')?.value||'';
+  let logs=(db.melonly?.logs||[]).filter(l=>{
+    if(typeFilter&&String(l.type)!==typeFilter)return false;
+    if(search&&!(l.staffName||'').toLowerCase().includes(search)&&!(l.username||'').toLowerCase().includes(search)&&!(l.text||'').toLowerCase().includes(search)&&!(l.description||'').toLowerCase().includes(search))return false;
+    return true;
+  });
   document.getElementById('logs-list').innerHTML=logs.length
     ? logs.map(l=>`<div class="log-row">
-        <div class="log-type" style="color:${logTypeColor(l.type)}">${logTypeLabel(l.type)}</div>
+        <div class="log-badge" style="background:${logColor(l.type)}22;color:${logColor(l.type)};border:1px solid ${logColor(l.type)}44">${logLabel(l.type)}</div>
         <div class="log-body">
-          <div class="log-user">${esc(l.username||'Unknown')}</div>
+          <div class="log-user">${esc(l.staffName||l.username||'Unknown')}</div>
           <div class="log-desc">${esc(l.text||l.description||'No description')}</div>
         </div>
-        <div class="log-time">${fts(l.createdAt)}</div>
+        <div class="log-time">${fdt(new Date(l.createdAt).toISOString())}</div>
       </div>`).join('')
-    : '<p style="color:var(--muted);font-size:12px;padding:12px 0">No logs available. Requires Melonly token.</p>';
+    : `<p class="no-data">No logs available${db.melonly?.lastFetch?'.':' — requires MELONLY_TOKEN.'}</p>`;
 }
 
-// ── DISCIPLINARY ──
+/* ── DISCIPLINARY ── */
 function renderDisc(){
   const withStrikes=allStaff.filter(m=>m.strikes?.length>0).sort((a,b)=>b.strikes.length-a.strikes.length);
   document.getElementById('disc-strikes').innerHTML=withStrikes.length
-    ? withStrikes.map(m=>`<div class="lb-row">
-        <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div>
-        <div style="margin-top:3px">${m.strikes.map(s=>`<span class="mb bstrike">${esc(s.replace('➜ ',''))}</span>`).join('')}</div></div>
+    ? withStrikes.map(m=>`<div class="disc-row">
+        <div class="disc-info">
+          <div class="disc-name">${esc(m.nickname||m.username?.split('#')[0])} <span style="font-size:10px;color:var(--muted)">${esc(m.highest_role)}</span></div>
+          <div class="disc-badges">${m.strikes.map(s=>`<span class="mb bstrike">${esc(s.replace('➜ ',''))}</span>`).join('')}</div>
+        </div>
       </div>`).join('')
-    : '<p style="color:var(--muted);font-size:12px">No active strikes.</p>';
+    : `<p class="no-data">No active strikes.</p>`;
 
   const special=allStaff.filter(m=>m.special?.length>0);
   document.getElementById('disc-special').innerHTML=special.length
-    ? special.map(m=>`<div class="lb-row">
-        <div style="flex:1"><div class="lb-name">${esc(m.nickname||m.username.split('#')[0])}</div>
-        <div style="margin-top:3px">${m.special.map(s=>`<span class="mb bspecial">${esc(s.replace('➜ ',''))}</span>`).join('')}</div></div>
+    ? special.map(m=>`<div class="disc-row">
+        <div class="disc-info">
+          <div class="disc-name">${esc(m.nickname||m.username?.split('#')[0])}</div>
+          <div class="disc-badges">${m.special.map(s=>`<span class="mb bspecial">${esc(s.replace('➜ ',''))}</span>`).join('')}</div>
+        </div>
       </div>`).join('')
-    : '<p style="color:var(--muted);font-size:12px">No special statuses.</p>';
+    : `<p class="no-data">No special statuses.</p>`;
 
   const ztp=allStaff.filter(m=>m.on_ztp);
   document.getElementById('disc-ztp').innerHTML=ztp.length
-    ? `<div style="display:flex;flex-wrap:wrap;gap:8px">${ztp.map(m=>`<span class="mb" style="background:rgba(235,69,158,.12);color:var(--accent2);border:1px solid rgba(235,69,158,.2);padding:4px 10px;font-size:11px">${esc(m.nickname||m.username.split('#')[0])}</span>`).join('')}</div>`
-    : '<p style="color:var(--muted);font-size:12px">No ZTP members.</p>';
+    ? `<div style="display:flex;flex-wrap:wrap;gap:8px">${ztp.map(m=>`<span class="mb" style="background:rgba(235,69,158,.12);color:var(--accent2);border:1px solid rgba(235,69,158,.2);padding:4px 10px;font-size:11px">${esc(m.nickname||m.username?.split('#')[0])}</span>`).join('')}</div>`
+    : `<p class="no-data">No ZTP members.</p>`;
+
+  const recentLogs=(db.melonly?.logs||[]).slice(0,8);
+  document.getElementById('disc-logs').innerHTML=recentLogs.length
+    ? recentLogs.map(l=>`<div class="log-row">
+        <div class="log-badge" style="background:${logColor(l.type)}22;color:${logColor(l.type)};border:1px solid ${logColor(l.type)}44">${logLabel(l.type)}</div>
+        <div class="log-body"><div class="log-user">${esc(l.staffName||l.username||'Unknown')}</div><div class="log-desc">${esc(l.text||'No description')}</div></div>
+        <div class="log-time">${fdt(new Date(l.createdAt).toISOString())}</div>
+      </div>`).join('')
+    : `<p class="no-data">No logs available.</p>`;
 }
 
-// ── DATA ──
+/* ── QUOTA ── */
+function renderQuota(){
+  const days=parseInt(document.getElementById('quota-period')?.value||'30');
+  const search=(document.getElementById('quota-search')?.value||'').toLowerCase();
+  const cutoff=Date.now()-(days*86400000);
+
+  const staff=[...allStaff].filter(m=>{
+    if(search&&!(m.nickname||'').toLowerCase().includes(search)&&!m.username?.toLowerCase().includes(search))return false;
+    return true;
+  });
+
+  staff.sort((a,b)=>{
+    const ga=GROUP_ORDER.indexOf(a.role_group||'Staff'),gb=GROUP_ORDER.indexOf(b.role_group||'Staff');
+    return ga!==gb?ga-gb:(b.melonly?.totalHours||0)-(a.melonly?.totalHours||0);
+  });
+
+  // Calculate hours in period from shifts data
+  const memberHoursInPeriod = {};
+  (db.melonly?.shifts||[]).forEach(s=>{
+    if(s.discordId&&s.endedAt&&s.createdAt>=cutoff){
+      memberHoursInPeriod[s.discordId]=(memberHoursInPeriod[s.discordId]||0)+(s.durationMs||0);
+    }
+  });
+
+  const rows=staff.map(m=>{
+    const quota=QUOTA[m.role_group||'Staff']||4;
+    const scaledQuota=quota*(days/30);
+    const hoursMs=memberHoursInPeriod[m.user_id]||0;
+    const hrs=Math.round((hoursMs/3600000)*10)/10;
+    const pct=Math.min((hrs/scaledQuota)*100,100);
+    const met=hrs>=scaledQuota;
+    return{m,hrs,scaledQuota,pct,met};
+  });
+
+  document.getElementById('quota-list').innerHTML=rows.length
+    ? rows.map(({m,hrs,scaledQuota,pct,met})=>`
+      <div class="quota-row">
+        <div class="av" style="width:24px;height:24px;font-size:9px">${ini(m.username)}</div>
+        <div class="quota-info">
+          <div class="quota-name">${esc(m.nickname||m.username?.split('#')[0])}</div>
+          <div class="quota-role">${esc(m.highest_role)} · ${esc(m.role_group)}</div>
+        </div>
+        <div class="quota-bar-wrap">
+          <div class="quota-bar-track"><div class="quota-bar-fill" style="width:${pct}%;background:${met?'var(--green)':'var(--red)'}"></div></div>
+          <div class="quota-val ${met?'quota-met':''}">${hrs}h / ${scaledQuota.toFixed(1)}h min</div>
+        </div>
+      </div>`).join('')
+    : `<p class="no-data">No staff found.</p>`;
+}
+
+/* ── DATA ── */
 function renderData(){
-  const total=allStaff.length,onLoa=allStaff.filter(m=>m.melonly?.onLoa).length,onZtp=allStaff.filter(m=>m.on_ztp).length;
-  const strikes=allStaff.filter(m=>m.strikes?.length>0).length,teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
+  const total=allStaff.length,onZtp=allStaff.filter(m=>m.on_ztp).length;
+  const onLoa=(db.melonly?.loas||[]).length;
+  const strikes=allStaff.filter(m=>m.strikes?.length>0).length;
+  const teams=allStaff.filter(m=>m.sub_teams?.length>0).length;
   const totalHrs=allStaff.reduce((a,m)=>a+(m.melonly?.totalHours||0),0);
+  const totalShifts=allStaff.reduce((a,m)=>a+(m.melonly?.totalShifts||0),0);
+
   document.getElementById('d-total').textContent=total;
   document.getElementById('d-loa').textContent=onLoa;
   document.getElementById('d-ztp').textContent=onZtp;
   document.getElementById('d-active').textContent=total-onLoa;
-  document.getElementById('d-strikes').textContent=strikes;
+  document.getElementById('d-strikecount').textContent=strikes;
   document.getElementById('d-teams').textContent=teams;
   document.getElementById('d-hours').textContent=totalHrs.toFixed(1)+'h';
+  document.getElementById('d-shifts').textContent=totalShifts;
 
-  const bars=(items,color)=>{const mx=Math.max(...items.map(i=>i.c),1);return items.map(i=>`<div class="br"><div class="bl">${esc(i.l)}</div><div class="bt"><div class="bf" style="width:${(i.c/mx)*100}%;background:${color}"></div></div><div class="bc">${i.c}</div></div>`).join('')};
+  const bars=(items,color)=>{const mx=Math.max(...items.map(i=>i.c),1);return items.map(i=>`<div class="br2"><div class="bl">${esc(i.l)}</div><div class="bt"><div class="bf" style="width:${(i.c/mx)*100}%;background:${color}"></div></div><div class="bc">${i.c}</div></div>`).join('')};
 
   document.getElementById('d-strike-bars').innerHTML=bars(['➜ Strike 3 (Termination)','➜ Strike 2 (Demotion)','➜ Strike 1','Warning 3 (Strike)','Warning 2','Warning 1','Verbal Warning'].map(s=>({l:s.replace('➜ ',''),c:allStaff.filter(m=>(m.strikes||[]).includes(s)).length})),'var(--red)');
   document.getElementById('d-perm-bars').innerHTML=bars(['50 / 50 Shift Permission','Off Duty Command Permission','Session Host Permission','Promotion Permission','Infraction Permission'].map(p=>({l:p.replace(' Permission',''),c:allStaff.filter(m=>(m.perms||[]).includes(p)).length})),'var(--accent)');
@@ -546,10 +705,10 @@ function renderData(){
   document.getElementById('d-role-bars').innerHTML=bars(Object.entries(rc).sort((a,b)=>b[1]-a[1]).map(([l,c])=>({l,c})),'var(--accent)');
   document.getElementById('d-team-bars').innerHTML=bars(['➜ Media Team','➜ Event Team','➜ Social Media Team','➜ Education & Training Team'].map(t=>({l:t.replace('➜ ',''),c:allStaff.filter(m=>(m.sub_teams||[]).includes(t)).length})),'var(--accent2)');
 
-  document.getElementById('d-sync-log').innerHTML=(db.sync_log||[]).slice(0,10).map(l=>`<li><span class="st2">${fdt(l.synced_at)}</span><span class="sc"><span class="sa">+${l.added}</span><span class="su">~${l.updated}</span><span class="sr">-${l.removed}</span></span></li>`).join('')||'<li style="color:var(--muted);font-size:11px;padding:8px 0">No syncs yet</li>';
+  document.getElementById('d-sync-log').innerHTML=(db.sync_log||[]).slice(0,10).map(l=>`<li><span class="st2">${fdt(l.synced_at)}</span><span class="sc"><span class="sa">+${l.added}</span><span class="su2">~${l.updated}</span><span class="sr2">-${l.removed}</span></span></li>`).join('')||'<li style="color:var(--muted);font-size:11px;padding:8px 0">No syncs yet</li>';
 }
 
-// ── FILTERS ──
+/* ── FILTERS ── */
 function toggleFilter(type){
   filters[type]=!filters[type];
   const b=document.getElementById('btn-'+type)||document.getElementById('btn-'+type+'2');
@@ -557,7 +716,7 @@ function toggleFilter(type){
   renderStaff();
 }
 
-// ── TABS ──
+/* ── TABS ── */
 function switchTab(tab,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
@@ -565,20 +724,18 @@ function switchTab(tab,btn){
   if(btn)btn.classList.add('active');
 }
 
-// ── MODAL ──
+/* ── MODAL ── */
 function openModal(uid){
   const s=allStaff.find(m=>m.user_id===uid);if(!s)return;
   document.getElementById('m-avatar').textContent=ini(s.username);
-  document.getElementById('m-name').textContent=s.nickname||s.username.split('#')[0];
+  document.getElementById('m-name').textContent=s.nickname||s.username?.split('#')[0];
   document.getElementById('m-id').textContent=`ID: ${s.user_id} · ${s.username}`;
   document.getElementById('m-role').innerHTML=`<span class="rb" style="${rs(s.highest_role)}">${esc(s.highest_role)}</span>`;
   document.getElementById('m-group').textContent=s.role_group||'—';
   document.getElementById('m-joined').textContent=fd(s.join_date);
-  document.getElementById('m-status').innerHTML=[
-    s.on_ztp?`<span class="mb" style="background:rgba(235,69,158,.15);color:var(--accent2);border:1px solid rgba(235,69,158,.3)">ZTP</span>`:'',
-  ].filter(Boolean).join(' ')||'<span style="color:var(--green);font-size:11px">Active</span>';
-  document.getElementById('m-hours').textContent=s.melonly?.totalHours!=null?s.melonly.totalHours+'h':'No data';
-  document.getElementById('m-shifts').textContent=s.melonly?.totalShifts!=null?s.melonly.totalShifts+' shifts':'No data';
+  document.getElementById('m-status').innerHTML=s.on_ztp?`<span class="mb" style="background:rgba(235,69,158,.15);color:var(--accent2);border:1px solid rgba(235,69,158,.3)">ZTP</span>`:`<span style="color:var(--green);font-size:11px">Active</span>`;
+  document.getElementById('m-hours').textContent=s.melonly?.totalHours!=null?s.melonly.totalHours+'h':'No Melonly data';
+  document.getElementById('m-shifts').textContent=s.melonly?.totalShifts!=null?s.melonly.totalShifts+' shifts':'No Melonly data';
   document.getElementById('m-lastshift').textContent=fd(s.melonly?.lastShiftAt);
   document.getElementById('m-loa').innerHTML=s.melonly?.onLoa?`<span class="sb byes"><span class="bd"></span>Yes — ${fd(s.melonly.loaEndsAt)}</span>`:`<span class="sb bno">No</span>`;
   document.getElementById('m-roles').innerHTML=(s.roles||[]).map(r=>`<span class="mb rb" style="${rs(r)}">${esc(r)}</span>`).join('');

@@ -21,114 +21,170 @@ const CONFIG = {
   ],
 
   roleGroups: {
-    'Chairman Team':          ['➜ Chairman', '➜ Vice Chairman'],
-    'Directive Team':         ['Director', 'Deputy Director', 'Assistant Director', '➜ Directive Team', 'Disciplinary Director', 'Recruitment Director', 'Internal Affairs Director', 'In-Game Director', 'Community Director'],
-    'Management Team':        ['Management Director', 'Lead Management', 'Senior Management', 'Management', 'Junior Management', 'Trial Management', '➜ Management Team'],
-    'Internal Affairs Team':  ['Lead Affairs Team', 'Senior Affairs Team', 'Affairs Team', 'Junior Affairs Team', 'Trial Affairs Team', '➜ Internal Affairs Team'],
-    'Admin Team':             ['Senior Administrator', 'Administrator', 'Junior Administrator', 'Trial Administrator', '➜ Administration Team'],
-    'Mod Team':               ['Senior Moderator', 'Moderator', 'Junior Moderator', 'Trial Moderator', '➜ Moderation Team'],
-    'Staff':                  ['➜ Staff Team'],
+    'Chairman Team':         ['➜ Chairman', '➜ Vice Chairman'],
+    'Directive Team':        ['Director', 'Deputy Director', 'Assistant Director', '➜ Directive Team', 'Disciplinary Director', 'Recruitment Director', 'Internal Affairs Director', 'In-Game Director', 'Community Director'],
+    'Management Team':       ['Management Director', 'Lead Management', 'Senior Management', 'Management', 'Junior Management', 'Trial Management', '➜ Management Team'],
+    'Internal Affairs Team': ['Lead Affairs Team', 'Senior Affairs Team', 'Affairs Team', 'Junior Affairs Team', 'Trial Affairs Team', '➜ Internal Affairs Team'],
+    'Admin Team':            ['Senior Administrator', 'Administrator', 'Junior Administrator', 'Trial Administrator', '➜ Administration Team'],
+    'Mod Team':              ['Senior Moderator', 'Moderator', 'Junior Moderator', 'Trial Moderator', '➜ Moderation Team'],
+    'Staff':                 ['➜ Staff Team'],
   },
 
-  strikeRoles: ['➜ Strike 3 (Termination)', '➜ Strike 2 (Demotion)', '➜ Strike 1', 'Warning 3 (Strike)', 'Warning 2', 'Warning 1', 'Verbal Warning'],
-  permRoles:   ['50 / 50 Shift Permission', 'Off Duty Command Permission', 'Session Host Permission', 'Promotion Permission', 'Infraction Permission'],
-  subTeamRoles:['➜ Media Team', '➜ Event Team', '➜ Social Media Team', '➜ Education & Training Team'],
-  specialRoles:['➜ Blacklisted Staff', '➜ Under Investigation', '➜ Terminated Staff', '➜ Suspended', 'Zero Tolerance Policy', '➜ Staff of the Week', 'Age Verified'],
-  ztpRole:     'Zero Tolerance Policy',
+  strikeRoles:  ['➜ Strike 3 (Termination)', '➜ Strike 2 (Demotion)', '➜ Strike 1', 'Warning 3 (Strike)', 'Warning 2', 'Warning 1', 'Verbal Warning'],
+  permRoles:    ['50 / 50 Shift Permission', 'Off Duty Command Permission', 'Session Host Permission', 'Promotion Permission', 'Infraction Permission'],
+  subTeamRoles: ['➜ Media Team', '➜ Event Team', '➜ Social Media Team', '➜ Education & Training Team'],
+  specialRoles: ['➜ Blacklisted Staff', '➜ Under Investigation', '➜ Terminated Staff', '➜ Suspended', 'Zero Tolerance Policy', '➜ Staff of the Week', 'Age Verified'],
+  ztpRole:      'Zero Tolerance Policy',
 };
 
 const DB_PATH = path.join(__dirname, '..', 'staff.json');
 
 function loadDB() {
-  if (!fs.existsSync(DB_PATH)) fs.writeFileSync(DB_PATH, JSON.stringify({ staff: {}, sync_log: [], melonly: { shifts: [], logs: [], loas: [], lastFetch: null } }, null, 2));
+  if (!fs.existsSync(DB_PATH)) {
+    fs.writeFileSync(DB_PATH, JSON.stringify({ staff: {}, sync_log: [], melonly: { shifts: [], logs: [], loas: [], lastFetch: null } }, null, 2));
+  }
   return JSON.parse(fs.readFileSync(DB_PATH, 'utf8'));
 }
 function saveDB(data) { fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2)); }
 
-// ── Melonly API helper ────────────────────────────────────────────────────────
-async function melonlyFetch(path, label) {
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+async function melonlyFetch(endpoint, label) {
   if (!CONFIG.melonlyToken) return null;
   try {
-    const res = await fetch(`${CONFIG.melonlyBase}${path}`, {
+    const res = await fetch(`${CONFIG.melonlyBase}${endpoint}`, {
       headers: { Authorization: `Bearer ${CONFIG.melonlyToken}` }
     });
-    if (!res.ok) { console.warn(`[MELONLY] ${label} failed: ${res.status}`); return null; }
+    if (res.status === 404) return null;
+    if (!res.ok) { console.warn(`[MELONLY] ${label} → ${res.status}`); return null; }
     return await res.json();
-  } catch (e) { console.warn(`[MELONLY] ${label} error:`, e.message); return null; }
+  } catch (e) { console.warn(`[MELONLY] ${label} error: ${e.message}`); return null; }
 }
 
 async function fetchAllPages(endpoint, label) {
   const results = [];
   let page = 1;
   while (true) {
-    const data = await melonlyFetch(`${endpoint}?page=${page}&limit=100`, `${label} p${page}`);
-    if (!data || !data.data || data.data.length === 0) break;
+    const sep = endpoint.includes('?') ? '&' : '?';
+    const data = await melonlyFetch(`${endpoint}${sep}page=${page}&limit=100`, `${label} p${page}`);
+    if (!data?.data?.length) break;
     results.push(...data.data);
     if (page >= data.totalPages) break;
     page++;
-    await new Promise(r => setTimeout(r, 300)); // be polite with rate limits
+    await sleep(300);
   }
   return results;
 }
 
-// ── Sync Melonly data ─────────────────────────────────────────────────────────
-async function syncMelonly(db) {
-  if (!CONFIG.melonlyToken) { console.log('[MELONLY] No token set, skipping.'); return; }
-  console.log('[MELONLY] Fetching shifts, logs and LOAs...');
+async function syncMelonly(db, discordIds) {
+  if (!CONFIG.melonlyToken) { console.log('[MELONLY] No token, skipping.'); return; }
+  console.log('[MELONLY] Starting sync...');
 
-  const [shifts, logs, loas] = await Promise.all([
+  // Step 1: fetch all shifts, logs, loas in parallel
+  const [allShifts, allLogs, allLoas] = await Promise.all([
     fetchAllPages('/server/shifts', 'shifts'),
     fetchAllPages('/server/logs', 'logs'),
     fetchAllPages('/server/loas', 'loas'),
   ]);
+  console.log(`[MELONLY] Fetched ${allShifts.length} shifts, ${allLogs.length} logs, ${allLoas.length} LOAs`);
 
-  // Enrich each staff member with their Melonly activity
-  for (const [discordId, member] of Object.entries(db.staff)) {
-    // Get melonly member by discord ID
-    const melMember = await melonlyFetch(`/server/members/discord/${discordId}`, `member ${discordId}`);
-    if (!melMember) continue;
+  // Step 2: for each staff Discord ID, look up their Melonly member ID
+  // Build map: melonyMemberId → discordId
+  const melonyToDiscord = {};
+  const discordToMelony = {};
 
-    const memberId = melMember.id;
+  console.log(`[MELONLY] Looking up ${discordIds.length} staff members...`);
+  for (const discordId of discordIds) {
+    const member = await melonlyFetch(`/server/members/discord/${discordId}`, `lookup ${discordId}`);
+    if (member?.id) {
+      melonyToDiscord[member.id] = discordId;
+      discordToMelony[discordId] = member.id;
+    }
+    await sleep(150);
+  }
+  console.log(`[MELONLY] Matched ${Object.keys(discordToMelony).length} staff to Melonly`);
 
-    // Filter shifts for this member
-    const memberShifts = shifts.filter(s => s.memberId === memberId);
-    const completedShifts = memberShifts.filter(s => s.endedAt);
-    const totalSeconds = completedShifts.reduce((acc, s) => {
-      return acc + ((s.endedAt - s.createdAt) / 1000); // ms to seconds
-    }, 0);
-    const totalHours = Math.round((totalSeconds / 3600) * 10) / 10;
-    const lastShift = completedShifts.sort((a, b) => b.endedAt - a.endedAt)[0];
+  // Step 3: calculate per-staff stats from shifts
+  for (const [discordId, melonyId] of Object.entries(discordToMelony)) {
+    if (!db.staff[discordId]) continue;
 
-    // Filter LOAs for this member
-    const memberLoas = loas.filter(l => l.memberId === memberId);
+    const memberShifts = allShifts.filter(s => s.memberId === melonyId);
+    const completed = memberShifts.filter(s => s.endedAt);
+    const totalMs = completed.reduce((a, s) => a + (s.endedAt - s.createdAt), 0);
+    const totalHours = Math.round((totalMs / 3600000) * 10) / 10;
+    const lastShift = completed.sort((a, b) => b.endedAt - a.endedAt)[0];
+
+    // LOA check
+    const memberLoas = allLoas.filter(l => l.memberId === melonyId);
     const activeLoa = memberLoas.find(l => l.status === 1 && !l.endedAt);
 
     db.staff[discordId].melonly = {
-      memberId,
-      totalShifts:  completedShifts.length,
+      melonyId,
+      totalShifts:  completed.length,
       totalHours,
       lastShiftAt:  lastShift ? new Date(lastShift.endedAt).toISOString() : null,
       onLoa:        !!activeLoa,
       loaReason:    activeLoa?.reason || null,
-      loaEndsAt:    activeLoa ? new Date(activeLoa.endAt).toISOString() : null,
+      loaEndsAt:    activeLoa?.endAt ? new Date(activeLoa.endAt).toISOString() : null,
     };
-
-    await new Promise(r => setTimeout(r, 200));
   }
 
-  // Store recent global data
+  // Step 4: enrich recent shifts with Discord info for the dashboard
+  const enrichedShifts = allShifts
+    .filter(s => s.endedAt)
+    .sort((a, b) => b.endedAt - a.endedAt)
+    .slice(0, 100)
+    .map(s => {
+      const discordId = melonyToDiscord[s.memberId];
+      const staffMember = discordId ? db.staff[discordId] : null;
+      return {
+        ...s,
+        discordId:    discordId || null,
+        displayName:  staffMember?.nickname || staffMember?.username?.split('#')[0] || 'Unknown',
+        highestRole:  staffMember?.highest_role || null,
+        durationMs:   s.endedAt - s.createdAt,
+      };
+    });
+
+  // Step 5: enrich logs with names
+  const enrichedLogs = allLogs.slice(0, 200).map(l => {
+    const discordId = melonyToDiscord[l.memberId] || null;
+    const staffMember = discordId ? db.staff[discordId] : null;
+    return {
+      ...l,
+      discordId,
+      staffName: staffMember?.nickname || staffMember?.username?.split('#')[0] || l.username || 'Unknown',
+    };
+  });
+
+  // Step 6: enrich active LOAs with names
+  const activeLoas = allLoas
+    .filter(l => l.status === 1 && !l.endedAt)
+    .map(l => {
+      const discordId = melonyToDiscord[l.memberId] || null;
+      const staffMember = discordId ? db.staff[discordId] : null;
+      return {
+        ...l,
+        discordId,
+        displayName: staffMember?.nickname || staffMember?.username?.split('#')[0] || 'Unknown',
+        highestRole: staffMember?.highest_role || null,
+      };
+    });
+
   db.melonly = {
-    shifts:    shifts.slice(0, 200),
-    logs:      logs.slice(0, 200),
-    loas:      loas.filter(l => l.status === 1).slice(0, 100),
+    shifts:    enrichedShifts,
+    logs:      enrichedLogs,
+    loas:      activeLoas,
     lastFetch: new Date().toISOString(),
   };
 
-  console.log(`[MELONLY] Done. ${shifts.length} shifts, ${logs.length} logs, ${loas.length} LOAs fetched.`);
+  console.log(`[MELONLY] Done. ${Object.keys(discordToMelony).length} staff enriched with activity data.`);
 }
 
 // ── Discord sync ──────────────────────────────────────────────────────────────
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences] });
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences],
+});
 
 async function syncStaff() {
   const guild = client.guilds.cache.get(CONFIG.guildId);
@@ -148,18 +204,21 @@ async function syncStaff() {
     const staffRolesOnMember = memberRoleNames.filter(r => staffRoleSet.has(r.toLowerCase()));
     if (staffRolesOnMember.length === 0) continue;
 
-    const highestRole = CONFIG.staffRoles.find(r => staffRolesOnMember.map(x => x.toLowerCase()).includes(r.toLowerCase())) || staffRolesOnMember[0];
+    const highestRole = CONFIG.staffRoles.find(r =>
+      staffRolesOnMember.map(x => x.toLowerCase()).includes(r.toLowerCase())
+    ) || staffRolesOnMember[0];
+
     let roleGroup = 'Staff';
     for (const [group, roles] of Object.entries(CONFIG.roleGroups)) {
       if (roles.some(r => r.toLowerCase() === highestRole.toLowerCase())) { roleGroup = group; break; }
     }
 
-    const onZtp      = memberRoleNames.some(r => r.toLowerCase() === CONFIG.ztpRole.toLowerCase());
-    const strikes    = CONFIG.strikeRoles.filter(s => memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase()));
-    const perms      = CONFIG.permRoles.filter(p => memberRoleNames.some(r => r.toLowerCase() === p.toLowerCase()));
-    const subTeams   = CONFIG.subTeamRoles.filter(t => memberRoleNames.some(r => r.toLowerCase() === t.toLowerCase()));
-    const special    = CONFIG.specialRoles.filter(s => memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase()));
-    const existing   = db.staff[member.id];
+    const onZtp    = memberRoleNames.some(r => r.toLowerCase() === CONFIG.ztpRole.toLowerCase());
+    const strikes  = CONFIG.strikeRoles.filter(s => memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase()));
+    const perms    = CONFIG.permRoles.filter(p => memberRoleNames.some(r => r.toLowerCase() === p.toLowerCase()));
+    const subTeams = CONFIG.subTeamRoles.filter(t => memberRoleNames.some(r => r.toLowerCase() === t.toLowerCase()));
+    const special  = CONFIG.specialRoles.filter(s => memberRoleNames.some(r => r.toLowerCase() === s.toLowerCase()));
+    const existing = db.staff[member.id];
     currentIds.add(member.id);
 
     db.staff[member.id] = {
@@ -180,14 +239,17 @@ async function syncStaff() {
     if (existing) updated++; else added++;
   }
 
-  for (const id of Object.keys(db.staff)) { if (!currentIds.has(id)) { delete db.staff[id]; removed++; } }
+  for (const id of Object.keys(db.staff)) {
+    if (!currentIds.has(id)) { delete db.staff[id]; removed++; }
+  }
+
   db.sync_log.unshift({ synced_at: now, added, updated, removed });
   if (db.sync_log.length > 20) db.sync_log = db.sync_log.slice(0, 20);
 
-  console.log(`[SYNC] +${added} added, ~${updated} updated, -${removed} removed. Total: ${currentIds.size}`);
+  console.log(`[SYNC] Discord done: +${added} added, ~${updated} updated, -${removed} removed. Total: ${currentIds.size}`);
 
-  // Now sync Melonly if token available
-  await syncMelonly(db);
+  // Sync Melonly with all Discord staff IDs
+  await syncMelonly(db, [...currentIds]);
 
   saveDB(db);
 }
