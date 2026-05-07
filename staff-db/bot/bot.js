@@ -85,7 +85,7 @@ async function syncMelonly(db) {
   // Enrich each staff member with their Melonly activity
   for (const [discordId, member] of Object.entries(db.staff)) {
     // Get melonly member by discord ID
-    const melMember = await melonlyFetch(`/members/discord/${discordId}`, `member ${discordId}`);
+    const melMember = await melonlyFetch(`/server/members/discord/${discordId}`, `member ${discordId}`);
     if (!melMember) continue;
 
     const memberId = melMember.id;
@@ -94,7 +94,7 @@ async function syncMelonly(db) {
     const memberShifts = shifts.filter(s => s.memberId === memberId);
     const completedShifts = memberShifts.filter(s => s.endedAt);
     const totalSeconds = completedShifts.reduce((acc, s) => {
-      return acc + (s.endedAt - s.createdAt);
+      return acc + ((s.endedAt - s.createdAt) / 1000); // ms to seconds
     }, 0);
     const totalHours = Math.round((totalSeconds / 3600) * 10) / 10;
     const lastShift = completedShifts.sort((a, b) => b.endedAt - a.endedAt)[0];
@@ -107,10 +107,10 @@ async function syncMelonly(db) {
       memberId,
       totalShifts:  completedShifts.length,
       totalHours,
-      lastShiftAt:  lastShift ? new Date(lastShift.endedAt * 1000).toISOString() : null,
+      lastShiftAt:  lastShift ? new Date(lastShift.endedAt).toISOString() : null,
       onLoa:        !!activeLoa,
       loaReason:    activeLoa?.reason || null,
-      loaEndsAt:    activeLoa ? new Date(activeLoa.endAt * 1000).toISOString() : null,
+      loaEndsAt:    activeLoa ? new Date(activeLoa.endAt).toISOString() : null,
     };
 
     await new Promise(r => setTimeout(r, 200));
