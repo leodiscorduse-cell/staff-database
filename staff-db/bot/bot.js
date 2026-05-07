@@ -52,103 +52,174 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 async function melonlyFetch(endpoint, label) {
   if (!CONFIG.melonlyToken) return null;
   try {
-    const res = await fetch(`${CONFIG.melonlyBase}${endpoint}`, {
+    const fullUrl = `${CONFIG.melonlyBase}${endpoint}`;
+    const res = await fetch(fullUrl, {
       headers: { Authorization: `Bearer ${CONFIG.melonlyToken}` }
     });
-    if (res.status === 404) return null;
-    if (!res.ok) { console.warn(`[MELONLY] ${label} → ${res.status}`); return null; }
-    return await res.json();
-  } catch (e) { console.warn(`[MELONLY] ${label} error: ${e.message}`); return null; }
+    if (res.status === 404) {
+      console.debug(`[MELONLY] ${label}: 404 (not found)`);
+      return null;
+    }
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.warn(`[MELONLY] ${label} → ${res.status}: ${errorText.substring(0, 100)}`);
+      return null;
+    }
+    const data = await res.json();
+    return data;
+  } catch (e) { 
+    console.warn(`[MELONLY] ${label} error: ${e.message}`);
+    return null;
+  }
 }
 
 async function fetchAllPages(endpoint, label) {
   const results = [];
   let page = 1;
-  while (true) {
+  let hasMore = true;
+  
+  while (hasMore && page <= 50) { // Max 50 pages safety limit
     const sep = endpoint.includes('?') ? '&' : '?';
     const data = await melonlyFetch(`${endpoint}${sep}page=${page}&limit=100`, `${label} p${page}`);
-    if (!data?.data?.length) break;
-    results.push(...data.data);
-    if (page >= data.totalPages) break;
+    
+    if (!data) {
+      console.debug(`[MELONLY] ${label}: No data for page ${page}`);
+      break;
+    }
+    
+    // Handle different response formats
+    const items = data.data || data.shifts || data.logs || data.loas || (Array.isArray(data) ? data : []);
+    if (!items || !items.length) {
+      hasMore = false;
+      break;
+    }
+    
+    results.push(...items);
+    hasMore = page < (data.totalPages || page);
     page++;
     await sleep(300);
   }
+  
+  console.log(`[MELONLY] ${label}: Fetched ${results.length} records`);
   return results;
 }
 
 async function syncMelonly(db, discordIds) {
-  if (!CONFIG.melonlyToken) { console.log('[MELONLY] No token, skipping.'); return; }
+  if (!CONFIG.melonlyToken) { 
+    console.log('[MELONLY] No token, skipping.'); 
+    return; 
+  }
+  
   console.log('[MELONLY] Starting sync...');
+  console.log(`[MELONLY] Token present: ${CONFIG.melonlyToken.substring(0, 20)}...`);
 
-  // Step 1: fetch all shifts, logs, loas in parallel
+  // Step 1: fetch critical data
+  console.log('[MELONLY] Fetching shifts, logs, LOAs...');
   const [allShifts, allLogs, allLoas] = await Promise.all([
     fetchAllPages('/server/shifts', 'shifts'),
     fetchAllPages('/server/logs', 'logs'),
     fetchAllPages('/server/loas', 'loas'),
   ]);
-  console.log(`[MELONLY] Fetched ${allShifts.length} shifts, ${allLogs.length} logs, ${allLoas.length} LOAs`);
+  console.log(`[MELONLY] Fetched: ${allShifts.length} shifts, ${allLogs.length} logs, ${allLoas.length} LOAs`);
 
-  // Step 2: for each staff Discord ID, look up their Melonly member ID
-  // Build map: melonyMemberId → discordId
+  if (allShifts.length === 0 && allLogs.length === 0 && allLoas.length === 0) {
+    console.warn('[MELONLY] ⚠️ No data returned from Melonly API. Check token and server ID.');
+  }
+
+  // Step 2: Build member lookup maps
   const melonyToDiscord = {};
   const discordToMelony = {};
+  let lookupSuccess = 0;
 
-  console.log(`[MELONLY] Looking up ${discordIds.length} staff members...`);
+  console.log(`[MELONLY] Looking up ${discordIds.length} Discord staff to Melonly members...`);
+  
   for (const discordId of discordIds) {
-    const member = await melonlyFetch(`/server/members/discord/${discordId}`, `lookup ${discordId}`);
+    // Try multiple endpoint variations
+    let member = null;
+    
+    // Try standard Discord lookup first
+    member = await melonlyFetch(`/server/members/discord/${discordId}`, `lookup-discord ${discordId}`);
+    
+    if (!member) {
+      // Try alternative endpoint
+      member = await melonlyFetch(`/server/members?discordId=${discordId}`, `lookup-param ${discordId}`);
+    }
+    
     if (member?.id) {
       melonyToDiscord[member.id] = discordId;
       discordToMelony[discordId] = member.id;
+      lookupSuccess++;
     }
+    
     await sleep(150);
   }
-  console.log(`[MELONLY] Matched ${Object.keys(discordToMelony).length} staff to Melonly`);
+  
+  console.log(`[MELONLY] ✓ Matched ${lookupSuccess}/${discordIds.length} staff to Melonly`);
+  
+  if (lookupSuccess === 0) {
+    console.warn('[MELONLY] ⚠️ No staff matched to Melonly. Possible causes:');
+    console.warn('  - Discord IDs not linked in Melonly');
+    console.warn('  - API token invalid or expired');
+    console.warn('  - Wrong server ID in config');
+  }
 
-  // Step 3: calculate per-staff stats from shifts
+  // Step 3: Calculate per-staff stats
+  let enriched = 0;
   for (const [discordId, melonyId] of Object.entries(discordToMelony)) {
     if (!db.staff[discordId]) continue;
 
-    const memberShifts = allShifts.filter(s => s.memberId === melonyId);
+    // Find shifts for this member
+    const memberShifts = allShifts.filter(s => {
+      // Try different field names
+      return s.memberId === melonyId || s.userId === melonyId || 
+             s.discordId === discordId || s.staffId === melonyId;
+    });
+    
     const completed = memberShifts.filter(s => s.endedAt);
-    const totalMs = completed.reduce((a, s) => a + (s.endedAt - s.createdAt), 0);
+    const totalMs = completed.reduce((a, s) => a + (Math.max(0, (s.endedAt || s.createdAt) - (s.createdAt || s.startedAt))), 0);
     const totalHours = Math.round((totalMs / 3600000) * 10) / 10;
-    const lastShift = completed.sort((a, b) => b.endedAt - a.endedAt)[0];
+    const lastShift = completed.sort((a, b) => (b.endedAt || 0) - (a.endedAt || 0))[0];
 
     // LOA check
-    const memberLoas = allLoas.filter(l => l.memberId === melonyId);
-    const activeLoa = memberLoas.find(l => l.status === 1 && !l.endedAt);
+    const memberLoas = allLoas.filter(l => l.memberId === melonyId || l.userId === melonyId || l.discordId === discordId);
+    const activeLoa = memberLoas.find(l => l.status === 1 || l.active === true);
 
     db.staff[discordId].melonly = {
       melonyId,
-      totalShifts:  completed.length,
-      totalHours,
-      lastShiftAt:  lastShift ? new Date(lastShift.endedAt).toISOString() : null,
-      onLoa:        !!activeLoa,
-      loaReason:    activeLoa?.reason || null,
-      loaEndsAt:    activeLoa?.endAt ? new Date(activeLoa.endAt).toISOString() : null,
+      totalShifts:   Math.max(0, completed.length),
+      totalHours:    Math.max(0, totalHours),
+      lastShiftAt:   lastShift ? new Date(lastShift.endedAt || lastShift.createdAt).toISOString() : null,
+      onLoa:         !!activeLoa,
+      loaReason:     activeLoa?.reason || null,
+      loaEndsAt:     activeLoa?.endAt ? new Date(activeLoa.endAt).toISOString() : null,
+      shiftCount:    memberShifts.length,
     };
+    
+    enriched++;
   }
 
-  // Step 4: enrich recent shifts with Discord info for the dashboard
+  // Step 4: Enrich shifts with Discord names
   const enrichedShifts = allShifts
-    .filter(s => s.endedAt)
-    .sort((a, b) => b.endedAt - a.endedAt)
+    .filter(s => s.endedAt || s.completedAt)
+    .sort((a, b) => (b.endedAt || 0) - (a.endedAt || 0))
     .slice(0, 100)
     .map(s => {
-      const discordId = melonyToDiscord[s.memberId];
+      const memberId = s.memberId || s.userId || s.staffId;
+      const discordId = melonyToDiscord[memberId];
       const staffMember = discordId ? db.staff[discordId] : null;
       return {
         ...s,
-        discordId:    discordId || null,
-        displayName:  staffMember?.nickname || staffMember?.username?.split('#')[0] || 'Unknown',
-        highestRole:  staffMember?.highest_role || null,
-        durationMs:   s.endedAt - s.createdAt,
+        discordId:   discordId || null,
+        displayName: staffMember?.nickname || staffMember?.username?.split('#')[0] || 'Unknown',
+        highestRole: staffMember?.highest_role || null,
+        durationMs:  Math.max(0, (s.endedAt || s.completedAt || 0) - (s.createdAt || s.startedAt || 0)),
       };
     });
 
-  // Step 5: enrich logs with names
+  // Step 5: Enrich logs
   const enrichedLogs = allLogs.slice(0, 200).map(l => {
-    const discordId = melonyToDiscord[l.memberId] || null;
+    const memberId = l.memberId || l.userId || l.staffId;
+    const discordId = melonyToDiscord[memberId];
     const staffMember = discordId ? db.staff[discordId] : null;
     return {
       ...l,
@@ -157,11 +228,12 @@ async function syncMelonly(db, discordIds) {
     };
   });
 
-  // Step 6: enrich active LOAs with names
+  // Step 6: Enrich active LOAs
   const activeLoas = allLoas
-    .filter(l => l.status === 1 && !l.endedAt)
+    .filter(l => l.status === 1 || l.active === true || (l.endAt && new Date(l.endAt) > new Date()))
     .map(l => {
-      const discordId = melonyToDiscord[l.memberId] || null;
+      const memberId = l.memberId || l.userId || l.staffId;
+      const discordId = melonyToDiscord[memberId];
       const staffMember = discordId ? db.staff[discordId] : null;
       return {
         ...l,
@@ -176,9 +248,16 @@ async function syncMelonly(db, discordIds) {
     logs:      enrichedLogs,
     loas:      activeLoas,
     lastFetch: new Date().toISOString(),
+    stats:     {
+      totalMatched: lookupSuccess,
+      totalEnriched: enriched,
+      shiftsCount: allShifts.length,
+      logsCount: allLogs.length,
+      loasCount: allLoas.length,
+    },
   };
 
-  console.log(`[MELONLY] Done. ${Object.keys(discordToMelony).length} staff enriched with activity data.`);
+  console.log(`[MELONLY] ✓ Done. ${enriched} staff enriched with Melonly activity data.`);
 }
 
 // ── Discord sync ──────────────────────────────────────────────────────────────

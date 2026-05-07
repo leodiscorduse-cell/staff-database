@@ -79,7 +79,53 @@ app.get('/api/logs', (req, res) => {
   const db = loadDB();
   res.json({ logs: db.sync_log });
 });
+// ── EXPORT staff data (CSV/JSON) ────────────────────────────────────────────
+app.get('/api/export', (req, res) => {
+  const db = loadDB();
+  const format = (req.query.format || 'json').toLowerCase();
+  const staff = Object.values(db.staff);
 
+  if (format === 'csv') {
+    const headers = ['User ID', 'Username', 'Nickname', 'Role', 'Role Group', 'Joined', 'ZTP', 'Strikes Count', 'Hours', 'Shifts', 'Notes'];
+    const rows = staff.map(s => [
+      s.user_id,
+      s.username || '',
+      s.nickname || '',
+      s.highest_role || '',
+      s.role_group || '',
+      s.join_date ? new Date(s.join_date).toLocaleDateString() : '',
+      s.on_ztp ? 'Yes' : 'No',
+      (s.strikes || []).length,
+      s.melonly?.totalHours || 0,
+      s.melonly?.totalShifts || 0,
+      (s.notes || '').replace(/"/g, '""'),
+    ]);
+    
+    const csv = [headers, ...rows].map(r => r.map(cell => typeof cell === 'string' && cell.includes(',') ? `"${cell}"` : cell).join(',')).join('\n');
+    res.header('Content-Type', 'text/csv');
+    res.header('Content-Disposition', 'attachment; filename="staff-export.csv"');
+    res.send(csv);
+  } else {
+    res.header('Content-Type', 'application/json');
+    res.header('Content-Disposition', 'attachment; filename="staff-export.json"');
+    res.json(db);
+  }
+});
+
+// ── GET Melonly stats ──────────────────────────────────────────────────────
+app.get('/api/melonly/stats', (req, res) => {
+  const db = loadDB();
+  const mel = db.melonly || {};
+  res.json({
+    lastFetch: mel.lastFetch,
+    stats: mel.stats || { totalMatched: 0, totalEnriched: 0, shiftsCount: 0, logsCount: 0, loasCount: 0 },
+    summary: {
+      totalShifts: (mel.shifts || []).length,
+      totalLogs: (mel.logs || []).length,
+      activeLoas: (mel.loas || []).length,
+    }
+  });
+});
 app.listen(PORT, () => {
   console.log(`[API] Dashboard running at http://localhost:${PORT}`);
 });
